@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* Heading Section  */
+
+header {
+    background-color: transparent;
+    background-image: linear-gradient(20deg, #FF5555 0%, #FF8934 100%);
+    color: #fff;
+}
+
+
+/* Left Section  */
+
+.openNow,
+.closeNow {
+    font-size: 10px;
+    background: #ffffffab;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.leftSection {
+    font-size: 12px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 20
+}
+
+
+/* Right Section  */
+
+.cartAmount {
+    font-size: 8px;
+    margin-left: -10px;
+    margin-top: -30px;
+}
+
+
+/* Head Body  */
+
+.food,
+.restaurant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    background: rgb(255 255 255 / 28%);
+    box-shadow: 0 4px 30px rgb(0 0 0 / 8%);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+}
+
+.food,
+.restaurant {
+    display: none;
+}
+
+.activeFood,
+.activeRestaurant {
+    display: flex;
+}
+
+.food input,
+.restaurant select {
+    width: 80%;
+    background: #ffffff36;
+    box-shadow: 0 4px 30px #0000001a;
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1.5px solid rgb(255 255 255 / 46%);
+}
+
+.restaurant select option {
+    background: #cc41414f;
+    box-shadow: 0 4px 30px #0000001a;
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+}
+
+.food span,
+.restaurant span {
+    width: 100px;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.food span:hover,
+.restaurant span:hover {
+    background: #783434;
+    transition: 0.3s;
+}
+
+.search {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 125px;
+}
+
+.burger {
+    width: 400px;
+    position: absolute;
+    left: 20px;
+    top: 180px;
+}
+
+.pasta {
+    position: absolute;
+    right: -155px;
+    top: 100px;
+}
+
+
+/* Container Section  */
+
+.container {
+    height: 1080px;
+    background: #FBF4ED;
+    position: relative;
+    z-index: 1;
+}
