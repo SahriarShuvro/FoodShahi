@@ -2,7 +2,7 @@
     let openNow = document.querySelector('.openNow');
     let closeNow = document.querySelector('.closeNow');
 
-    let date = new Date("April 1 2023, 09:00:01");
+    let date = new Date();
     let minutes = date.getMinutes();
     let hours = date.getHours();
 

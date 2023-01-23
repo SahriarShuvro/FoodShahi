@@ -1,7 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +12,8 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 
@@ -46,13 +50,34 @@ header {
 /* Right Section  */
 
 .cartAmount {
-    font-size: 8px;
+    font-size: 12px;
     margin-left: -10px;
     margin-top: -30px;
 }
 
+.cartIcon {
+    font-size: 30px;
+}
+
+.logIn:hover,
+.singUp:hover {
+    background: #390000;
+    color: #fff;
+}
+
 
 /* Head Body  */
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    background: rgb(255 255 255 / 28%);
+    box-shadow: 0 4px 30px rgb(0 0 0 / 8%);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+}
 
 .food,
 .restaurant {
@@ -87,10 +112,15 @@ header {
 }
 
 .restaurant select option {
-    background: #cc41414f;
+    background: #ffffff2b;
     box-shadow: 0 4px 30px #0000001a;
     backdrop-filter: blur(5.7px);
     -webkit-backdrop-filter: blur(5.7px);
+    border-radius: 999%;
+    -webkit-border-radius: 999%;
+    -moz-border-radius: 999%;
+    -ms-border-radius: 999%;
+    -o-border-radius: 999%;
 }
 
 .food span,
@@ -112,7 +142,7 @@ header {
 .search {
     position: relative;
     z-index: 1;
-    margin-bottom: 125px;
+    margin-bottom: 55px;
 }
 
 .burger {
@@ -122,18 +152,242 @@ header {
     top: 180px;
 }
 
-.pasta {
+.setMenu {
     position: absolute;
-    right: -155px;
+    right: 0;
     top: 100px;
+    width: 500px;
 }
 
 
 /* Container Section  */
 
-.container {
-    height: 1080px;
+.slick-next {
+    color: #000;
+}
+
+.containerSection {
     background: #FBF4ED;
     position: relative;
     z-index: 1;
+}
+
+.headBodySection {
+    margin-top: 50px;
+}
+
+.slick-prev::before {
+    color: #000000 !important;
+    font-size: 30px;
+}
+
+.categorySlider .slick-list {
+    position: relative;
+}
+
+.categorySlider .btnNext,
+.categorySlider .btnPrev {
+    position: absolute;
+    top: 30% !important;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    padding: 15px;
+    box-shadow: #000000 0px 0px 30px -10px;
+    background: #fff;
+    border-radius: 999%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.categorySlider .btnNext {
+    right: -50px;
+}
+
+.categorySlider .btnPrev {
+    left: -50px;
+}
+
+.sliderPrevBTN {
+    margin-right: 5px;
+}
+
+.sliderPrevBTN,
+.sliderNextBTN {
+    font-size: 14px;
+}
+
+.categoryBTNcard {
+    background: #ffffff63;
+    box-shadow: 0 0px 7px #0000001a;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.categoryBTNcard img {
+    width: 56px;
+    height: 56px;
+    border-radius: 999%;
+}
+
+.title {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 1;
+    text-align: center;
+}
+
+
+/* Trandign section  */
+
+.tranding {
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+    width: 525px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.trandingInnerSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slick-active button::before {
+    font-size: 12px !important;
+}
+
+
+/* Popular Restaurant */
+
+.singleCard {
+    width: 355px;
+    height: 315px;
+    background: rgba(255, 255, 255, 0.71);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.7px);
+    -webkit-backdrop-filter: blur(0.7px);
+    border: 1px solid #c8c7c7;
+}
+
+.coverImg img {
+    height: 140px;
+    width: 355px;
+}
+
+.cardLogo {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* Try Somethin New  */
+
+.tryNewFoodCard {
+    width: 256px !important;
+    height: 400px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.71);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.7px);
+    -webkit-backdrop-filter: blur(0.7px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+
+/* .tryNewFoodCard:hover {
+    background-image: linear-gradient(20deg, #FF5555 0%, #FF8934 100%);
+    color: #fff;
+    transition: 0.7ms;
+    -webkit-transition: 0.7ms;
+    -moz-transition: 0.7ms;
+    -ms-transition: 0.7ms;
+    -o-transition: 0.7ms;
+} */
+
+.foodCoverImg {
+    width: 260px;
+    height: 200px;
+    display: flex;
+}
+
+.tryNewFoodNext {
+    right: 0;
+}
+
+.tryNewFoodPrev {
+    right: 45px;
+}
+
+.tryNewFoodNext,
+.tryNewFoodPrev {
+    font-size: 25px;
+    position: absolute;
+    top: -50px;
+    background: #fff;
+    padding: 5px;
+    border-radius: 999%;
+    -webkit-border-radius: 999%;
+    -moz-border-radius: 999%;
+    -ms-border-radius: 999%;
+    -o-border-radius: 999%;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 10%);
+}
+
+
+/* Footer Section  */
+
+.googlePlay {
+    width: 200px;
+    padding: 10px 30px;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 5px 20px 0px #ff6b5752;
+}
+
+.footerRight {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.footerMenu p {
+    color: #783434 !important;
+}
+
+.fa-phone::before {
+    font-size: 12px;
+}
+
+.paymentSupport {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paymentSupport ul li img {
+    height: 34px;
 }
