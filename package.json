@@ -1,13 +1,13 @@
 {
-    "name": "customer-site",
-    "version": "1.0.0",
-    "description": "",
-    "main": "tailwind.config.js",
-    "homepage": "https://github.com/SahriarShuvro/FoodShahi/blob/main/src/index.html",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC"
+  "name": "customer-site",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "homepage": "https://github.com/SahriarShuvro/FoodShahi/blob/main/src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
