@@ -395,12 +395,3 @@ header {
 .paymentSupport ul li img {
     height: 34px;
 }
-
-.emptyCartWindow {
-    transition-duration: 600ms;
-}
-
-.btnCartActive {
-    right: 0 !important;
-    transition-duration: 600ms !important;
-}
