@@ -1,11 +1,11 @@
-$(".categorySlider").slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    nextArrow: `<div class="btnNext style='display:none"><span class="material-symbols-outlined sliderNextBTN"> arrow_forward_ios </span></div>`,
-    prevArrow: `<div class="btnPrev style='display:none"><span class="material-symbols-outlined sliderPrevBTN"> arrow_back_ios_new </span></div>`,
+$(".fsSpecialItemSlider").slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
     autoplay: true,
-    speed: 1500,
-    autoplaySpeed: 3000,
+    nextArrow: `<div class="tryNewNext hidden"><span class="material-symbols-outlined tryNewFoodNext"> arrow_forward_ios </span></div>`,
+    prevArrow: `<div class="tryNextPrev hidden"><span class="material-symbols-outlined tryNewFoodPrev"> arrow_back_ios_new </span></div>`,
+    speed: 2000,
+    autoplaySpeed: 4000,
     responsive: [{
             breakpoint: 1200,
             settings: {
@@ -32,7 +32,9 @@ $(".categorySlider").slick({
             breakpoint: 500,
             settings: {
                 slidesToShow: 1,
-                arrows: false
+                settings: 'unslick',
+                arrows: false,
+                dots: true,
             },
         }
     ],

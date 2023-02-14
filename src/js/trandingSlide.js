@@ -7,4 +7,11 @@ $(".trandingSlider").slick({
     dots: true,
     speed: 1500,
     autoplaySpeed: 2000,
+    responsive: [{
+        breakpoint: 900,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        },
+    }],
 });
