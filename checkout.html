@@ -1,0 +1,853 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | FoodShahiBD - Home delivery service in Rajshahi</title>
+    <!--  meta tags -->
+    <meta name="keywords"
+        content="home delivery in rajshahi, home delivery in natore, home delivery in gopalgonj, rajshahi, natore, gopalgonj, food home delivery in Rajshahi, online food delivery in Rajshahi">
+    <meta name="description"
+        content="FoodShahiBD is the first online food ordering platform in Rajshahi. Becoming Most trusted and popular delivery service day by  day. FoodShahi also available in Natore and Gopalgonj. You can find all restaurants located in your area and can take home delivery with FoodShahiBD">
+    <link rel="apple-touch-icon" sizes="57x57"
+        href="https://foodshahibd.com/assets/frontend/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60"
+        href="https://foodshahibd.com/assets/frontend/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72"
+        href="https://foodshahibd.com/assets/frontend/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76"
+        href="https://foodshahibd.com/assets/frontend/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114"
+        href="https://foodshahibd.com/assets/frontend/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120"
+        href="https://foodshahibd.com/assets/frontend/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144"
+        href="https://foodshahibd.com/assets/frontend/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152"
+        href="https://foodshahibd.com/assets/frontend/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://foodshahibd.com/assets/frontend/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="https://foodshahibd.com/assets/frontend/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://foodshahibd.com/assets/frontend/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96"
+        href="https://foodshahibd.com/assets/frontend/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://foodshahibd.com/assets/frontend/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://foodshahibd.com/assets/frontend/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/frontend/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Font Awesome Icon  -->
+    <script src="https://kit.fontawesome.com/9674ac7627.js" crossorigin="anonymous"></script>
+    <!-- Google Icon  -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style>
+    <!-- Slick Slider  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Custom css  -->
+    <link href="./src/input.css" rel="stylesheet">
+
+    <style>
+        .checkOutPage {
+            color: #d03801 !important;
+        }
+    </style>
+</head>
+
+<body class=" 2xl:max-w-[2000px] 2xl:m-auto bg-[#fbf4ed] no-scrollbar relative">
+    <!-- Heading Section  -->
+    <nav id="navBarSection"></nav>
+    <script src="./src/js/heading.js"></script>
+
+
+    <div class="main relative lg:mx-20">
+        <!-- Container Section Start   -->
+        <div class="checkOutContainer  pt-[7rem] lg:flex lg:justify-between lg:w-full">
+            <!-- section one  -->
+            <div class="sectionOne lg:w-[70%]">
+                <!-- Food Suggest Area  -->
+                <div
+                    class="foodSuggestArea m-3 bg-white p-4 rounded-md shadow-lg shadow-gray-400 flex flex-col justify-center">
+                    <p class="text-base mb-3">You may also like</p>
+                    <div class="foodCards relative flex flex-wrap justify-center">
+                        <div class="flex justify-center">
+                            <div
+                                class="checkOutFoodCard max-w-[115px] h-auto bg-white border border-gray-200 rounded-lg shadow m-1">
+                                <a href="#" class="">
+                                    <div class="relative">
+                                        <img class="rounded-t-lg w-full h-16 object-cover"
+                                            src="https://foodshahibd.com/foodshahi_ci/assets/media/product/1675857891_food.jpg"
+                                            alt="">
+                                        <a href="#"
+                                            class="absolute top-3 right-2 z-50 inline-flex items-center px-2 py-1 text-[10px] font-medium text-center text-white bg-green-600 rounded hover:bg-green-800 focus:ring-2 focus:outline-none focus:ring-green-300 ">
+                                            Add
+                                            <span class="material-symbols-outlined text-[10px]">
+                                                add_circle
+                                            </span>
+                                        </a>
+                                    </div>
+                                </a>
+                                <div class="p-2">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 d">
+                                            Buy Large & Get Small
+                                        </h5>
+                                    </a>
+                                    <p class="mb-1 flex justify-center">
+                                        <span
+                                            class="checkOutCardPrice text-[10px] bg-gray-200 border-orange-600 text-orange-700 duration-100 rounded px-[7px] py-[2px] cursor-pointer hover:bg-orange-600 hover:text-white">৳
+                                            799</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center">
+                            <div
+                                class="checkOutFoodCard max-w-[115px] h-auto bg-white border border-gray-200 rounded-lg shadow m-1">
+                                <a href="#" class="">
+                                    <div class="relative">
+                                        <img class="rounded-t-lg w-full h-16 object-cover"
+                                            src="https://foodshahibd.com/foodshahi_ci/assets/media/product/1675857891_food.jpg"
+                                            alt="">
+                                        <a href="#"
+                                            class="absolute top-3 right-2 z-50 inline-flex items-center px-2 py-1 text-[10px] font-medium text-center text-white bg-green-600 rounded hover:bg-green-800 focus:ring-2 focus:outline-none focus:ring-green-300 ">
+                                            Add
+                                            <span class="material-symbols-outlined text-[10px]">
+                                                add_circle
+                                            </span>
+                                        </a>
+                                    </div>
+                                </a>
+                                <div class="p-2">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 d">
+                                            Buy Large & Get Small
+                                        </h5>
+                                    </a>
+                                    <p class="mb-1 flex justify-center">
+                                        <span
+                                            class="checkOutCardPrice text-[10px] bg-gray-200 border-orange-600 text-orange-700 duration-100 rounded px-[7px] py-[2px] cursor-pointer hover:bg-orange-600 hover:text-white">৳
+                                            799</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center">
+                            <div
+                                class="checkOutFoodCard max-w-[115px] h-auto bg-white border border-gray-200 rounded-lg shadow m-1">
+                                <a href="#" class="">
+                                    <div class="relative">
+                                        <img class="rounded-t-lg w-full h-16 object-cover"
+                                            src="https://foodshahibd.com/foodshahi_ci/assets/media/product/1675857891_food.jpg"
+                                            alt="">
+                                        <a href="#"
+                                            class="absolute top-3 right-2 z-50 inline-flex items-center px-2 py-1 text-[10px] font-medium text-center text-white bg-green-600 rounded hover:bg-green-800 focus:ring-2 focus:outline-none focus:ring-green-300 ">
+                                            Add
+                                            <span class="material-symbols-outlined text-[10px]">
+                                                add_circle
+                                            </span>
+                                        </a>
+                                    </div>
+                                </a>
+                                <div class="p-2">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 d">
+                                            Buy Large & Get Small
+                                        </h5>
+                                    </a>
+                                    <p class="mb-1 flex justify-center">
+                                        <span
+                                            class="checkOutCardPrice text-[10px] bg-gray-200 border-orange-600 text-orange-700 duration-100 rounded px-[7px] py-[2px] cursor-pointer hover:bg-orange-600 hover:text-white">৳
+                                            799</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center">
+                            <div
+                                class="checkOutFoodCard max-w-[115px] h-auto bg-white border border-gray-200 rounded-lg shadow m-1">
+                                <a href="#" class="">
+                                    <div class="relative">
+                                        <img class="rounded-t-lg w-full h-16 object-cover"
+                                            src="https://foodshahibd.com/foodshahi_ci/assets/media/product/1675857891_food.jpg"
+                                            alt="">
+                                        <a href="#"
+                                            class="absolute top-3 right-2 z-50 inline-flex items-center px-2 py-1 text-[10px] font-medium text-center text-white bg-green-600 rounded hover:bg-green-800 focus:ring-2 focus:outline-none focus:ring-green-300 ">
+                                            Add
+                                            <span class="material-symbols-outlined text-[10px]">
+                                                add_circle
+                                            </span>
+                                        </a>
+                                    </div>
+                                </a>
+                                <div class="p-2">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 d">
+                                            Buy Large & Get Small
+                                        </h5>
+                                    </a>
+                                    <p class="mb-1 flex justify-center">
+                                        <span
+                                            class="checkOutCardPrice text-[10px] bg-gray-200 border-orange-600 text-orange-700 duration-100 rounded px-[7px] py-[2px] cursor-pointer hover:bg-orange-600 hover:text-white">৳
+                                            799</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center">
+                            <div
+                                class="checkOutFoodCard max-w-[115px] h-auto bg-white border border-gray-200 rounded-lg shadow m-1">
+                                <a href="#" class="">
+                                    <div class="relative">
+                                        <img class="rounded-t-lg w-full h-16 object-cover"
+                                            src="https://foodshahibd.com/foodshahi_ci/assets/media/product/1675857891_food.jpg"
+                                            alt="">
+                                        <a href="#"
+                                            class="absolute top-3 right-2 z-50 inline-flex items-center px-2 py-1 text-[10px] font-medium text-center text-white bg-green-600 rounded hover:bg-green-800 focus:ring-2 focus:outline-none focus:ring-green-300 ">
+                                            Add
+                                            <span class="material-symbols-outlined text-[10px]">
+                                                add_circle
+                                            </span>
+                                        </a>
+                                    </div>
+                                </a>
+                                <div class="p-2">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 d">
+                                            Buy Large & Get Small
+                                        </h5>
+                                    </a>
+                                    <p class="mb-1 flex justify-center">
+                                        <span
+                                            class="checkOutCardPrice text-[10px] bg-gray-200 border-orange-600 text-orange-700 duration-100 rounded px-[7px] py-[2px] cursor-pointer hover:bg-orange-600 hover:text-white">৳
+                                            799</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center">
+                            <div
+                                class="checkOutFoodCard max-w-[115px] h-auto bg-white border border-gray-200 rounded-lg shadow m-1">
+                                <a href="#" class="">
+                                    <div class="relative">
+                                        <img class="rounded-t-lg w-full h-16 object-cover"
+                                            src="https://foodshahibd.com/foodshahi_ci/assets/media/product/1675857891_food.jpg"
+                                            alt="">
+                                        <a href="#"
+                                            class="absolute top-3 right-2 z-50 inline-flex items-center px-2 py-1 text-[10px] font-medium text-center text-white bg-green-600 rounded hover:bg-green-800 focus:ring-2 focus:outline-none focus:ring-green-300 ">
+                                            Add
+                                            <span class="material-symbols-outlined text-[10px]">
+                                                add_circle
+                                            </span>
+                                        </a>
+                                    </div>
+                                </a>
+                                <div class="p-2">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 d">
+                                            Buy Large & Get Small
+                                        </h5>
+                                    </a>
+                                    <p class="mb-1 flex justify-center">
+                                        <span
+                                            class="checkOutCardPrice text-[10px] bg-gray-200 border-orange-600 text-orange-700 duration-100 rounded px-[7px] py-[2px] cursor-pointer hover:bg-orange-600 hover:text-white">৳
+                                            799</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center">
+                            <div
+                                class="checkOutFoodCard max-w-[115px] h-auto bg-white border border-gray-200 rounded-lg shadow m-1">
+                                <a href="#" class="">
+                                    <div class="relative">
+                                        <img class="rounded-t-lg w-full h-16 object-cover"
+                                            src="https://foodshahibd.com/foodshahi_ci/assets/media/product/1675857891_food.jpg"
+                                            alt="">
+                                        <a href="#"
+                                            class="absolute top-3 right-2 z-50 inline-flex items-center px-2 py-1 text-[10px] font-medium text-center text-white bg-green-600 rounded hover:bg-green-800 focus:ring-2 focus:outline-none focus:ring-green-300 ">
+                                            Add
+                                            <span class="material-symbols-outlined text-[10px]">
+                                                add_circle
+                                            </span>
+                                        </a>
+                                    </div>
+                                </a>
+                                <div class="p-2">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 d">
+                                            Buy Large & Get Small
+                                        </h5>
+                                    </a>
+                                    <p class="mb-1 flex justify-center">
+                                        <span
+                                            class="checkOutCardPrice text-[10px] bg-gray-200 border-orange-600 text-orange-700 duration-100 rounded px-[7px] py-[2px] cursor-pointer hover:bg-orange-600 hover:text-white">৳
+                                            799</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center">
+                            <div
+                                class="checkOutFoodCard max-w-[115px] h-auto bg-white border border-gray-200 rounded-lg shadow m-1">
+                                <a href="#" class="">
+                                    <div class="relative">
+                                        <img class="rounded-t-lg w-full h-16 object-cover"
+                                            src="https://foodshahibd.com/foodshahi_ci/assets/media/product/1675857891_food.jpg"
+                                            alt="">
+                                        <a href="#"
+                                            class="absolute top-3 right-2 z-50 inline-flex items-center px-2 py-1 text-[10px] font-medium text-center text-white bg-green-600 rounded hover:bg-green-800 focus:ring-2 focus:outline-none focus:ring-green-300 ">
+                                            Add
+                                            <span class="material-symbols-outlined text-[10px]">
+                                                add_circle
+                                            </span>
+                                        </a>
+                                    </div>
+                                </a>
+                                <div class="p-2">
+                                    <a href="#">
+                                        <h5 class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 d">
+                                            Buy Large & Get Small
+                                        </h5>
+                                    </a>
+                                    <p class="mb-1 flex justify-center">
+                                        <span
+                                            class="checkOutCardPrice text-[10px] bg-gray-200 border-orange-600 text-orange-700 duration-100 rounded px-[7px] py-[2px] cursor-pointer hover:bg-orange-600 hover:text-white">৳
+                                            799</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Delivery Address area  -->
+                <div
+                    class="deliveryAddressArea m-3 mt-6 bg-white p-4 rounded-md shadow-sm  flex flex-col justify-center">
+                    <h1 class="text-2xl">Choose a delivery address</h1>
+                    <h2 class="text-base text-gray-500">Multiple addresses in this location</h2>
+
+                    <div class="md:flex md:flex-wrap md:justify-between">
+                        <!-- Home -->
+                        <div class="homeAddress activeAddressButton commonClassForAddress border-orange-600">
+                            <!-- Icon  -->
+                            <div class="icons mr-3"><span class="material-symbols-outlined text-5xl"> house </span>
+                            </div>
+                            <!-- Address  -->
+                            <div class="addresses">
+                                <h1 class="text-sm font-semibold mb-2">Home</h1>
+                                <h2 class="text-xs mb-2">Padma Residancil Area Home: 220/232, Road: 4, Vodra, Rajshahi
+                                </h2>
+                                <button type="button"
+                                    class="mb-1 deleveryButton text-white bg-orange-500 hover:bg-orange-600 focus:ring-2 focus:ring-orange-100 font-medium rounded text-sm px-5 py-1 mr-2 mb-2  focus:outline-none  capitalize">Delivery
+                                    Here</button>
+                                <p class="uppercase text-xs font-bold">30min</p>
+                            </div>
+                        </div>
+                        <!-- Work  -->
+                        <div class="workAddress commonClassForAddress">
+                            <!-- Icon  -->
+                            <div class="icons mr-3"><span class="material-symbols-outlined text-5xl"> work </span></div>
+                            <!-- Address  -->
+                            <div class="addresses">
+                                <h1 class="text-sm font-semibold mb-2">Work</h1>
+                                <h2 class="text-xs mb-2">Padma Residancil Area Home: 220/232, Road: 4, Vodra, Rajshahi
+                                </h2>
+                                <button type="button"
+                                    class="mb-1 deleveryButton text-white bg-orange-500 hover:bg-orange-600 focus:ring-2 focus:ring-orange-100 font-medium rounded text-sm px-5 py-1 mr-2 mb-2  focus:outline-none  capitalize">Delivery
+                                    Here</button>
+                                <p class="uppercase text-xs font-bold">30min</p>
+                            </div>
+                        </div>
+                        <!-- Other -->
+                        <div class="othersAddress commonClassForAddress">
+                            <!-- Icon  -->
+                            <div class="icons mr-3"><span class="material-symbols-outlined text-5xl"> location_on
+                                </span>
+                            </div>
+                            <!-- Address  -->
+                            <div class="addresses">
+                                <h1 class="text-sm font-semibold mb-2">Others</h1>
+                                <h2 class="text-xs mb-2">Padma Residancil Area Home: 220/232, Road: 4, Vodra, Rajshahi
+                                </h2>
+                                <button type="button"
+                                    class="mb-1 deleveryButton text-white bg-orange-500 hover:bg-orange-600 focus:ring-2 focus:ring-orange-100 font-medium rounded text-sm px-5 py-1 mr-2 mb-2  focus:outline-none  capitalize">Delivery
+                                    Here</button>
+                                <p class="uppercase text-xs font-bold">30min</p>
+                            </div>
+                        </div>
+                        <!-- Add -->
+                        <div class="addAddress commonClassForAddress">
+                            <!-- Icon  -->
+                            <div class="icons mr-3"><span class="material-symbols-outlined text-5xl"> location_on
+                                </span>
+                            </div>
+                            <!-- Address  -->
+                            <div class="addresses">
+                                <h1 class="text-sm font-semibold mb-2">Other</h1>
+                                <h2 class="text-xs mb-2">Padma Residancil Area Home: 220/232, Road: 4, Vodra, Rajshahi
+                                </h2>
+                                <button id="addAddress"
+                                    class="mb-1 deleveryButton text-white bg-green-500 hover:bg-green-700 focus:ring-2 focus:ring-green-300 font-medium rounded text-sm px-5 py-1 mr-2 mb-2  focus:outline-none  capitalize">Add
+                                    New Address</button>
+                                <p class="uppercase text-xs font-bold">30min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Payment Method Area  -->
+                <div
+                    class="paymentMethodArea  m-3 mt-6 bg-white p-4 rounded-md shadow-sm  flex flex-col justify-center">
+                    <h1 class="text-2xl">Choose payment method</h1>
+                    <h2 class="text-base text-gray-500">Mobile Banking/Cash on Delivery</h2>
+
+                    <!-- Cash On Delivery  -->
+                    <div class="paymentMethod w-full">
+                        <button type="submit" id="cashOnDeliveryButton"
+                            class="cashOnDelivery w-full flex items-center rounded-md px-4 mt-4 py-2 bg-gray-100 border border-gray-100 duration-200 hover:border-orange-600  focus:border focus:border-orange-600">
+                            <img src="./src/img/cashOnDelivery.svg" alt="" class="w-12 h-12 mr-4">
+                            Cash On Delevery
+                        </button>
+                        <div class="mobileBankingDetails duration-200  h-0 overflow-hidden" id="cashOnDeliveryDetails">
+                            <div class=" rounded-md shadow-sm text-sm flex flex-col justify-center items-center w-full mt-4"
+                                role="group">
+                                <div class="payButton">
+                                    <button type="button"
+                                        class="payButtonShadow focus:outline-none border border-orange-600 text-white bg-orange-600 duration-200 hover:text-orange-700 hover:border-orange-600 hover:bg-white  font-medium rounded text-sm px-6 py-2 my-4 ">Pay
+                                        1009 ৳</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Mobile Banking  -->
+                    <div class="paymentMethod w-full">
+                        <button type="submit" id="mobileBankButton"
+                            class="cashOnDelivery w-full flex items-center rounded-md px-4 mt-4 py-2 bg-gray-100 border border-gray-100 duration-200 hover:border-orange-600  focus:border focus:border-orange-600 ">
+                            <img src="./src/img/mobileBankin.svg" alt="" class="w-12 h-12 mr-4">
+                            Mobile Banking
+                        </button>
+                        <div class="mobileBankingDetails duration-200 h-0 overflow-hidden" id="mobileBankingDetails">
+
+                            <div class=" rounded-md shadow-sm text-sm flex flex-col justify-center items-center w-full mt-4"
+                                role="group">
+                                <div class="paymentMethodButton flex text-sm">
+                                    <button type="button"
+                                        class="px-4 py-2 text-sm font-medium text-gray-900 bg-white border-t border-b border-l border-gray-200 rounded-l-lg hover:bg-gray-100 hover:text-pink-600 focus:z-10 focus:bg-pink-600 focus:text-white ">
+                                        bKash
+                                    </button>
+                                    <button type="button"
+                                        class="px-4 py-2 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-purple-800 focus:z-10 focus:bg-purple-600 focus:text-white ">
+                                        Rocket
+                                    </button>
+                                    <button type="button"
+                                        class="px-4 py-2 text-sm font-medium text-gray-900 bg-white border-t border-b border-r border-gray-200 rounded-r-md hover:bg-gray-100 hover:text-red-600 focus:z-10 focus:bg-red-600 focus:text-white ">
+                                        Nagad
+                                    </button>
+                                </div>
+                                <div class="paymentInfo flex flex-col items-center mt-4 ">
+                                    <label for="phoneNo">Phone No</label>
+                                    <input type="tel" name="phoneNo" id=""
+                                        class=" outline-none border py-1 px-4 rounded-md mt-2 flex"
+                                        placeholder="+8801728XXXXXX">
+                                </div>
+                                <div class="payButton">
+                                    <button type="button"
+                                        class="payButtonShadow focus:outline-none border border-orange-600 text-white bg-orange-600 duration-200 hover:text-orange-700 hover:border-orange-600 hover:bg-white  font-medium rounded text-sm px-6 py-2 my-4 ">Pay
+                                        1009 ৳</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section two -->
+            <div class="sectionTwo lg:w-[30%]">
+                <!-- Food item Area  -->
+                <div
+                    class="foodItemsArea m-3 mt-6 lg:mt-[.75rem]  p-4 rounded-md shadow-sm  flex flex-col justify-center">
+                    <div class="resturantItem">
+                        <!-- Resturant One  -->
+                        <div class="resturantOne">
+                            <!-- Heade -->
+                            <div class="itemHead flex items-center">
+                                <div class="flex flex-wrap justify-center w-16 mr-4">
+                                    <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1553410254_logo.jpg"
+                                        class="p-1 bg-white border rounded-full w-12 h-12" alt="...">
+                                </div>
+                                <div class="flex flex-col text-white">
+                                    <p class="text-sm">Tasty Time</p>
+                                    <p class="text-xs">
+                                        <span class="material-symbols-outlined text-xs"> stars</span> 3.37/5 (52
+                                        total reviews)
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="itemList rounded-md mt-4 text-xs p-4 bg-white">
+                                <ul>
+                                    <li class="flex justify-between items-center py-2">
+                                        <span>
+                                            <span
+                                                class="material-symbols-outlined text-xs mr-1 text-orange-600 font-bold">
+                                                fastfood</span> Nachos </span>
+                                        <div class="flex justify-center items-center">
+                                            <div class="">
+                                                <div class="qty-container">
+                                                    <button class="qty-btn-minus btn-danger btn-cornered mr-1"
+                                                        type="button"><i
+                                                            class="material-symbols-outlined">do_not_disturb_on</i></button>
+                                                    <input type="text" name="qty" value="1"
+                                                        class="input-qty input-cornered" />
+                                                    <button class="qty-btn-plus btn-danger btn-cornered ml-1"
+                                                        type="button">
+                                                        <i class="material-symbols-outlined">add_circle</i></button>
+                                                </div>
+                                            </div>
+                                            <span class="ml-3">৳ 200</span>
+                                        </div>
+                                        </span>
+                                    </li>
+                                    <hr>
+                                    <li class="flex justify-between py-2">
+                                        <span>
+                                            <span
+                                                class="material-symbols-outlined text-xs mr-1 text-orange-600 font-bold">
+                                                fastfood</span> Oven Baked Pasta </span>
+                                        <div class="flex justify-center items-center">
+                                            <div class="">
+                                                <div class="qty-container">
+                                                    <button class="qty-btn-minus btn-danger btn-cornered mr-1"
+                                                        type="button"><i
+                                                            class="material-symbols-outlined">do_not_disturb_on</i></button>
+                                                    <input type="text" name="qty" value="1"
+                                                        class="input-qty input-cornered" />
+                                                    <button class="qty-btn-plus btn-danger btn-cornered ml-1"
+                                                        type="button">
+                                                        <i class="material-symbols-outlined">add_circle</i></button>
+                                                </div>
+                                            </div>
+                                            <span class="ml-3">৳ 200</span>
+                                        </div>
+                                        </span>
+                                    </li>
+                                    <hr>
+                                    <li class="flex justify-between py-2">
+                                        <span>
+                                            <span
+                                                class="material-symbols-outlined text-xs mr-1 text-orange-600 font-bold">
+                                                fastfood</span> Chicken Loly </span>
+                                        <div class="flex justify-center items-center">
+                                            <div class="">
+                                                <div class="qty-container">
+                                                    <button class="qty-btn-minus btn-danger btn-cornered mr-1"
+                                                        type="button"><i
+                                                            class="material-symbols-outlined">do_not_disturb_on</i></button>
+                                                    <input type="text" name="qty" value="1"
+                                                        class="input-qty input-cornered" />
+                                                    <button class="qty-btn-plus btn-danger btn-cornered ml-1"
+                                                        type="button">
+                                                        <i class="material-symbols-outlined">add_circle</i></button>
+                                                </div>
+                                            </div>
+                                            <span class="ml-3">৳ 200</span>
+                                        </div>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Resturant Two  -->
+                        <div class="resturantTwo mt-4">
+                            <!-- Heade -->
+                            <div class="itemHead flex items-center">
+                                <div class="flex flex-wrap justify-center w-16 mr-4">
+                                    <img src="./src/img/ghoroni.png" class="p-1 bg-white border rounded-full w-12 h-12"
+                                        alt="...">
+                                </div>
+                                <div class="flex flex-col text-white">
+                                    <p class="text-sm">Tasty Time</p>
+                                    <p class="text-xs">
+                                        <span class="material-symbols-outlined text-xs"> stars</span> 3.37/5 (52
+                                        total reviews)
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="itemList rounded-md mt-4 text-xs p-4 bg-white">
+                                <ul>
+                                    <li class="flex justify-between items-center py-2">
+                                        <span>
+                                            <span
+                                                class="material-symbols-outlined text-xs mr-1 text-orange-600 font-bold">
+                                                fastfood</span> Nachos </span>
+                                        <div class="flex justify-center items-center">
+                                            <div class="">
+                                                <div class="qty-container">
+                                                    <button class="qty-btn-minus btn-danger btn-cornered mr-1"
+                                                        type="button"><i
+                                                            class="material-symbols-outlined">do_not_disturb_on</i></button>
+                                                    <input type="text" name="qty" value="1"
+                                                        class="input-qty input-cornered" />
+                                                    <button class="qty-btn-plus btn-danger btn-cornered ml-1"
+                                                        type="button">
+                                                        <i class="material-symbols-outlined">add_circle</i></button>
+                                                </div>
+                                            </div>
+                                            <span class="ml-3">৳ 200</span>
+                                        </div>
+                                        </span>
+                                    </li>
+                                    <hr>
+                                    <li class="flex justify-between py-2">
+                                        <span>
+                                            <span
+                                                class="material-symbols-outlined text-xs mr-1 text-orange-600 font-bold">
+                                                fastfood</span> Oven Baked Pasta </span>
+                                        <div class="flex justify-center items-center">
+                                            <div class="">
+                                                <div class="qty-container">
+                                                    <button class="qty-btn-minus btn-danger btn-cornered mr-1"
+                                                        type="button"><i
+                                                            class="material-symbols-outlined">do_not_disturb_on</i></button>
+                                                    <input type="text" name="qty" value="1"
+                                                        class="input-qty input-cornered" />
+                                                    <button class="qty-btn-plus btn-danger btn-cornered ml-1"
+                                                        type="button">
+                                                        <i class="material-symbols-outlined">add_circle</i></button>
+                                                </div>
+                                            </div>
+                                            <span class="ml-3">৳ 200</span>
+                                        </div>
+                                        </span>
+                                    </li>
+                                    <hr>
+                                    <li class="flex justify-between py-2">
+                                        <span>
+                                            <span
+                                                class="material-symbols-outlined text-xs mr-1 text-orange-600 font-bold">
+                                                fastfood</span> Chicken Loly </span>
+                                        <div class="flex justify-center items-center">
+                                            <div class="">
+                                                <div class="qty-container">
+                                                    <button class="qty-btn-minus btn-danger btn-cornered mr-1"
+                                                        type="button"><i
+                                                            class="material-symbols-outlined">do_not_disturb_on</i></button>
+                                                    <input type="text" name="qty" value="1"
+                                                        class="input-qty input-cornered" />
+                                                    <button class="qty-btn-plus btn-danger btn-cornered ml-1"
+                                                        type="button">
+                                                        <i class="material-symbols-outlined">add_circle</i></button>
+                                                </div>
+                                            </div>
+                                            <span class="ml-3">৳ 200</span>
+                                        </div>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Note And Promo Code  -->
+                    <div class="noteAndPromoCode rounded-md mt-4 text-xs p-4 bg-white">
+                        <!-- Promo Code  -->
+                        <div class="promoCode flex w-full items-center mb-4 rounded-md">
+                            <input type="text" name="" id="" placeholder="Enter Promo Code "
+                                class="border rounded-tl-md rounded-bl-md border-y border-l p-3 w-[70%] border-gray-300">
+                            <button type="submit"
+                                class="w-[30%] p-4 rounded-tr-md rounded-br-md border-y border-r border-orange-600 bg-orange-600 text-white">Apply</button>
+                        </div>
+                        <div class="note flex w-full items-center mb-4 rounded-md border bg-slate-200">
+                            <span class="material-symbols-outlined w-[20%] p-3 text-center">
+                                comment </span>
+                            <textarea type="text" name="" cols="30" rows="3" id=""
+                                placeholder="Any suggestions? We will pass it on..."
+                                class=" w-[80%] border-l rounded-tr-md rounded-br-md p-3 no-scrollbar outline-none border-gray-300"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Billing Area  -->
+                    <div class="billingArea rounded-md mt-4 text-xs p-4 bg-white">
+                        <ul class="mb-4">
+                            <li class="flex justify-between">
+                                <span class="">Item Total</span> <span>৳ 1200</span>
+                            </li>
+                            <li class="flex justify-between mt-2">
+                                <span class="">Delivery Charge</span> <span>৳ 50</span>
+                            </li>
+                            <li class="flex justify-between mt-2">
+                                <span class="">Plartfrom Charge</span> <span>৳ 09</span>
+                            </li>
+                            <li class="flex justify-between mt-2">
+                                <span class="">Total Discount</span> <span>৳ 120</span>
+                            </li>
+                        </ul>
+                        <hr>
+                        <div class="flex justify-between text-base font-bold mt-4">
+                            <span>To Pay</span>
+                            <span>৳ 1139</span>
+                        </div>
+                    </div>
+
+                    <div class="order w-full flex items-center mt-5">
+                        <button type="submit"
+                            class="placeOrderButton bg-green-500 text-white w-full rounded-md py-3 text-xl duration-200 hover:bg-green-600">Place
+                            Order</button>
+                    </div>
+                </div>
+                <!-- save alart -->
+                <div class="saveAlart bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md  m-3 mt-6  p-4 rounded-md shadow-sm  flex flex-col justify-center"
+                    role="alert">
+                    <div class="flex justify-center items-center">
+                        <div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path
+                                    d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" />
+                            </svg></div>
+                        <div>
+                            <p class="text-sm">You have saved <span class="font-semibold">৳120</span> on the bill</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Next campain ads area -->
+                <div class="campaingAdsArea"></div>
+            </div>
+        </div>
+        <!-- Container Section End  -->
+        <!-- Container Section End  -->
+        <div id="singInUpModal"></div>
+        <script src="./src/js/singInUpModal.js"></script>
+        <script src="./src/js/flowbite.min.js"></script>
+    </div>
+
+    <!-- Container Footer  -->
+    <div id="footer"></div>
+    <script src="./src/js/footer.js"></script>
+    <!-- Footer Section End  -->
+
+    <div id="singInUpModal"></div>
+    <script src="./src/js/singInUpModal.js"></script>
+    <script src="./src/js/flowbite.min.js"></script>
+
+    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
+        class="inline-block p-3 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition ease-in-out bottom-5 right-5 z-50 duration-200"
+        id="btn-back-to-top">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="currentColor"
+                d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
+            </path>
+        </svg>
+    </button>
+    <!-- Modal  -->
+    <div class=" bg-modal fixed bg-gray-300 top-[50%] left-[50%] z-50 flex justify-center items-center overflow-y-scroll no-scrollbar duration-200 w-0 h-0"
+        id="modal">
+        <div class="absolute bg-white rounded-md my-80  w-[90%] lg:w-[40%]  overflow-y-scroll no-scrollbar">
+            <div class="flex justify-between px-6 py-3 items-center">
+                <h5 class="" id="add-address">Add Delivery Address</h5>
+                <button type="button" id="modalCloseButton">
+                    <span aria-hidden="true"
+                        class="material-symbols-outlined text-xl duration-200 hover:text-red-600">close</span>
+                </button>
+            </div>
+            <hr>
+            <div class="">
+                <form>
+                    <div class=" text-xs px-6 py-3">
+                        <div class=" deliveryAreaInput">
+                            <label for="inputPassword4" class="">Delivery Area</label>
+                            <div class="flex justify-between mt-3 ">
+                                <input type="text"
+                                    class="inputsShadow outline-none px-4 py-2  border border-gray-300 rounded-bl-md rounded-tl-md w-[95%]"
+                                    placeholder="Delivery Area">
+                                <div
+                                    class="inputsShadow rounded-tr-md rounded-br-md border  border-black w-10 flex justify-center cursor-pointer duration-200 hover:bg-orange-600 hover:text-white hover:border-orange-600">
+                                    <button type="submit"
+                                        class="material-symbols-outlined flex justify-center items-center">
+                                        pin_drop
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="compleatAddressinput flex flex-col justify-between mt-3 w-full">
+                            <label for="inputPassword4">Complete Address
+                            </label>
+                            <input type="text"
+                                class="inputsShadow outline-none px-4 py-2 mt-3 border border-gray-300 rounded w-full"
+                                placeholder="Complete Address e.g. house number, street name, landmark">
+                        </div>
+                        <div class="deliveryinstructions flex flex-col justify-between mt-3 w-full">
+                            <label for="inputPassword4">Delivery Instructions
+                            </label>
+                            <input type="text"
+                                class="inputsShadow outline-none px-4 py-2 mt-3 border border-gray-300 rounded w-full"
+                                placeholder="Delivery Instructions e.g. Opposite Gold Souk Mall">
+                        </div>
+                        <div class="nickName flex flex-col justify-between mt-3 w-full">
+                            <label for="inputPassword4">Nickname
+                            </label>
+                            <input type="text"
+                                class="inputsShadow outline-none px-4 py-2 mt-3 border border-gray-300 rounded w-full"
+                                placeholder="Nickname e.g. Home, Office, Others...">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="flex justify-between items-center px-6 py-3">
+                <button type="button" onclick="hideModal()"
+                    class="w-[48%] border border-red-600 text-red-600 rounded-lg py-2 duration-300 hover:bg-red-600 hover:text-white "
+                    data-dismiss="modal">CANCEL
+                </button>
+                <button type="button" onclick="hideModal()"
+                    class="w-[48%] border border-green-600 text-white bg-green-600 rounded-lg py-2 duration-300 hover:bg-white hover:text-green-600 ">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+    <!-- Slick Slider Js -->
+    <script type="text/javascript " src="//code.jquery.com/jquery-1.11.0.min.js "></script>
+    <script type="text/javascript " src="//code.jquery.com/jquery-migrate-1.2.1.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js "
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+    <!-- Global js -->
+    <script defer src="./src/js/cartActiveInactive.js"></script>
+    <script src="./src/js/main.js "></script>
+    <script src="./src/js/cartAdd.js "></script>
+    <script src="./src/js/backToTop.js "></script>
+
+    <script src="./src/js/openClose.js "></script>
+    <script>
+        let menu = document.getElementById('menu');
+        let rightSection = document.getElementById('rightSection');
+        menu.addEventListener('click', function () {
+            rightSection.classList.toggle('activeRightSection')
+        })
+    </script>
+
+    <!-- Custom js  -->
+    <script src="./src/js/cartPageSlider.js"></script>
+    <script src="./src/js/modal.js"></script>
+    <script src="./src/js/mobileBankingDetails.js"></script>
+    <script src="./src/js/inAndDeButton.js"></script>
+    <script src="./src/js/deliveryAddriess.js"></script>
+</body>
+
+</html>
+
+</html>
+
+</html>
