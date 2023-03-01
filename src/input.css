@@ -2631,10 +2631,14 @@ body {
   --tooltip-text-color: hsl(var(--nc));
   --tooltip-tail-offset: calc(100% + 1px - var(--tooltip-tail));
 }
+
+.searchAndAddressSection form{
+  z-index:1;
+}
 .tooltip:before {
   position: absolute;
   pointer-events: none;
-  z-index: 1;
+  z-index: 1 !important;
   content: var(--tw-content);
   --tw-content: attr(data-tip);
   max-width: 20rem;
