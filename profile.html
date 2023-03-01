@@ -1215,7 +1215,135 @@
         </svg>
     </button>
 
+    <!-- Modal  -->
+    <div class="bg-modal fixed bg-gray-300 top-[50%] left-[50%] z-50 flex justify-center items-center overflow-y-scroll no-scrollbar duration-200 w-0 h-0"
+        id="modal">
+        <div class="absolute bg-white rounded-md my-80  w-[90%] lg:w-[40%]  overflow-y-scroll no-scrollbar">
+            <div class="flex justify-between px-6 py-3 items-center">
+                <h5 class="" id="add-address">Add Delivery Address</h5>
+                <button type="button" id="modalCloseButton">
+                    <span aria-hidden="true"
+                        class="material-symbols-outlined text-xl duration-200 hover:text-red-600">close</span>
+                </button>
+            </div>
+            <hr>
+            <div class="">
+                <form>
+                    <div class=" text-xs px-6 py-3">
+                        <div class=" deliveryAreaInput">
+                            <label for="inputPassword4" class="">Delivery Area</label>
+                            <div class="flex justify-between mt-3 ">
+                                <input type="text"
+                                    class="inputsShadow outline-none px-4 py-2  border border-gray-300 rounded-bl-md rounded-tl-md w-[95%]"
+                                    placeholder="Delivery Area">
+                                <div
+                                    class="inputsShadow rounded-tr-md rounded-br-md border  border-black w-10 flex justify-center cursor-pointer duration-200 hover:bg-orange-600 hover:text-white hover:border-orange-600">
+                                    <button type="submit"
+                                        class="material-symbols-outlined flex justify-center items-center">
+                                        pin_drop
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="compleatAddressinput flex flex-col justify-between mt-3 w-full">
+                            <label for="inputPassword4">Complete Address
+                            </label>
+                            <input type="text"
+                                class="inputsShadow outline-none px-4 py-2 mt-3 border border-gray-300 rounded w-full"
+                                placeholder="Complete Address e.g. house number, street name, landmark">
+                        </div>
+                        <div class="deliveryinstructions flex flex-col justify-between mt-3 w-full">
+                            <label for="inputPassword4">Delivery Instructions
+                            </label>
+                            <input type="text"
+                                class="inputsShadow outline-none px-4 py-2 mt-3 border border-gray-300 rounded w-full"
+                                placeholder="Delivery Instructions e.g. Opposite Gold Souk Mall">
+                        </div>
+                        <div class="nickName flex flex-col justify-between mt-3 w-full">
+                            <label for="inputPassword4">Nickname
+                            </label>
+                            <input type="text"
+                                class="inputsShadow outline-none px-4 py-2 mt-3 border border-gray-300 rounded w-full"
+                                placeholder="Nickname e.g. Home, Office, Others...">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="flex justify-between items-center px-6 py-3">
+                <button type="button" onclick="hideModal()"
+                    class="w-[48%] border border-red-600 text-red-600 rounded-lg py-2 duration-300 hover:bg-red-600 hover:text-white "
+                    data-dismiss="modal">CANCEL
+                </button>
+                <button type="button" onclick="hideModal()"
+                    class="w-[48%] border border-green-600 text-white bg-green-600 rounded-lg py-2 duration-300 hover:bg-white hover:text-green-600 ">SUBMIT</button>
+            </div>
+        </div>
+    </div>
 
+    <!-- Modal Edit  -->
+    <div class="bg-modal fixed bg-gray-300 top-[50%] left-[50%] z-50 flex justify-center items-center overflow-y-scroll no-scrollbar duration-200 w-0 h-0"
+        id="modal2">
+        <div class="absolute bg-white rounded-md my-80  w-[90%] lg:w-[40%]  overflow-y-scroll no-scrollbar">
+            <div class="flex justify-between px-6 py-3 items-center">
+                <h5 class="" id="add-address">Edit Delivery Address</h5>
+                <button type="button" id="modalCloseButton">
+                    <span aria-hidden="true" class="material-symbols-outlined text-xl duration-200 hover:text-red-600"
+                        onclick="hideModal2()">close</span>
+                </button>
+            </div>
+            <hr>
+            <div class="">
+                <form>
+                    <div class=" text-xs px-6 py-3">
+                        <div class=" deliveryAreaInput">
+                            <label for="inputPassword4" class="">Delivery Area</label>
+                            <div class="flex justify-between mt-3 ">
+                                <input type="text"
+                                    class="inputsShadow outline-none px-4 py-2  border border-gray-300 rounded-bl-md rounded-tl-md w-[95%]"
+                                    placeholder="Delivery Area">
+                                <div
+                                    class="inputsShadow rounded-tr-md rounded-br-md border  border-black w-10 flex justify-center cursor-pointer duration-200 hover:bg-orange-600 hover:text-white hover:border-orange-600">
+                                    <button type="submit"
+                                        class="material-symbols-outlined flex justify-center items-center">
+                                        pin_drop
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="compleatAddressinput flex flex-col justify-between mt-3 w-full">
+                            <label for="inputPassword4">Complete Address
+                            </label>
+                            <input type="text"
+                                class="inputsShadow outline-none px-4 py-2 mt-3 border border-gray-300 rounded w-full"
+                                placeholder="Complete Address e.g. house number, street name, landmark">
+                        </div>
+                        <div class="deliveryinstructions flex flex-col justify-between mt-3 w-full">
+                            <label for="inputPassword4">Delivery Instructions
+                            </label>
+                            <input type="text"
+                                class="inputsShadow outline-none px-4 py-2 mt-3 border border-gray-300 rounded w-full"
+                                placeholder="Delivery Instructions e.g. Opposite Gold Souk Mall">
+                        </div>
+                        <div class="nickName flex flex-col justify-between mt-3 w-full">
+                            <label for="inputPassword4">Nickname
+                            </label>
+                            <input type="text"
+                                class="inputsShadow outline-none px-4 py-2 mt-3 border border-gray-300 rounded w-full"
+                                placeholder="Nickname e.g. Home, Office, Others...">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="flex justify-between items-center px-6 py-3">
+                <button type="button" onclick="hideModal2()"
+                    class="w-[48%] border border-red-600 text-red-600 rounded-lg py-2 duration-300 hover:bg-red-600 hover:text-white "
+                    data-dismiss="modal">CANCEL
+                </button>
+                <button type="button" onclick="hideModal2()"
+                    class="w-[48%] border border-green-600 text-white bg-green-600 rounded-lg py-2 duration-300 hover:bg-white hover:text-green-600 ">SUBMIT</button>
+            </div>
+        </div>
+    </div>
     <div id="singInUpModal"></div>
     <script src="./src/js/singInUpModal.js"></script>
     <script src="./src/js/flowbite.min.js"></script>
