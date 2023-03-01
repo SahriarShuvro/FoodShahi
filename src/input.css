@@ -2633,8 +2633,8 @@ body {
 }
 
 .searchFoodOrRestaurant{
-  position: relative;
-  z-index:2000 !important ;
+  position: relative ;
+  z-index:2000 ;
 }
 .tooltip:before {
   position: absolute;
