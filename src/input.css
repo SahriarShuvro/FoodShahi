@@ -2632,8 +2632,8 @@ body {
   --tooltip-tail-offset: calc(100% + 1px - var(--tooltip-tail));
 }
 
-.searchAndAddressSection form{
-  z-index:1;
+.searchFoodOrRestaurant{
+  z-index:10 ;
 }
 .tooltip:before {
   position: absolute;
