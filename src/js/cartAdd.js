@@ -95,40 +95,6 @@ let count = 0;
             <img src="${itemData.foodImage}" alt=" " class="itemThumb w-[90px] h-[90px] absolute top-0 right-0 rounded-sm p-1 border border-white ">
             </div>`;
 
-            items += `<div class="item relative h-[180px] flex flex-col justify-between">
-            <!-- Name  -->
-            <div class="foodName flex justify-between w-full font-semibold ">
-                <p>${itemData.foodName}</p>
-            </div>
-
-            <!-- Resturant Name  -->
-            <div class="cartRestrantName flex mt-3 text-sm">
-                <p class=" ">${itemData.tryNewFoodSubtitle}</p>
-            </div>
-            <div class="cartRestrantName flex mt-3 ">
-                <p class=" ">${itemData.nameOfRestuarant}</p>
-            </div>
-            <!-- Price  -->
-            <div class="cartItemPrice flex justify-between mt-12 items-center ">
-                <!-- left -->
-                <div class="catItemPriceLeft flex items-center ">
-                    <div class="inputInDi relative mr-2 ">
-                        <span class="minus absolute ">-</span>
-                        <input type="text " value="${itemData.quantity}" />
-                        <span class="plus absolute ">+</span>
-                    </div>
-                    <p>X</p>
-                    <span class="ml-2 "> ${itemData.price}</span>
-                </div>
-
-                <!-- Right  -->
-                <div class="cartItemPriceRight font-semibold ">
-                    ৳ 100
-                </div>
-            </div>
-            <hr class="my-5 ">
-            <img src="${itemData.foodImage}" alt=" " class="itemThumb w-[90px] h-[90px] absolute top-0 right-0 rounded-sm p-1 border border-white ">
-            </div>`;
 
             cartItems.innerHTML = items;
         });
