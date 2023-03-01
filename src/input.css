@@ -2633,6 +2633,7 @@ body {
 }
 
 .searchFoodOrRestaurant{
+  order: 2;
   z-index:2000 !important ;
 }
 .tooltip:before {
