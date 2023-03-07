@@ -7489,6 +7489,11 @@ a:hover {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+@media only screen and (min-width: 720px) {
+.SingUpModal {
+  width: 500px;
+}
+}
 .remember {
   margin-top: 10px;
 }
