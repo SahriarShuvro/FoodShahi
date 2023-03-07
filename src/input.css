@@ -7497,3 +7497,6 @@ a:hover {
 .remember {
   margin-top: 10px;
 }
+.searchFoodOrRestaurant {
+  z-index: 50;
+}
