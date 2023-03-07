@@ -33,11 +33,15 @@
         const address = data.address;
         const location = `${address.suburb}, ${address.postcode}, ${address.city}, ${address.country}`;
         document.getElementById("address").value = location;
+        currentAddress.innerHTML = location;
       })
       .catch((error) => {
         console.error(error);
         document.getElementById("address").value =
           "Error getting location data";
+        currentAddress.innerHTML = "Error getting location data";
       });
   }
+
+  getLocation();
 }

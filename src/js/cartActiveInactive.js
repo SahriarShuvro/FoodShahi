@@ -20,6 +20,12 @@ btnCart.addEventListener("mouseout", function () {
       cartBody.classList.remove("ActiveCartBody");
     }
   });
+  cartBody.addEventListener("mouseover", function () {
+    cartBody.classList.add("ActiveCartBody");
+  });
+  cartBody.addEventListener("mouseout", function () {
+    cartBody.classList.remove("ActiveCartBody");
+  });
 });
 
 {
@@ -47,6 +53,12 @@ btnCart.addEventListener("mouseout", function () {
     ) {
       profileSection.classList.remove("activeProfileSection");
     }
+  });
+  profileSection.addEventListener("mouseover", function () {
+    profileSection.classList.add("activeProfileSection");
+  });
+  profileSection.addEventListener("mouseout", function () {
+    profileSection.classList.remove("activeProfileSection");
   });
 }
 
