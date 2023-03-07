@@ -54,7 +54,7 @@
   <link href="./src/input.css" rel="stylesheet" />
 </head>
 
-<body class="bg-[#fbf4ed] font-['Poppins', sans-serif]">
+<body class="bg-[#fbf4ed] dark:bg-black font-['Poppins', sans-serif]">
   <div class="mainContainer flex justify-between">
     <div class="imageSide hidden md:w-[48%] md:flex">
       <img src="./src/img/singUp.jpg" alt="" srcset="" class="object-cover" />
@@ -83,7 +83,8 @@
               <input
                 class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-orange-600 checked:border-bg-orange-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer shadow-lg shadow-gray-400"
                 type="checkbox" value="" id="flexCheckDefault" />
-              <label class="form-check-label inline-block text-gray-800 mt-[5px]" for="flexCheckDefault">
+              <label class="dark:text-slate-300 form-check-label inline-block text-gray-800 mt-[5px]"
+                for="flexCheckDefault">
                 Remember Password
               </label>
               <div class="right absolute top-[16px] left-[6px] md:top-[18px] lg:top-[22px]">
@@ -102,7 +103,8 @@
         <div class="footerText mt-4 flex w-full items-center justify-center text-xs md:text-sm lg:text-lg">
           <p>
             Don't have an Account?
-            <a href="singUp.html" class="text-orange-600 font-semibold">Sing Up</a>
+            <a href="singUp.html" class="text-orange-600 font-semibold">Sing Up</a> or <a href="forgotPassword.html"
+              class="text-orange-600 font-semibold">Lost password?</a>
           </p>
         </div>
       </div>

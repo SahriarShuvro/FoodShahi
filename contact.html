@@ -69,7 +69,7 @@
     </style>
 </head>
 
-<body class=" 2xl:max-w-[2000px] 2xl:m-auto bg-[#fbf4ed] no-scrollbar">
+<body class=" 2xl:max-w-[2000px] 2xl:m-auto bg-[#fbf4ed] dark:bg-black no-scrollbar">
     <!-- Heading Section  -->
     <nav id="navBarSection"></nav>
     <script src="./src/js/heading.js"></script>
@@ -88,7 +88,7 @@
             <div class=" p-6  rounded">
                 <div class="contactInfo relative flex flex-col justify-center items-center">
                     <div
-                        class="contactInfoDetails bg-[#ff7700]  text-xs lg:text-base text-white shadow-lg shadow-gray-300 p-4 lg:p-0 lg:absolute lg:top-[9rem] lg:left-4">
+                        class="contactInfoDetails bg-[#ff7700]  text-xs lg:text-base text-white shadow-lg shadow-gray-500 p-4 lg:p-0 lg:absolute lg:top-[9rem] lg:left-4">
                         <div class="flex flex-col  lg:p-4">
                             <!-- location -->
                             <div class="contactInfoDetails_location  flex items-cemt-2nter ">
@@ -154,9 +154,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="contactForm bg-white text-xs shadow-lg shadow-gray-300 p-4 mt-4 w-full lg:w-[70%] ">
+                    <div
+                        class="contactForm bg-white dark:bg-slate-700 text-xs shadow-lg shadow-gray-300 p-4 mt-4 w-full lg:w-[70%] ">
                         <section class="bg-white dark:bg-gray-900 w-full">
-                            <div class="py-8 lg:py-16  flex lg:justify-end lg:items-end  flex-col">
+                            <div class="py-8 lg:py-16  flex lg:justify-end lg:items-end  flex-col dark:bg-slate-700">
                                 <form action="#" class="space-y-4 w-full lg:w-1/2 lg:mr-4">
                                     <div class="">
                                         <label for="email" class="lableUi">Email</label>
@@ -189,34 +190,16 @@
                 </div>
             </div>
         </div>
-
-        <div id="singInUpModal"></div>
-        <script src="./src/js/singInUpModal.js"></script>
-
-        <!-- Container Section End  -->
     </div>
+    <!-- Container Section End  -->
 
-
-    <!-- Container Footer  -->
+    <!-- Foooter Section  -->
     <div id="footer"></div>
     <script src="./src/js/footer.js"></script>
-    <!-- Footer Section End  -->
-
+    <!-- Container Section End  -->
     <div id="singInUpModal"></div>
-    <script src="./src/js/singInUpModal.js"></script>
+    <script src="./src/js/allModals.js"></script>
     <script src="./src/js/flowbite.min.js"></script>
-
-    <!-- Back to top button  -->
-    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
-        class="inline-block p-3 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition ease-in-out bottom-5 right-5 z-50 duration-200"
-        id="btn-back-to-top">
-        <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img"
-            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path fill="currentColor"
-                d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
-            </path>
-        </svg>
-    </button>
 
     <!-- Slick Slider Js -->
     <script type="text/javascript " src="//code.jquery.com/jquery-1.11.0.min.js "></script>
@@ -231,7 +214,8 @@
     <script src="./src/js/categoryDropdown.js "></script>
     <script defer src="./src/js/cartActiveInactive.js"></script>
     <script src="./src/js/openClose.js "></script>
-    <script src="./src/js/flowbite.min.js"></script>
+    <script src="./src/js/flowbite.min.js "></script>
+    <script src="./src/js/allModals.js "></script>
     <script>
         let menu = document.getElementById('menu');
         let rightSection = document.getElementById('rightSection');

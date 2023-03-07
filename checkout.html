@@ -65,11 +65,10 @@
     </style>
 </head>
 
-<body class=" 2xl:max-w-[2000px] 2xl:m-auto bg-[#fbf4ed] no-scrollbar relative">
+<body class=" 2xl:max-w-[2000px] 2xl:m-auto bg-[#fbf4ed] dark:bg-black no-scrollbar relative">
     <!-- Heading Section  -->
     <nav id="navBarSection"></nav>
     <script src="./src/js/heading.js"></script>
-
 
     <div class="main relative lg:mx-20">
         <!-- Container Section Start   -->
@@ -78,7 +77,7 @@
             <div class="sectionOne lg:w-[70%]">
                 <!-- Food Suggest Area  -->
                 <div
-                    class="foodSuggestArea m-3 bg-white p-4 rounded-md shadow-lg shadow-gray-400 flex flex-col justify-center">
+                    class="foodSuggestArea m-3 bg-white dark:bg-slate-700 p-4 rounded-md shadow-lg shadow-gray-400 flex flex-col justify-center">
                     <p class="text-base mb-3">You may also like</p>
                     <div class="foodCards relative flex flex-wrap justify-center">
                         <div class="flex justify-center">
@@ -333,7 +332,7 @@
                 </div>
                 <!-- Delivery Address area  -->
                 <div
-                    class="deliveryAddressArea m-3 mt-6 bg-white p-4 rounded-md shadow-sm  flex flex-col justify-center">
+                    class="deliveryAddressArea m-3 mt-6 bg-white dark:bg-slate-700 p-4 rounded-md shadow-sm  flex flex-col justify-center">
                     <h1 class="text-2xl">Choose a delivery address</h1>
                     <h2 class="text-base text-gray-500">Multiple addresses in this location</h2>
 
@@ -407,14 +406,14 @@
                 </div>
                 <!-- Payment Method Area  -->
                 <div
-                    class="paymentMethodArea  m-3 mt-6 bg-white p-4 rounded-md shadow-sm  flex flex-col justify-center">
+                    class="paymentMethodArea  m-3 mt-6 bg-white dark:bg-slate-700 p-4 rounded-md shadow-sm  flex flex-col justify-center">
                     <h1 class="text-2xl">Choose payment method</h1>
                     <h2 class="text-base text-gray-500">Mobile Banking/Cash on Delivery</h2>
 
                     <!-- Cash On Delivery  -->
                     <div class="paymentMethod w-full">
                         <button type="submit" id="cashOnDeliveryButton"
-                            class="cashOnDelivery w-full flex items-center rounded-md px-4 mt-4 py-2 bg-gray-100 border border-gray-100 duration-200 hover:border-orange-600  focus:border focus:border-orange-600">
+                            class="cashOnDelivery w-full flex items-center rounded-md px-4 mt-4 py-2 bg-gray-100 dark:bg-slate-500 dark:text-slate-200 border border-gray-100 duration-200 hover:border-orange-600  focus:border focus:border-orange-600">
                             <img src="./src/img/cashOnDelivery.svg" alt="" class="w-12 h-12 mr-4">
                             Cash On Delevery
                         </button>
@@ -434,7 +433,7 @@
                     <!-- Mobile Banking  -->
                     <div class="paymentMethod w-full">
                         <button type="submit" id="mobileBankButton"
-                            class="cashOnDelivery w-full flex items-center rounded-md px-4 mt-4 py-2 bg-gray-100 border border-gray-100 duration-200 hover:border-orange-600  focus:border focus:border-orange-600 ">
+                            class="cashOnDelivery w-full flex items-center rounded-md px-4 mt-4 py-2 bg-gray-100 border dark:bg-slate-500 dark:text-slate-200 border-gray-100 duration-200 hover:border-orange-600  focus:border focus:border-orange-600 ">
                             <img src="./src/img/mobileBankin.svg" alt="" class="w-12 h-12 mr-4">
                             Mobile Banking
                         </button>
@@ -684,7 +683,7 @@
                     <div class="billingArea rounded-md mt-4 text-xs p-4 bg-white">
                         <ul class="mb-4">
                             <li class="flex justify-between">
-                                <span class="">Item Total Bill</span> <span>৳ 1200</span>
+                                <span class="">Item Total</span> <span>৳ 1200</span>
                             </li>
                             <li class="flex justify-between mt-2">
                                 <span class="">Delivery Charge</span> <span>৳ 50</span>
@@ -704,8 +703,13 @@
                     </div>
 
                     <div class="order w-full flex items-center mt-5">
-                        <button type="submit"
-                            class="placeOrderButton bg-green-500 text-white w-full rounded-md py-3 text-xl duration-200 hover:bg-green-600">Place
+                        <button type="button" data-modal-target="orderSuccess" data-modal-toggle="orderSuccess"
+                            class="placeOrderButton bg-green-500 text-white w-full rounded-md py-3 text-xl duration-200 hover:bg-green-600">Placed
+                            Order</button>
+                    </div>
+                    <div class="order w-full flex items-center mt-5">
+                        <button type="button" data-modal-target="orderUnsuccess" data-modal-toggle="orderUnsuccess"
+                            class="placeOrderButton bg-green-500 text-white w-full rounded-md py-3 text-xl duration-200 hover:bg-green-600">Placed
                             Order</button>
                     </div>
                 </div>
@@ -728,95 +732,19 @@
             </div>
         </div>
         <!-- Container Section End  -->
-        <!-- Container Section End  -->
-        <div id="singInUpModal"></div>
-        <script src="./src/js/singInUpModal.js"></script>
-        <script src="./src/js/flowbite.min.js"></script>
     </div>
-
-    <!-- Container Footer  -->
+    <!-- Foooter Section  -->
     <div id="footer"></div>
     <script src="./src/js/footer.js"></script>
-    <!-- Footer Section End  -->
-
+    <!-- Container Section End  -->
     <div id="singInUpModal"></div>
-    <script src="./src/js/singInUpModal.js"></script>
+    <script src="./src/js/allModals.js"></script>
     <script src="./src/js/flowbite.min.js"></script>
 
-    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
-        class="inline-block p-3 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition ease-in-out bottom-5 right-5 z-50 duration-200"
-        id="btn-back-to-top">
-        <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img"
-            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path fill="currentColor"
-                d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
-            </path>
-        </svg>
-    </button>
-    <!-- Modal  -->
-    <div class=" bg-modal fixed bg-gray-300 top-[50%] left-[50%] z-50 flex justify-center items-center overflow-y-scroll no-scrollbar duration-200 w-0 h-0"
-        id="modal">
-        <div class="absolute bg-white rounded-md my-80  w-[90%] lg:w-[40%]  overflow-y-scroll no-scrollbar">
-            <div class="flex justify-between px-6 py-3 items-center">
-                <h5 class="" id="add-address">Add Delivery Address</h5>
-                <button type="button" id="modalCloseButton">
-                    <span aria-hidden="true"
-                        class="material-symbols-outlined text-xl duration-200 hover:text-red-600">close</span>
-                </button>
-            </div>
-            <hr>
-            <div class="">
-                <form>
-                    <div class=" text-xs px-6 py-3">
-                        <div class=" deliveryAreaInput">
-                            <label for="inputPassword4" class="">Delivery Area</label>
-                            <div class="flex justify-between mt-3 ">
-                                <input type="text"
-                                    class="inputsShadow outline-none px-4 py-2  border border-gray-300 rounded-bl-md rounded-tl-md w-[95%]"
-                                    placeholder="Delivery Area">
-                                <div
-                                    class="inputsShadow rounded-tr-md rounded-br-md border  border-black w-10 flex justify-center cursor-pointer duration-200 hover:bg-orange-600 hover:text-white hover:border-orange-600">
-                                    <button type="submit"
-                                        class="material-symbols-outlined flex justify-center items-center">
-                                        pin_drop
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="compleatAddressinput flex flex-col justify-between mt-3 w-full">
-                            <label for="inputPassword4">Complete Address
-                            </label>
-                            <input type="text"
-                                class="inputsShadow outline-none px-4 py-2 mt-3 border border-gray-300 rounded w-full"
-                                placeholder="Complete Address e.g. house number, street name, landmark">
-                        </div>
-                        <div class="deliveryinstructions flex flex-col justify-between mt-3 w-full">
-                            <label for="inputPassword4">Delivery Instructions
-                            </label>
-                            <input type="text"
-                                class="inputsShadow outline-none px-4 py-2 mt-3 border border-gray-300 rounded w-full"
-                                placeholder="Delivery Instructions e.g. Opposite Gold Souk Mall">
-                        </div>
-                        <div class="nickName flex flex-col justify-between mt-3 w-full">
-                            <label for="inputPassword4">Nickname
-                            </label>
-                            <input type="text"
-                                class="inputsShadow outline-none px-4 py-2 mt-3 border border-gray-300 rounded w-full"
-                                placeholder="Nickname e.g. Home, Office, Others...">
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="flex justify-between items-center px-6 py-3">
-                <button type="button" onclick="hideModal()"
-                    class="w-[48%] border border-red-600 text-red-600 rounded-lg py-2 duration-300 hover:bg-red-600 hover:text-white "
-                    data-dismiss="modal">CANCEL
-                </button>
-                <button type="button" onclick="hideModal()"
-                    class="w-[48%] border border-green-600 text-white bg-green-600 rounded-lg py-2 duration-300 hover:bg-white hover:text-green-600 ">SUBMIT</button>
-            </div>
-        </div>
-    </div>
+
+
+
+
     <!-- Slick Slider Js -->
     <script type="text/javascript " src="//code.jquery.com/jquery-1.11.0.min.js "></script>
     <script type="text/javascript " src="//code.jquery.com/jquery-migrate-1.2.1.min.js "></script>
@@ -824,12 +752,14 @@
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
     <!-- Global js -->
-    <script defer src="./src/js/cartActiveInactive.js"></script>
     <script src="./src/js/main.js "></script>
     <script src="./src/js/cartAdd.js "></script>
     <script src="./src/js/backToTop.js "></script>
-
+    <script src="./src/js/categoryDropdown.js "></script>
+    <script defer src="./src/js/cartActiveInactive.js"></script>
     <script src="./src/js/openClose.js "></script>
+    <script src="./src/js/flowbite.min.js "></script>
+    <script src="./src/js/allModals.js "></script>
     <script>
         let menu = document.getElementById('menu');
         let rightSection = document.getElementById('rightSection');

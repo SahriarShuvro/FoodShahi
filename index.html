@@ -60,16 +60,8 @@
 
 
     <style>
-        #user-dropdown {
-            top: 5rem !important;
-        }
-
         .homePage {
             color: #d03801 !important;
-        }
-
-        .bannarSection {
-            background-image: url("./src/img/herobg.jpg");
         }
     </style>
     <link rel="stylesheet" href="./src/input.css">
@@ -82,11 +74,11 @@
         <script src="./src/js/heading.js"></script>
 
         <!-- Container Section  -->
-        <div class=" containerSection flex justify-between flex-col items-center py-16" onclick="cartWindowHide()">
-
+        <div class=" containerSection bg-[#fbf4ed] dark:bg-black flex justify-between flex-col items-center py-16"
+            onclick="cartWindowHide()">
             <!-- Bannar Start -->
             <div
-                class="bannarSection bg-[url('https://ibb.co/cLYdvTV')] bg-cover object-cover bg-no-repeat w-full max-h-[80vh] ">
+                class="bannarSection bg-[url('/src/img/herobg.jpg')] bg-cover object-cover bg-no-repeat w-full max-h-[80vh] ">
                 <img src="" alt="">
                 <div class="overlaySection w-full h-full bg-[#00000064] flex flex-col justify-between pt-[15px]">
                     <!-- Hero Section Start -->
@@ -118,19 +110,23 @@
                                             aria-labelledby="dropdown-button">
                                             <li>
                                                 <button type="button"
-                                                    class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tasty Time</button>
+                                                    class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tasty
+                                                    Time</button>
                                             </li>
                                             <li>
                                                 <button type="button"
-                                                    class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Code 3</button>
+                                                    class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Code
+                                                    3</button>
                                             </li>
                                             <li>
                                                 <button type="button"
-                                                    class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Hungry Heros</button>
+                                                    class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Hungry
+                                                    Heros</button>
                                             </li>
                                             <li>
                                                 <button type="button"
-                                                    class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Master Chef</button>
+                                                    class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Master
+                                                    Chef</button>
                                             </li>
                                         </ul>
                                     </div>
@@ -238,84 +234,78 @@
                 </div>
             </div>
             <!-- Bannar End -->
-            <!-- Container Head  -->
-            <div class="containerHead w-full" style="margin-top: 40px;">
-
-                <!-- Tranding Slider  -->
-                <div class="trandingSlider w-full">
-                    <div
-                        class="tranding bg-[url('https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?cs=srgb&dl=pexels-ash-376464.jpg&fm=jpg')] rounded-xl p-10 flex items-end m-3">
-                        <div class="trandingInnerSection text-white h-full">
-                            <!-- Logo -->
-                            <div class="logo mb-4">
-                                <img src="/assets/ghoroni-c37c80a4.png" alt="" width="75" height="75">
-                            </div>
-                            <!-- Slogan -->
-                            <div class="slogan ">
-                                <h3 class="text-sm font-bold text-white">Lorem ipsum dolor sit amet.</h3>
-                            </div>
-                            <!-- Title -->
-                            <div class="trandingTitle  ">
-                                <h1 class="font-extrabold text-4xl">Supper Offer</h1>
-                            </div>
-                            <!-- Button -->
-                            <div class="button mt-10">
-                                <a href="#" class="px-4 py-2 rounded-md font-semibold bg-yellow-500">Order Now</a>
-                            </div>
+            <!-- Tranding Slider  -->
+            <div class="trandingSlider w-full mt-8">
+                <div
+                    class="tranding bg-[url('https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?cs=srgb&dl=pexels-ash-376464.jpg&fm=jpg')] rounded-xl p-10 flex items-end m-3">
+                    <div class="trandingInnerSection text-white h-full">
+                        <!-- Logo -->
+                        <div class="logo mb-4">
+                            <img src="/assets/ghoroni-c37c80a4.png" alt="" width="75" height="75">
                         </div>
-                    </div>
-                    <div
-                        class="tranding bg-[url('https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?cs=srgb&dl=pexels-ash-376464.jpg&fm=jpg')] rounded-xl p-10 flex items-end m-3">
-                        <div class="trandingInnerSection text-white h-full">
-                            <!-- Logo -->
-                            <div class="logo mb-4">
-                                <img src="/assets/ghoroni-c37c80a4.png" alt="" width="75" height="75">
-                            </div>
-                            <!-- Slogan -->
-                            <div class="slogan ">
-                                <h3 class="text-sm font-bold text-white">Lorem ipsum dolor sit amet.</h3>
-                            </div>
-                            <!-- Title -->
-                            <div class="trandingTitle  ">
-                                <h1 class="font-extrabold text-4xl">Supper Offer</h1>
-                            </div>
-                            <!-- Button -->
-                            <div class="button mt-10">
-                                <a href="#" class="px-4 py-2 rounded-md font-semibold bg-yellow-500">Order Now</a>
-                            </div>
+                        <!-- Slogan -->
+                        <div class="slogan ">
+                            <h3 class="text-sm font-bold text-white">Lorem ipsum dolor sit amet.</h3>
                         </div>
-                    </div>
-                    <div
-                        class="tranding bg-[url('https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?cs=srgb&dl=pexels-ash-376464.jpg&fm=jpg')] rounded-xl p-10 flex items-end m-3">
-                        <div class="trandingInnerSection text-white h-full">
-                            <!-- Logo -->
-                            <div class="logo mb-4">
-                                <img src="/assets/ghoroni-c37c80a4.png" alt="" width="75" height="75">
-                            </div>
-                            <!-- Slogan -->
-                            <div class="slogan ">
-                                <h3 class="text-sm font-bold text-white">Lorem ipsum dolor sit amet.</h3>
-                            </div>
-                            <!-- Title -->
-                            <div class="trandingTitle  ">
-                                <h1 class="font-extrabold text-4xl">Supper Offer</h1>
-                            </div>
-                            <!-- Button -->
-                            <div class="button mt-10">
-                                <a href="#" class="px-4 py-2 rounded-md font-semibold bg-yellow-500">Order Now</a>
-                            </div>
+                        <!-- Title -->
+                        <div class="trandingTitle  ">
+                            <h1 class="font-extrabold text-4xl">Supper Offer</h1>
+                        </div>
+                        <!-- Button -->
+                        <div class="button mt-10">
+                            <a href="#" class="px-4 py-2 rounded-md font-semibold bg-yellow-500">Order Now</a>
                         </div>
                     </div>
                 </div>
-                <!-- Tranding Slider End -->
+                <div
+                    class="tranding bg-[url('https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?cs=srgb&dl=pexels-ash-376464.jpg&fm=jpg')] rounded-xl p-10 flex items-end m-3">
+                    <div class="trandingInnerSection text-white h-full">
+                        <!-- Logo -->
+                        <div class="logo mb-4">
+                            <img src="/assets/ghoroni-c37c80a4.png" alt="" width="75" height="75">
+                        </div>
+                        <!-- Slogan -->
+                        <div class="slogan ">
+                            <h3 class="text-sm font-bold text-white">Lorem ipsum dolor sit amet.</h3>
+                        </div>
+                        <!-- Title -->
+                        <div class="trandingTitle  ">
+                            <h1 class="font-extrabold text-4xl">Supper Offer</h1>
+                        </div>
+                        <!-- Button -->
+                        <div class="button mt-10">
+                            <a href="#" class="px-4 py-2 rounded-md font-semibold bg-yellow-500">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="tranding bg-[url('https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?cs=srgb&dl=pexels-ash-376464.jpg&fm=jpg')] rounded-xl p-10 flex items-end m-3">
+                    <div class="trandingInnerSection text-white h-full">
+                        <!-- Logo -->
+                        <div class="logo mb-4">
+                            <img src="/assets/ghoroni-c37c80a4.png" alt="" width="75" height="75">
+                        </div>
+                        <!-- Slogan -->
+                        <div class="slogan ">
+                            <h3 class="text-sm font-bold text-white">Lorem ipsum dolor sit amet.</h3>
+                        </div>
+                        <!-- Title -->
+                        <div class="trandingTitle  ">
+                            <h1 class="font-extrabold text-4xl">Supper Offer</h1>
+                        </div>
+                        <!-- Button -->
+                        <div class="button mt-10">
+                            <a href="#" class="px-4 py-2 rounded-md font-semibold bg-yellow-500">Order Now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- Tranding Slider End -->
             <!-- Popular Restaurants  -->
             <div class="popularRestaurants my-10">
                 <p class=" font-bold text-center text-orange-600 text-2xl lg:text-4xl">Popular Restaurants</p>
                 <div class="flex flex-wrap justify-center w-[90%] m-auto pt-6">
-                    <!-- Popular Restaurants Card  -->
-                    <div
-                        class="restaurant_card bg-white rounded-md flex flex-col justify-center h-full md:max-w-[40%] xl:max-w-[23.5%] m-4 xl:m-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
+                    <div class="restaurant_card">
                         <a href="restaurantsPage.html" class="resturant_card h-full cursor-pointer ">
                             <div
                                 class="r_card_cover_image relative h-full object-cover bg-cover bg-center bg-no-repeat">
@@ -323,25 +313,23 @@
                                     <img src="https://media.istockphoto.com/id/1154731746/photo/cheeseburger-with-cola-and-french-fries.jpg?s=612x612&w=0&k=20&c=DfuI7KyMDIF8_JH66oAhIZLOgL4RRXulfv24PQ5vTEo="
                                         alt="" srcset="" class="rounded-tl-md rounded-tr-md w-full">
                                 </div>
-                                <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
-                                    alt="" class="absolute h-20 w-20 bottom-4 left-4 rounded-full ring-4 ring-white">
+                                <div class="absolute h-20 w-20 bottom-4 left-4 ">
+                                    <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
+                                        alt="" class="h-20 w-20 rounded-full ring-4 ring-white">
+                                    <span
+                                        class="top-0 right-0 absolute  w-5 h-5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                </div>
                                 <span
                                     class="material-symbols-outlined absolute top-2 right-2 bg-white duration-200 hover:text-orange-600 rounded-full p-2 cursor-pointer">
                                     favorite </span>
                                 <a href="review.html"
-                                    class="absolute flex bottom-2 right-2 justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md p-2">
-                                    <i class="fa fa-star"></i>
-                                    <span class="ml-1 ">3.1/5 (100+)</span>
+                                    class="absolute flex bottom-2 right-2 justify-center items-center text-[10px] text-white font-semibold bg-orange-600 rounded px-2 py-1">5%
+                                    Off</span>
                                 </a>
-                                <div
-                                    class="r_openClose absolute top-2 left-2 text-[8px] flex justify-center items-center font-semibold">
-                                    <span class="bg-green-600 text-white rounded px-2 py-1">Open Now</span>
-                                </div>
                             </div>
 
                             <div class="r_card_dis p-4 cursor-pointer">
-                                <a href="restaurantsPage.html" class="text-lg hover:text-orange-600 duration-200">El
-                                    Plato</a>
+                                <a href="#" class="text-lg hover:text-orange-600 duration-200">El Plato</a>
                                 <div class="tags text-xs text-gray-400 flex w-full my-1">
                                     <a href="#" class="mr-1 duration-200 hover:text-orange-600">Bangla</a>|
                                     <a href="#" class="mx-1 duration-200 hover:text-orange-600">Indian</a>|
@@ -349,15 +337,15 @@
                                     <a href="#" class="mx-1 duration-200 hover:text-orange-600">Chinese</a>
                                 </div>
                                 <hr>
-                                <div class="max text-sm mt-1 flex items-center justify-between mt-2">
-                                    <p class="min">Minimum Order: 100 ৳</p>
+                                <div class="r_card_footer my-2 flex items-center justify-center">
+
                                 </div>
-                                <div class="r_card_footer">
-                                    <span
-                                        class="bg-orange-600 px-2 text-white text-xs rounded-[3px] uppercase">Offer</span>
-                                    <span class="text-xs">5% Off | Minimum order ৳ 250 </span>
+                                <div class="max text-sm mt-1 flex items-center justify-center mt-2">
+                                    <p class="min mr-2">Min Order: 100 ৳</p><span
+                                        class="justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md px-2 py-1"><i
+                                            class="fa fa-star"></i>3.1/5 (100+)</span>
                                 </div>
-                                <div class="r_openClose flex items-center justify-center my-4 text-xs ">
+                                <div class="r_openClose my-2 flex items-center justify-center text-xs ">
                                     <span
                                         class="r_opening text-center rounded-full px-2  mr-2 border border-green-600 text-green-500">Open:
                                         12:00
@@ -368,16 +356,13 @@
                                         PM</span>
                                 </div>
 
-                                <a href="restaurantsPage.html"
+                                <a href="#"
                                     class=" w-full mt-2 py-2 rounded-md bg-orange-600 border border-orange-600 mt-2 flex justify-center items-center text-white duration-200 uppercase hover:bg-white hover:text-orange-600 font-normal">visit
                                     restaurant</a>
                             </div>
                         </a>
                     </div>
-                    <!-- Popular Restaurants Card End -->
-                    <!-- Popular Restaurants Card  -->
-                    <div
-                        class="restaurant_card bg-white rounded-md flex flex-col justify-center h-full md:max-w-[40%] xl:max-w-[23.5%] m-4 xl:m-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
+                    <div class="restaurant_card">
                         <a href="restaurantsPage.html" class="resturant_card h-full cursor-pointer ">
                             <div
                                 class="r_card_cover_image relative h-full object-cover bg-cover bg-center bg-no-repeat">
@@ -385,25 +370,23 @@
                                     <img src="https://media.istockphoto.com/id/1154731746/photo/cheeseburger-with-cola-and-french-fries.jpg?s=612x612&w=0&k=20&c=DfuI7KyMDIF8_JH66oAhIZLOgL4RRXulfv24PQ5vTEo="
                                         alt="" srcset="" class="rounded-tl-md rounded-tr-md w-full">
                                 </div>
-                                <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
-                                    alt="" class="absolute h-20 w-20 bottom-4 left-4 rounded-full ring-4 ring-white">
+                                <div class="absolute h-20 w-20 bottom-4 left-4 ">
+                                    <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
+                                        alt="" class="h-20 w-20 rounded-full ring-4 ring-white">
+                                    <span
+                                        class="top-0 right-0 absolute  w-5 h-5 bg-red-500 border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                </div>
                                 <span
                                     class="material-symbols-outlined absolute top-2 right-2 bg-white duration-200 hover:text-orange-600 rounded-full p-2 cursor-pointer">
                                     favorite </span>
                                 <a href="review.html"
-                                    class="absolute flex bottom-2 right-2 justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md p-2">
-                                    <i class="fa fa-star"></i>
-                                    <span class="ml-1 ">3.1/5 (100+)</span>
+                                    class="absolute flex bottom-2 right-2 justify-center items-center text-[10px] text-white font-semibold bg-orange-600 rounded px-2 py-1">5%
+                                    Off</span>
                                 </a>
-                                <div
-                                    class="r_openClose absolute top-2 left-2 text-[8px] flex justify-center items-center font-semibold">
-                                    <span class="bg-green-600 text-white rounded px-2 py-1">Open Now</span>
-                                </div>
                             </div>
 
                             <div class="r_card_dis p-4 cursor-pointer">
-                                <a href="restaurantsPage.html" class="text-lg hover:text-orange-600 duration-200">El
-                                    Plato</a>
+                                <a href="#" class="text-lg hover:text-orange-600 duration-200">El Plato</a>
                                 <div class="tags text-xs text-gray-400 flex w-full my-1">
                                     <a href="#" class="mr-1 duration-200 hover:text-orange-600">Bangla</a>|
                                     <a href="#" class="mx-1 duration-200 hover:text-orange-600">Indian</a>|
@@ -411,15 +394,15 @@
                                     <a href="#" class="mx-1 duration-200 hover:text-orange-600">Chinese</a>
                                 </div>
                                 <hr>
-                                <div class="max text-sm mt-1 flex items-center justify-between mt-2">
-                                    <p class="min">Minimum Order: 100 ৳</p>
+                                <div class="r_card_footer my-2 flex items-center justify-center">
+
                                 </div>
-                                <div class="r_card_footer">
-                                    <span
-                                        class="bg-orange-600 px-2 text-white text-xs rounded-[3px] uppercase">Offer</span>
-                                    <span class="text-xs">5% Off | Minimum order ৳ 250 </span>
+                                <div class="max text-sm mt-1 flex items-center justify-center mt-2">
+                                    <p class="min mr-2">Min Order: 100 ৳</p><span
+                                        class="justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md px-2 py-1"><i
+                                            class="fa fa-star"></i>3.1/5 (100+)</span>
                                 </div>
-                                <div class="r_openClose flex items-center justify-center my-4 text-xs ">
+                                <div class="r_openClose my-2 flex items-center justify-center text-xs ">
                                     <span
                                         class="r_opening text-center rounded-full px-2  mr-2 border border-green-600 text-green-500">Open:
                                         12:00
@@ -430,16 +413,13 @@
                                         PM</span>
                                 </div>
 
-                                <a href="restaurantsPage.html"
+                                <a href="#"
                                     class=" w-full mt-2 py-2 rounded-md bg-orange-600 border border-orange-600 mt-2 flex justify-center items-center text-white duration-200 uppercase hover:bg-white hover:text-orange-600 font-normal">visit
                                     restaurant</a>
                             </div>
                         </a>
                     </div>
-                    <!-- Popular Restaurants Card End -->
-                    <!-- Popular Restaurants Card  -->
-                    <div
-                        class="restaurant_card bg-white rounded-md flex flex-col justify-center h-full md:max-w-[40%] xl:max-w-[23.5%] m-4 xl:m-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
+                    <div class="restaurant_card">
                         <a href="restaurantsPage.html" class="resturant_card h-full cursor-pointer ">
                             <div
                                 class="r_card_cover_image relative h-full object-cover bg-cover bg-center bg-no-repeat">
@@ -447,25 +427,23 @@
                                     <img src="https://media.istockphoto.com/id/1154731746/photo/cheeseburger-with-cola-and-french-fries.jpg?s=612x612&w=0&k=20&c=DfuI7KyMDIF8_JH66oAhIZLOgL4RRXulfv24PQ5vTEo="
                                         alt="" srcset="" class="rounded-tl-md rounded-tr-md w-full">
                                 </div>
-                                <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
-                                    alt="" class="absolute h-20 w-20 bottom-4 left-4 rounded-full ring-4 ring-white">
+                                <div class="absolute h-20 w-20 bottom-4 left-4 ">
+                                    <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
+                                        alt="" class="h-20 w-20 rounded-full ring-4 ring-white">
+                                    <span
+                                        class="top-0 right-0 absolute  w-5 h-5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                </div>
                                 <span
                                     class="material-symbols-outlined absolute top-2 right-2 bg-white duration-200 hover:text-orange-600 rounded-full p-2 cursor-pointer">
                                     favorite </span>
                                 <a href="review.html"
-                                    class="absolute flex bottom-2 right-2 justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md p-2">
-                                    <i class="fa fa-star"></i>
-                                    <span class="ml-1 ">3.1/5 (100+)</span>
+                                    class="absolute flex bottom-2 right-2 justify-center items-center text-[10px] text-white font-semibold bg-orange-600 rounded px-2 py-1">5%
+                                    Off</span>
                                 </a>
-                                <div
-                                    class="r_openClose absolute top-2 left-2 text-[8px] flex justify-center items-center font-semibold">
-                                    <span class="bg-green-600 text-white rounded px-2 py-1">Open Now</span>
-                                </div>
                             </div>
 
                             <div class="r_card_dis p-4 cursor-pointer">
-                                <a href="restaurantsPage.html" class="text-lg hover:text-orange-600 duration-200">El
-                                    Plato</a>
+                                <a href="#" class="text-lg hover:text-orange-600 duration-200">El Plato</a>
                                 <div class="tags text-xs text-gray-400 flex w-full my-1">
                                     <a href="#" class="mr-1 duration-200 hover:text-orange-600">Bangla</a>|
                                     <a href="#" class="mx-1 duration-200 hover:text-orange-600">Indian</a>|
@@ -473,15 +451,15 @@
                                     <a href="#" class="mx-1 duration-200 hover:text-orange-600">Chinese</a>
                                 </div>
                                 <hr>
-                                <div class="max text-sm mt-1 flex items-center justify-between mt-2">
-                                    <p class="min">Minimum Order: 100 ৳</p>
+                                <div class="r_card_footer my-2 flex items-center justify-center">
+
                                 </div>
-                                <div class="r_card_footer">
-                                    <span
-                                        class="bg-orange-600 px-2 text-white text-xs rounded-[3px] uppercase">Offer</span>
-                                    <span class="text-xs">5% Off | Minimum order ৳ 250 </span>
+                                <div class="max text-sm mt-1 flex items-center justify-center mt-2">
+                                    <p class="min mr-2">Min Order: 100 ৳</p><span
+                                        class="justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md px-2 py-1"><i
+                                            class="fa fa-star"></i>3.1/5 (100+)</span>
                                 </div>
-                                <div class="r_openClose flex items-center justify-center my-4 text-xs ">
+                                <div class="r_openClose my-2 flex items-center justify-center text-xs ">
                                     <span
                                         class="r_opening text-center rounded-full px-2  mr-2 border border-green-600 text-green-500">Open:
                                         12:00
@@ -492,16 +470,13 @@
                                         PM</span>
                                 </div>
 
-                                <a href="restaurantsPage.html"
+                                <a href="#"
                                     class=" w-full mt-2 py-2 rounded-md bg-orange-600 border border-orange-600 mt-2 flex justify-center items-center text-white duration-200 uppercase hover:bg-white hover:text-orange-600 font-normal">visit
                                     restaurant</a>
                             </div>
                         </a>
                     </div>
-                    <!-- Popular Restaurants Card End -->
-                    <!-- Popular Restaurants Card  -->
-                    <div
-                        class="restaurant_card bg-white rounded-md flex flex-col justify-center h-full md:max-w-[40%] xl:max-w-[23.5%] m-4 xl:m-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
+                    <div class="restaurant_card">
                         <a href="restaurantsPage.html" class="resturant_card h-full cursor-pointer ">
                             <div
                                 class="r_card_cover_image relative h-full object-cover bg-cover bg-center bg-no-repeat">
@@ -509,25 +484,23 @@
                                     <img src="https://media.istockphoto.com/id/1154731746/photo/cheeseburger-with-cola-and-french-fries.jpg?s=612x612&w=0&k=20&c=DfuI7KyMDIF8_JH66oAhIZLOgL4RRXulfv24PQ5vTEo="
                                         alt="" srcset="" class="rounded-tl-md rounded-tr-md w-full">
                                 </div>
-                                <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
-                                    alt="" class="absolute h-20 w-20 bottom-4 left-4 rounded-full ring-4 ring-white">
+                                <div class="absolute h-20 w-20 bottom-4 left-4 ">
+                                    <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
+                                        alt="" class="h-20 w-20 rounded-full ring-4 ring-white">
+                                    <span
+                                        class="top-0 right-0 absolute  w-5 h-5 bg-red-500 border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                </div>
                                 <span
                                     class="material-symbols-outlined absolute top-2 right-2 bg-white duration-200 hover:text-orange-600 rounded-full p-2 cursor-pointer">
                                     favorite </span>
                                 <a href="review.html"
-                                    class="absolute flex bottom-2 right-2 justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md p-2">
-                                    <i class="fa fa-star"></i>
-                                    <span class="ml-1 ">3.1/5 (100+)</span>
+                                    class="absolute flex bottom-2 right-2 justify-center items-center text-[10px] text-white font-semibold bg-orange-600 rounded px-2 py-1">5%
+                                    Off</span>
                                 </a>
-                                <div
-                                    class="r_openClose absolute top-2 left-2 text-[8px] flex justify-center items-center font-semibold">
-                                    <span class="bg-green-600 text-white rounded px-2 py-1">Open Now</span>
-                                </div>
                             </div>
 
                             <div class="r_card_dis p-4 cursor-pointer">
-                                <a href="restaurantsPage.html" class="text-lg hover:text-orange-600 duration-200">El
-                                    Plato</a>
+                                <a href="#" class="text-lg hover:text-orange-600 duration-200">El Plato</a>
                                 <div class="tags text-xs text-gray-400 flex w-full my-1">
                                     <a href="#" class="mr-1 duration-200 hover:text-orange-600">Bangla</a>|
                                     <a href="#" class="mx-1 duration-200 hover:text-orange-600">Indian</a>|
@@ -535,15 +508,15 @@
                                     <a href="#" class="mx-1 duration-200 hover:text-orange-600">Chinese</a>
                                 </div>
                                 <hr>
-                                <div class="max text-sm mt-1 flex items-center justify-between mt-2">
-                                    <p class="min">Minimum Order: 100 ৳</p>
+                                <div class="r_card_footer my-2 flex items-center justify-center">
+
                                 </div>
-                                <div class="r_card_footer">
-                                    <span
-                                        class="bg-orange-600 px-2 text-white text-xs rounded-[3px] uppercase">Offer</span>
-                                    <span class="text-xs">5% Off | Minimum order ৳ 250 </span>
+                                <div class="max text-sm mt-1 flex items-center justify-center mt-2">
+                                    <p class="min mr-2">Min Order: 100 ৳</p><span
+                                        class="justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md px-2 py-1"><i
+                                            class="fa fa-star"></i>3.1/5 (100+)</span>
                                 </div>
-                                <div class="r_openClose flex items-center justify-center my-4 text-xs ">
+                                <div class="r_openClose my-2 flex items-center justify-center text-xs ">
                                     <span
                                         class="r_opening text-center rounded-full px-2  mr-2 border border-green-600 text-green-500">Open:
                                         12:00
@@ -554,16 +527,13 @@
                                         PM</span>
                                 </div>
 
-                                <a href="restaurantsPage.html"
+                                <a href="#"
                                     class=" w-full mt-2 py-2 rounded-md bg-orange-600 border border-orange-600 mt-2 flex justify-center items-center text-white duration-200 uppercase hover:bg-white hover:text-orange-600 font-normal">visit
                                     restaurant</a>
                             </div>
                         </a>
                     </div>
-                    <!-- Popular Restaurants Card End -->
-                    <!-- Popular Restaurants Card  -->
-                    <div
-                        class="restaurant_card bg-white rounded-md flex flex-col justify-center h-full md:max-w-[40%] xl:max-w-[23.5%] m-4 xl:m-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
+                    <div class="restaurant_card">
                         <a href="restaurantsPage.html" class="resturant_card h-full cursor-pointer ">
                             <div
                                 class="r_card_cover_image relative h-full object-cover bg-cover bg-center bg-no-repeat">
@@ -571,25 +541,23 @@
                                     <img src="https://media.istockphoto.com/id/1154731746/photo/cheeseburger-with-cola-and-french-fries.jpg?s=612x612&w=0&k=20&c=DfuI7KyMDIF8_JH66oAhIZLOgL4RRXulfv24PQ5vTEo="
                                         alt="" srcset="" class="rounded-tl-md rounded-tr-md w-full">
                                 </div>
-                                <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
-                                    alt="" class="absolute h-20 w-20 bottom-4 left-4 rounded-full ring-4 ring-white">
+                                <div class="absolute h-20 w-20 bottom-4 left-4 ">
+                                    <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
+                                        alt="" class="h-20 w-20 rounded-full ring-4 ring-white">
+                                    <span
+                                        class="top-0 right-0 absolute  w-5 h-5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                </div>
                                 <span
                                     class="material-symbols-outlined absolute top-2 right-2 bg-white duration-200 hover:text-orange-600 rounded-full p-2 cursor-pointer">
                                     favorite </span>
                                 <a href="review.html"
-                                    class="absolute flex bottom-2 right-2 justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md p-2">
-                                    <i class="fa fa-star"></i>
-                                    <span class="ml-1 ">3.1/5 (100+)</span>
+                                    class="absolute flex bottom-2 right-2 justify-center items-center text-[10px] text-white font-semibold bg-orange-600 rounded px-2 py-1">5%
+                                    Off</span>
                                 </a>
-                                <div
-                                    class="r_openClose absolute top-2 left-2 text-[8px] flex justify-center items-center font-semibold">
-                                    <span class="bg-green-600 text-white rounded px-2 py-1">Open Now</span>
-                                </div>
                             </div>
 
                             <div class="r_card_dis p-4 cursor-pointer">
-                                <a href="restaurantsPage.html" class="text-lg hover:text-orange-600 duration-200">El
-                                    Plato</a>
+                                <a href="#" class="text-lg hover:text-orange-600 duration-200">El Plato</a>
                                 <div class="tags text-xs text-gray-400 flex w-full my-1">
                                     <a href="#" class="mr-1 duration-200 hover:text-orange-600">Bangla</a>|
                                     <a href="#" class="mx-1 duration-200 hover:text-orange-600">Indian</a>|
@@ -597,15 +565,15 @@
                                     <a href="#" class="mx-1 duration-200 hover:text-orange-600">Chinese</a>
                                 </div>
                                 <hr>
-                                <div class="max text-sm mt-1 flex items-center justify-between mt-2">
-                                    <p class="min">Minimum Order: 100 ৳</p>
+                                <div class="r_card_footer my-2 flex items-center justify-center">
+
                                 </div>
-                                <div class="r_card_footer">
-                                    <span
-                                        class="bg-orange-600 px-2 text-white text-xs rounded-[3px] uppercase">Offer</span>
-                                    <span class="text-xs">5% Off | Minimum order ৳ 250 </span>
+                                <div class="max text-sm mt-1 flex items-center justify-center mt-2">
+                                    <p class="min mr-2">Min Order: 100 ৳</p><span
+                                        class="justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md px-2 py-1"><i
+                                            class="fa fa-star"></i>3.1/5 (100+)</span>
                                 </div>
-                                <div class="r_openClose flex items-center justify-center my-4 text-xs ">
+                                <div class="r_openClose my-2 flex items-center justify-center text-xs ">
                                     <span
                                         class="r_opening text-center rounded-full px-2  mr-2 border border-green-600 text-green-500">Open:
                                         12:00
@@ -616,16 +584,13 @@
                                         PM</span>
                                 </div>
 
-                                <a href="restaurantsPage.html"
+                                <a href="#"
                                     class=" w-full mt-2 py-2 rounded-md bg-orange-600 border border-orange-600 mt-2 flex justify-center items-center text-white duration-200 uppercase hover:bg-white hover:text-orange-600 font-normal">visit
                                     restaurant</a>
                             </div>
                         </a>
                     </div>
-                    <!-- Popular Restaurants Card End -->
-                    <!-- Popular Restaurants Card  -->
-                    <div
-                        class="restaurant_card bg-white rounded-md flex flex-col justify-center h-full md:max-w-[40%] xl:max-w-[23.5%] m-4 xl:m-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
+                    <div class="restaurant_card">
                         <a href="restaurantsPage.html" class="resturant_card h-full cursor-pointer ">
                             <div
                                 class="r_card_cover_image relative h-full object-cover bg-cover bg-center bg-no-repeat">
@@ -633,25 +598,23 @@
                                     <img src="https://media.istockphoto.com/id/1154731746/photo/cheeseburger-with-cola-and-french-fries.jpg?s=612x612&w=0&k=20&c=DfuI7KyMDIF8_JH66oAhIZLOgL4RRXulfv24PQ5vTEo="
                                         alt="" srcset="" class="rounded-tl-md rounded-tr-md w-full">
                                 </div>
-                                <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
-                                    alt="" class="absolute h-20 w-20 bottom-4 left-4 rounded-full ring-4 ring-white">
+                                <div class="absolute h-20 w-20 bottom-4 left-4 ">
+                                    <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
+                                        alt="" class="h-20 w-20 rounded-full ring-4 ring-white">
+                                    <span
+                                        class="top-0 right-0 absolute  w-5 h-5 bg-red-500 border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                </div>
                                 <span
                                     class="material-symbols-outlined absolute top-2 right-2 bg-white duration-200 hover:text-orange-600 rounded-full p-2 cursor-pointer">
                                     favorite </span>
                                 <a href="review.html"
-                                    class="absolute flex bottom-2 right-2 justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md p-2">
-                                    <i class="fa fa-star"></i>
-                                    <span class="ml-1 ">3.1/5 (100+)</span>
+                                    class="absolute flex bottom-2 right-2 justify-center items-center text-[10px] text-white font-semibold bg-orange-600 rounded px-2 py-1">5%
+                                    Off</span>
                                 </a>
-                                <div
-                                    class="r_openClose absolute top-2 left-2 text-[8px] flex justify-center items-center font-semibold">
-                                    <span class="bg-green-600 text-white rounded px-2 py-1">Open Now</span>
-                                </div>
                             </div>
 
                             <div class="r_card_dis p-4 cursor-pointer">
-                                <a href="restaurantsPage.html" class="text-lg hover:text-orange-600 duration-200">El
-                                    Plato</a>
+                                <a href="#" class="text-lg hover:text-orange-600 duration-200">El Plato</a>
                                 <div class="tags text-xs text-gray-400 flex w-full my-1">
                                     <a href="#" class="mr-1 duration-200 hover:text-orange-600">Bangla</a>|
                                     <a href="#" class="mx-1 duration-200 hover:text-orange-600">Indian</a>|
@@ -659,15 +622,15 @@
                                     <a href="#" class="mx-1 duration-200 hover:text-orange-600">Chinese</a>
                                 </div>
                                 <hr>
-                                <div class="max text-sm mt-1 flex items-center justify-between mt-2">
-                                    <p class="min">Minimum Order: 100 ৳</p>
+                                <div class="r_card_footer my-2 flex items-center justify-center">
+
                                 </div>
-                                <div class="r_card_footer">
-                                    <span
-                                        class="bg-orange-600 px-2 text-white text-xs rounded-[3px] uppercase">Offer</span>
-                                    <span class="text-xs">5% Off | Minimum order ৳ 250 </span>
+                                <div class="max text-sm mt-1 flex items-center justify-center mt-2">
+                                    <p class="min mr-2">Min Order: 100 ৳</p><span
+                                        class="justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md px-2 py-1"><i
+                                            class="fa fa-star"></i>3.1/5 (100+)</span>
                                 </div>
-                                <div class="r_openClose flex items-center justify-center my-4 text-xs ">
+                                <div class="r_openClose my-2 flex items-center justify-center text-xs ">
                                     <span
                                         class="r_opening text-center rounded-full px-2  mr-2 border border-green-600 text-green-500">Open:
                                         12:00
@@ -678,13 +641,12 @@
                                         PM</span>
                                 </div>
 
-                                <a href="restaurantsPage.html"
+                                <a href="#"
                                     class=" w-full mt-2 py-2 rounded-md bg-orange-600 border border-orange-600 mt-2 flex justify-center items-center text-white duration-200 uppercase hover:bg-white hover:text-orange-600 font-normal">visit
                                     restaurant</a>
                             </div>
                         </a>
                     </div>
-                    <!-- Popular Restaurants Card End -->
                 </div>
             </div>
             <!-- Popular Restaurants End -->
@@ -696,11 +658,9 @@
                 </div>
                 <div class="trySomethingNewSlider w-full flex justify-center ">
                     <div class=" ">
-                        <div href="# "
-                            class="tryNewFoodCard duration-300 rounded-t-xl bg-white hover:text-white hover:bg-orange-600 mx-3 ">
+                        <div href="# " class="tryNewFoodCard homeFoodCard">
                             <a href="# " class="foodCoverImg ">
-                                <img src="./src/img/restaurantcover.jpg " alt=" " width="255 " height="200 "
-                                    class="foodImage rounded-t-xl ">
+                                <img src="./src/img/restaurantcover.jpg " class="foodImage w-full rounded-t-xl ">
                             </a>
                             <div class="tryNewFoodDis p-8 ">
                                 <a href="# " class="foodName text-lg font-bold ">Alapino</a>
@@ -721,11 +681,9 @@
                         </div>
                     </div>
                     <div class=" ">
-                        <div href="# "
-                            class="tryNewFoodCard duration-300 rounded-t-xl bg-white hover:text-white hover:bg-orange-600 mx-3 ">
+                        <div href="# " class="tryNewFoodCard homeFoodCard">
                             <a href="# " class="foodCoverImg ">
-                                <img src="./src/img/restaurantcover.jpg " alt=" " width="255 " height="200 "
-                                    class="foodImage rounded-t-xl ">
+                                <img src="./src/img/restaurantcover.jpg " class="foodImage w-full rounded-t-xl ">
                             </a>
                             <div class="tryNewFoodDis p-8 ">
                                 <a href="# " class="foodName text-lg font-bold ">Alapino</a>
@@ -746,11 +704,9 @@
                         </div>
                     </div>
                     <div class=" ">
-                        <div href="# "
-                            class="tryNewFoodCard duration-300 rounded-t-xl bg-white hover:text-white hover:bg-orange-600 mx-3 ">
+                        <div href="# " class="tryNewFoodCard homeFoodCard">
                             <a href="# " class="foodCoverImg ">
-                                <img src="./src/img/restaurantcover.jpg " alt=" " width="255 " height="200 "
-                                    class="foodImage rounded-t-xl ">
+                                <img src="./src/img/restaurantcover.jpg " class="foodImage w-full rounded-t-xl ">
                             </a>
                             <div class="tryNewFoodDis p-8 ">
                                 <a href="# " class="foodName text-lg font-bold ">Alapino</a>
@@ -771,11 +727,9 @@
                         </div>
                     </div>
                     <div class=" ">
-                        <div href="# "
-                            class="tryNewFoodCard duration-300 rounded-t-xl bg-white hover:text-white hover:bg-orange-600 mx-3 ">
+                        <div href="# " class="tryNewFoodCard homeFoodCard">
                             <a href="# " class="foodCoverImg ">
-                                <img src="./src/img/restaurantcover.jpg " alt=" " width="255 " height="200 "
-                                    class="foodImage rounded-t-xl ">
+                                <img src="./src/img/restaurantcover.jpg " class="foodImage w-full rounded-t-xl ">
                             </a>
                             <div class="tryNewFoodDis p-8 ">
                                 <a href="# " class="foodName text-lg font-bold ">Alapino</a>
@@ -796,11 +750,9 @@
                         </div>
                     </div>
                     <div class=" ">
-                        <div href="# "
-                            class="tryNewFoodCard duration-300 rounded-t-xl bg-white hover:text-white hover:bg-orange-600 mx-3 ">
+                        <div href="# " class="tryNewFoodCard homeFoodCard">
                             <a href="# " class="foodCoverImg ">
-                                <img src="./src/img/restaurantcover.jpg " alt=" " width="255 " height="200 "
-                                    class="foodImage rounded-t-xl ">
+                                <img src="./src/img/restaurantcover.jpg " class="foodImage w-full rounded-t-xl ">
                             </a>
                             <div class="tryNewFoodDis p-8 ">
                                 <a href="# " class="foodName text-lg font-bold ">Alapino</a>
@@ -830,11 +782,9 @@
                 </div>
                 <div class="offerItemSlider w-full flex justify-center ">
                     <div>
-                        <div href="# "
-                            class="tryNewFoodCard duration-300 rounded-t-xl bg-white hover:text-white hover:bg-orange-600 mx-3 ">
+                        <div href="# " class="tryNewFoodCard homeFoodCard">
                             <a href="# " class="foodCoverImg ">
-                                <img src="./src/img/restaurantcover.jpg " alt=" " width="255 " height="200 "
-                                    class="foodImage rounded-t-xl ">
+                                <img src="./src/img/restaurantcover.jpg " class="foodImage w-full rounded-t-xl ">
                             </a>
                             <div class="tryNewFoodDis p-8 ">
                                 <a href="# " class="foodName text-lg font-bold ">Alapino</a>
@@ -855,11 +805,9 @@
                         </div>
                     </div>
                     <div>
-                        <div href="# "
-                            class="tryNewFoodCard duration-300 rounded-t-xl bg-white hover:text-white hover:bg-orange-600 mx-3 ">
+                        <div href="# " class="tryNewFoodCard homeFoodCard">
                             <a href="# " class="foodCoverImg ">
-                                <img src="./src/img/restaurantcover.jpg " alt=" " width="255 " height="200 "
-                                    class="foodImage rounded-t-xl ">
+                                <img src="./src/img/restaurantcover.jpg " class="foodImage w-full rounded-t-xl ">
                             </a>
                             <div class="tryNewFoodDis p-8 ">
                                 <a href="# " class="foodName text-lg font-bold ">Alapino</a>
@@ -880,11 +828,9 @@
                         </div>
                     </div>
                     <div>
-                        <div href="# "
-                            class="tryNewFoodCard duration-300 rounded-t-xl bg-white hover:text-white hover:bg-orange-600 mx-3 ">
+                        <div href="# " class="tryNewFoodCard homeFoodCard">
                             <a href="# " class="foodCoverImg ">
-                                <img src="./src/img/restaurantcover.jpg " alt=" " width="255 " height="200 "
-                                    class="foodImage rounded-t-xl ">
+                                <img src="./src/img/restaurantcover.jpg " class="foodImage w-full rounded-t-xl ">
                             </a>
                             <div class="tryNewFoodDis p-8 ">
                                 <a href="# " class="foodName text-lg font-bold ">Alapino</a>
@@ -905,11 +851,9 @@
                         </div>
                     </div>
                     <div>
-                        <div href="# "
-                            class="tryNewFoodCard duration-300 rounded-t-xl bg-white hover:text-white hover:bg-orange-600 mx-3 ">
+                        <div href="# " class="tryNewFoodCard homeFoodCard">
                             <a href="# " class="foodCoverImg ">
-                                <img src="./src/img/restaurantcover.jpg " alt=" " width="255 " height="200 "
-                                    class="foodImage rounded-t-xl ">
+                                <img src="./src/img/restaurantcover.jpg " class="foodImage w-full rounded-t-xl ">
                             </a>
                             <div class="tryNewFoodDis p-8 ">
                                 <a href="# " class="foodName text-lg font-bold ">Alapino</a>
@@ -930,11 +874,9 @@
                         </div>
                     </div>
                     <div>
-                        <div href="# "
-                            class="tryNewFoodCard duration-300 rounded-t-xl bg-white hover:text-white hover:bg-orange-600 mx-3 ">
+                        <div href="# " class="tryNewFoodCard homeFoodCard">
                             <a href="# " class="foodCoverImg ">
-                                <img src="./src/img/restaurantcover.jpg " alt=" " width="255 " height="200 "
-                                    class="foodImage rounded-t-xl ">
+                                <img src="./src/img/restaurantcover.jpg " class="foodImage w-full rounded-t-xl ">
                             </a>
                             <div class="tryNewFoodDis p-8 ">
                                 <a href="# " class="foodName text-lg font-bold ">Alapino</a>
@@ -965,11 +907,9 @@
                 </div>
                 <div class="fsSpecialItemSlider w-full flex justify-center ">
                     <div>
-                        <div href="# "
-                            class="tryNewFoodCard duration-300 rounded-t-xl bg-white hover:text-white hover:bg-orange-600 mx-3 ">
+                        <div href="# " class="tryNewFoodCard homeFoodCard">
                             <a href="# " class="foodCoverImg ">
-                                <img src="./src/img/restaurantcover.jpg " alt=" " width="255 " height="200 "
-                                    class="foodImage rounded-t-xl ">
+                                <img src="./src/img/restaurantcover.jpg " class="foodImage w-full rounded-t-xl ">
                             </a>
                             <div class="tryNewFoodDis p-8 ">
                                 <a href="# " class="foodName text-lg font-bold ">Alapino</a>
@@ -990,11 +930,9 @@
                         </div>
                     </div>
                     <div>
-                        <div href="# "
-                            class="tryNewFoodCard duration-300 rounded-t-xl bg-white hover:text-white hover:bg-orange-600 mx-3 ">
+                        <div href="# " class="tryNewFoodCard homeFoodCard">
                             <a href="# " class="foodCoverImg ">
-                                <img src="./src/img/restaurantcover.jpg " alt=" " width="255 " height="200 "
-                                    class="foodImage rounded-t-xl ">
+                                <img src="./src/img/restaurantcover.jpg " class="foodImage w-full rounded-t-xl ">
                             </a>
                             <div class="tryNewFoodDis p-8 ">
                                 <a href="# " class="foodName text-lg font-bold ">Alapino</a>
@@ -1015,11 +953,9 @@
                         </div>
                     </div>
                     <div>
-                        <div href="# "
-                            class="tryNewFoodCard duration-300 rounded-t-xl bg-white hover:text-white hover:bg-orange-600 mx-3 ">
+                        <div href="# " class="tryNewFoodCard homeFoodCard">
                             <a href="# " class="foodCoverImg ">
-                                <img src="./src/img/restaurantcover.jpg " alt=" " width="255 " height="200 "
-                                    class="foodImage rounded-t-xl ">
+                                <img src="./src/img/restaurantcover.jpg " class="foodImage w-full rounded-t-xl ">
                             </a>
                             <div class="tryNewFoodDis p-8 ">
                                 <a href="# " class="foodName text-lg font-bold ">Alapino</a>
@@ -1040,11 +976,9 @@
                         </div>
                     </div>
                     <div>
-                        <div href="# "
-                            class="tryNewFoodCard duration-300 rounded-t-xl bg-white hover:text-white hover:bg-orange-600 mx-3 ">
+                        <div href="# " class="tryNewFoodCard homeFoodCard">
                             <a href="# " class="foodCoverImg ">
-                                <img src="./src/img/restaurantcover.jpg " alt=" " width="255 " height="200 "
-                                    class="foodImage rounded-t-xl ">
+                                <img src="./src/img/restaurantcover.jpg " class="foodImage w-full rounded-t-xl ">
                             </a>
                             <div class="tryNewFoodDis p-8 ">
                                 <a href="# " class="foodName text-lg font-bold ">Alapino</a>
@@ -1065,11 +999,9 @@
                         </div>
                     </div>
                     <div>
-                        <div href="# "
-                            class="tryNewFoodCard duration-300 rounded-t-xl bg-white hover:text-white hover:bg-orange-600 mx-3 ">
+                        <div href="# " class="tryNewFoodCard homeFoodCard">
                             <a href="# " class="foodCoverImg ">
-                                <img src="./src/img/restaurantcover.jpg " alt=" " width="255 " height="200 "
-                                    class="foodImage rounded-t-xl ">
+                                <img src="./src/img/restaurantcover.jpg " class="foodImage w-full rounded-t-xl ">
                             </a>
                             <div class="tryNewFoodDis p-8 ">
                                 <a href="# " class="foodName text-lg font-bold ">Alapino</a>
@@ -1100,11 +1032,9 @@
                 </div>
                 <div class="topSnacksSlider w-full flex justify-center ">
                     <div>
-                        <div href="# "
-                            class="tryNewFoodCard duration-300 rounded-t-xl bg-white hover:text-white hover:bg-orange-600 mx-3 ">
+                        <div href="# " class="tryNewFoodCard homeFoodCard">
                             <a href="# " class="foodCoverImg ">
-                                <img src="./src/img/restaurantcover.jpg " alt=" " width="255 " height="200 "
-                                    class="foodImage rounded-t-xl ">
+                                <img src="./src/img/restaurantcover.jpg " class="foodImage w-full rounded-t-xl ">
                             </a>
                             <div class="tryNewFoodDis p-8 ">
                                 <a href="# " class="foodName text-lg font-bold ">Alapino</a>
@@ -1125,11 +1055,9 @@
                         </div>
                     </div>
                     <div>
-                        <div href="# "
-                            class="tryNewFoodCard duration-300 rounded-t-xl bg-white hover:text-white hover:bg-orange-600 mx-3 ">
+                        <div href="# " class="tryNewFoodCard homeFoodCard">
                             <a href="# " class="foodCoverImg ">
-                                <img src="./src/img/restaurantcover.jpg " alt=" " width="255 " height="200 "
-                                    class="foodImage rounded-t-xl ">
+                                <img src="./src/img/restaurantcover.jpg " class="foodImage w-full rounded-t-xl ">
                             </a>
                             <div class="tryNewFoodDis p-8 ">
                                 <a href="# " class="foodName text-lg font-bold ">Alapino</a>
@@ -1150,11 +1078,9 @@
                         </div>
                     </div>
                     <div>
-                        <div href="# "
-                            class="tryNewFoodCard duration-300 rounded-t-xl bg-white hover:text-white hover:bg-orange-600 mx-3 ">
+                        <div href="# " class="tryNewFoodCard homeFoodCard">
                             <a href="# " class="foodCoverImg ">
-                                <img src="./src/img/restaurantcover.jpg " alt=" " width="255 " height="200 "
-                                    class="foodImage rounded-t-xl ">
+                                <img src="./src/img/restaurantcover.jpg " class="foodImage w-full rounded-t-xl ">
                             </a>
                             <div class="tryNewFoodDis p-8 ">
                                 <a href="# " class="foodName text-lg font-bold ">Alapino</a>
@@ -1175,11 +1101,9 @@
                         </div>
                     </div>
                     <div>
-                        <div href="# "
-                            class="tryNewFoodCard duration-300 rounded-t-xl bg-white hover:text-white hover:bg-orange-600 mx-3 ">
+                        <div href="# " class="tryNewFoodCard homeFoodCard">
                             <a href="# " class="foodCoverImg ">
-                                <img src="./src/img/restaurantcover.jpg " alt=" " width="255 " height="200 "
-                                    class="foodImage rounded-t-xl ">
+                                <img src="./src/img/restaurantcover.jpg " class="foodImage w-full rounded-t-xl ">
                             </a>
                             <div class="tryNewFoodDis p-8 ">
                                 <a href="# " class="foodName text-lg font-bold ">Alapino</a>
@@ -1200,11 +1124,9 @@
                         </div>
                     </div>
                     <div>
-                        <div href="# "
-                            class="tryNewFoodCard duration-300 rounded-t-xl bg-white hover:text-white hover:bg-orange-600 mx-3 ">
+                        <div href="# " class="tryNewFoodCard homeFoodCard">
                             <a href="# " class="foodCoverImg ">
-                                <img src="./src/img/restaurantcover.jpg " alt=" " width="255 " height="200 "
-                                    class="foodImage rounded-t-xl ">
+                                <img src="./src/img/restaurantcover.jpg " class="foodImage w-full rounded-t-xl ">
                             </a>
                             <div class="tryNewFoodDis p-8 ">
                                 <a href="# " class="foodName text-lg font-bold ">Alapino</a>
@@ -1228,25 +1150,15 @@
             </div>
             <!-- Top Snacks End -->
         </div>
+
+        <!-- Foooter Section  -->
         <div id="footer"></div>
         <script src="./src/js/footer.js"></script>
         <!-- Container Section End  -->
-
         <div id="singInUpModal"></div>
-        <script src="./src/js/singInUpModal.js"></script>
+        <script src="./src/js/allModals.js"></script>
         <script src="./src/js/flowbite.min.js"></script>
     </div>
-    <!-- Back to top button  -->
-    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
-        class="inline-block p-3 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition ease-in-out bottom-5 right-5 z-50 duration-200"
-        id="btn-back-to-top">
-        <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img"
-            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path fill="currentColor"
-                d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
-            </path>
-        </svg>
-    </button>
 
     <!-- Slick Slider Js -->
     <script type="text/javascript " src="//code.jquery.com/jquery-1.11.0.min.js "></script>
@@ -1262,6 +1174,8 @@
     <script src="./src/js/categoryDropdown.js "></script>
     <script defer src="./src/js/cartActiveInactive.js"></script>
     <script src="./src/js/openClose.js "></script>
+    <script src="./src/js/flowbite.min.js "></script>
+    <script src="./src/js/allModals.js "></script>
 
 
 
@@ -1276,7 +1190,6 @@
     <script src="./src/js/onHover.js "></script>
     <script src="./src/js/locationAjax.js "></script>
     <script src="./src/js/cartAdd.js "></script>
-    <script src="./src/js/locationAjax.js "></script>
     <script>
         let menu = document.getElementById('menu');
         let rightSection = document.getElementById('rightSection');

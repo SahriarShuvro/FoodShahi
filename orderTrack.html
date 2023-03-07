@@ -69,11 +69,12 @@
     </style>
 </head>
 
-<body class=" 2xl:max-w-[2000px] 2xl:m-auto bg-[#fbf4ed] no-scrollbar">
+<body class=" 2xl:max-w-[2000px] 2xl:m-auto bg-[#fbf4ed] dark:bg-black no-scrollbar">
     <!-- Heading Section  -->
     <nav id="navBarSection"></nav>
     <script src="./src/js/heading.js"></script>
 
+    <!-- Container Footer  -->
     <div class="main  mt-20">
         <div class="fullMap relative">
             <iframe
@@ -81,10 +82,52 @@
                 style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                 class=" w-screen h-[250vh] md:h-screen lg:h-[150vh]">
             </iframe>
+
+            <!-- Progress  -->
+            <div
+                class="orderTracnProgress absolute top-2  p-3  mx-4 bg-white rounded  shadow-gray-400 flex flex-col justify-center mt-5">
+                <div class=" mt-2">
+                    <div class="row text-center flex flex-col md:flex-row justify-center md:justify-between text-xs">
+
+                        <div class="col duration-200 hoverBG m-1.5 p-4 w-40">
+                            <i class="fa fa-check text-info rounded-full p-1 border-2 border-info"></i>
+                            <p class="mt-1 font-weight-bold text-dark mb-0">Order Confirmed</p>
+                            <small class="text-info mb-0">NEXT</small>
+                        </div>
+                        <div class="col duration-200  m-1.5 p-4 w-40">
+                            <i
+                                class="material-symbols-outlined text-[16px] text-yellow-400 rounded-full p-1 border-2 border-yellow-400">outdoor_grill</i>
+                            <p class="mt-1 font-weight-bold text-dark mb-0">Food Preparing</p>
+                            <small class="text-yellow-400 mb-0">NEXT</small>
+                        </div>
+                        <div class="col duration-200  m-1.5 p-4 w-40">
+                            <i class="fa fa-truck text-primary rounded-full py-1.5 p-1 border-2 border-primary"></i>
+                            <p class="mt-1 font-weight-bold text-dark mb-0">On The Way</p>
+                            <small class="text-primary mb-0">Next</small>
+                        </div>
+                        <div class="col duration-200  m-1.5 p-4 w-40">
+                            <i
+                                class="fa fa-clipboard-list text-success rounded-full px-1.5 p-1 border-2 border-success"></i>
+                            <p class="mt-1 font-weight-bold text-dark mb-0">Order Received</p>
+                            <small class="text-success mb-0">NOW</small>
+                        </div>
+                        <a href="profile.html" class="tooltip col duration-200  m-1.5 p-4 w-40"
+                            data-tip="Rate This Order">
+                            <i
+                                class="fa fa-star text-orange-500 rounded-full px-1.5 p-1.5 border-2 border-orange-500"></i>
+                            <p class="mt-1 font-weight-bold text-dark mb-0">Rate This Order</p>
+                            <small class="text-orange-500 mb-0">NOW</small>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
             <div class="orderTrackSection absolute top-56 right-0 z-20 md:max-w-md md:right-4 md:top-20 lg:right-10">
+
                 <!-- head  -->
                 <div
-                    class="orderTrackingHead  p-3  mx-4 bg-white rounded  shadow-gray-400 flex flex-col justify-center">
+                    class="orderTrackingHead  p-3  mx-4 bg-white dark:bg-slate-700 rounded mt-5 shadow-gray-400 flex flex-col justify-center">
                     <!-- top  -->
                     <div class="topTitle text-xs flex justify-between items-center w-full my-2">
                         <span>Order #FS63fc5a0248cc9</span>
@@ -133,7 +176,7 @@
 
                 <!-- Body  -->
                 <div
-                    class="orderTrackBody p-3  mx-4 bg-white rounded  shadow-gray-400 flex flex-col justify-center mt-5">
+                    class="orderTrackBody p-3  mx-4 bg-white dark:bg-slate-700 rounded  shadow-gray-400 flex flex-col justify-center mt-5">
                     <h1 class="text-base mb-4">Order Details</h1>
 
                     <div class="flex flex-col">
@@ -249,61 +292,22 @@
 
                     </div>
                 </div>
-
-                <!-- Progress  -->
-                <div
-                    class="orderTracnProgress  p-3  mx-4 bg-white rounded  shadow-gray-400 flex flex-col justify-center mt-5">
-                    <div class="bg-white mt-2">
-                        <div
-                            class="row text-center flex flex-col md:flex-row justify-center md:justify-between text-xs">
-                            <div class="col duration-200 pending m-1.5 p-4">
-                                <i
-                                    class="fa fa-clipboard-list text-info rounded-full px-1.5 p-1 border-2 border-info"></i>
-                                <p class="mt-1 font-weight-bold text-dark mb-0">Order Received</p>
-                                <small class="text-info mb-0">NOW</small>
-                            </div>
-                            <div class="col duration-200 hover:confirm m-1.5 p-4">
-                                <i class="fa fa-check text-success rounded-full p-1 border-2 border-success"></i>
-                                <p class="mt-1 font-weight-bold text-dark mb-0">Order Confirmed</p>
-                                <small class="text-success mb-0">NEXT</small>
-                            </div>
-                            <div class="col duration-200 hover:delivered m-1.5 p-4">
-                                <i class="fa fa-truck text-primary rounded-full py-1.5 p-1 border-2 border-primary"></i>
-                                <p class="mt-1 font-weight-bold text-dark mb-0">Order Picked Up</p>
-                                <small class="text-primary mb-0">LATER (ET : 30min)</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Footer  -->
                 <div class="orderTrackFooter"></div>
             </div>
         </div>
+
+        <!-- Foooter Section  -->
+        <div id="footer"></div>
+        <script src="./src/js/footer.js"></script>
+        <!-- Container Section End  -->
+        <div id="singInUpModal"></div>
+        <script src="./src/js/allModals.js"></script>
+        <script src="./src/js/flowbite.min.js"></script>
     </div>
-
-    <!-- Container Footer  -->
-    <div id="footer"></div>
-    <script src="./src/js/footer.js"></script>
-    <!-- Footer Section End  -->
-
     <!-- Container Section End  -->
-    <div id="singInUpModal"></div>
-    <script src="./src/js/singInUpModal.js"></script>
-    <script src="./src/js/flowbite.min.js"></script>
-    <!-- Container Section End -->
 
-    <!-- Back to top button  -->
-    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
-        class="inline-block p-3 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition ease-in-out bottom-5 right-5 z-50 duration-200"
-        id="btn-back-to-top">
-        <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img"
-            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path fill="currentColor"
-                d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
-            </path>
-        </svg>
-    </button>
+
 
     <!-- Slick Slider Js -->
     <script type="text/javascript " src="//code.jquery.com/jquery-1.11.0.min.js "></script>
@@ -317,8 +321,9 @@
     <script src="./src/js/backToTop.js "></script>
     <script src="./src/js/categoryDropdown.js "></script>
     <script defer src="./src/js/cartActiveInactive.js"></script>
-
     <script src="./src/js/openClose.js "></script>
+    <script src="./src/js/flowbite.min.js "></script>
+    <script src="./src/js/allModals.js "></script>
     <script>
         let menu = document.getElementById('menu');
         let rightSection = document.getElementById('rightSection');

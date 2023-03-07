@@ -69,12 +69,12 @@
     </style>
 </head>
 
-<body class=" 2xl:max-w-[2000px] 2xl:m-auto bg-[#fbf4ed] no-scrollbar">
+<body class=" 2xl:max-w-[2000px] 2xl:m-auto bg-[#fbf4ed] dark:bg-black no-scrollbar">
     <!-- Heading Section  -->
     <nav id="navBarSection"></nav>
     <script src="./src/js/heading.js"></script>
 
-    <!-- Container  -->
+    <!-- Container Section Start  -->
     <div class="main relative ">
         <!-- Container Section Start   -->
         <div class="r_container mt-16 flex flex-col lg:flex lg:justify-between">
@@ -150,7 +150,7 @@
 
                 <!-- Favourite And Offer Button  -->
                 <div
-                    class="bannarFooter flex flex-col justify-center items-center py-4 px-4 bg-white text-xs lg:flex-row lg:justify-between lg:px-20 lg:text-base">
+                    class="bannarFooter flex flex-col justify-center items-center py-4 px-4 bg-white dark:bg-slate-700 text-xs lg:flex-row lg:justify-between lg:px-20 lg:text-base">
                     <!-- Bannar Footer Left  -->
 
                     <div class="tabs carousel flex-nowrap w-full text-sm justify-center duration-200 lg:justify-start">
@@ -194,7 +194,7 @@
                     <div class="leftSectionForMenu h-0 overflow-hidden opacity-0 duration-200 activeTab"
                         id="menuButton">
                         <!-- category filter -->
-                        <div class="categoryFilter px-4 bg-white duration-300 " id="categoryFilter">
+                        <div class="categoryFilter px-4 bg-white dark:bg-slate-700 duration-300 " id="categoryFilter">
                             <div class="  tabs carousel flex-nowrap  py-4 my-5 duration-150" id="categoryFilter2">
                                 <a id="all" class=" tab tab-bordered carousel-item mr-2 tab-active">All</a>
                                 <a data-target="snacks"
@@ -216,29 +216,10 @@
 
                         <!-- Food Suggest Area  -->
                         <div
-                            class="foodSuggestArea m-3 bg-white p-4 rounded-md  shadow-gray-400 flex flex-col justify-center">
+                            class="foodSuggestArea m-3 bg-white dark:bg-slate-700 p-4 rounded-md  shadow-gray-400 flex flex-col justify-center">
                             <p class="text-base mb-3">Recommended</p>
 
-                            <form class="mb-3 ">
-                                <label for="search"
-                                    class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-                                <div class="relative">
-                                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
 
-                                    </div>
-                                    <input type="search" id="search"
-                                        class="r_form block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
-                                        placeholder="Search" required>
-                                    <button type="submit"
-                                        class="text-white absolute right-0 bottom-0 h-[37px] bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-tr-lg rounded-br-lg text-sm px-4 py-2 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800"><svg
-                                            aria-hidden="true" class="w-5 h-5 text-white dark:text-gray-400" fill="none"
-                                            stroke="currentColor" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                                        </svg></button>
-                                </div>
-                            </form>
 
                             <div class="flex text-xs ">
                                 <p class=" mb-3 mr-1">Most Popular</p>
@@ -270,7 +251,7 @@
                                         <div class="p-2">
                                             <a href="#">
                                                 <h5
-                                                    class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 d">
+                                                    class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 dark:text-slate-300 hover:text-white">
                                                     Buy Large & Get Small
                                                 </h5>
                                             </a>
@@ -302,7 +283,7 @@
                                         <div class="p-2">
                                             <a href="#">
                                                 <h5
-                                                    class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 d">
+                                                    class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 dark:text-slate-300 hover:text-white">
                                                     Buy Large & Get Small
                                                 </h5>
                                             </a>
@@ -334,7 +315,7 @@
                                         <div class="p-2">
                                             <a href="#">
                                                 <h5
-                                                    class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 d">
+                                                    class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 dark:text-slate-300 hover:text-white">
                                                     Buy Large & Get Small
                                                 </h5>
                                             </a>
@@ -366,7 +347,7 @@
                                         <div class="p-2">
                                             <a href="#">
                                                 <h5
-                                                    class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 d">
+                                                    class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 dark:text-slate-300 hover:text-white">
                                                     Buy Large & Get Small
                                                 </h5>
                                             </a>
@@ -398,7 +379,7 @@
                                         <div class="p-2">
                                             <a href="#">
                                                 <h5
-                                                    class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 d">
+                                                    class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 dark:text-slate-300 hover:text-white">
                                                     Buy Large & Get Small
                                                 </h5>
                                             </a>
@@ -430,7 +411,7 @@
                                         <div class="p-2">
                                             <a href="#">
                                                 <h5
-                                                    class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 d">
+                                                    class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 dark:text-slate-300 hover:text-white">
                                                     Buy Large & Get Small
                                                 </h5>
                                             </a>
@@ -462,7 +443,7 @@
                                         <div class="p-2">
                                             <a href="#">
                                                 <h5
-                                                    class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 d">
+                                                    class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 dark:text-slate-300 hover:text-white">
                                                     Buy Large & Get Small
                                                 </h5>
                                             </a>
@@ -494,7 +475,7 @@
                                         <div class="p-2">
                                             <a href="#">
                                                 <h5
-                                                    class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 d">
+                                                    class="mb-2 text-xs text-center font-bold tracking-tight text-gray-900 dark:text-slate-300 hover:text-white">
                                                     Buy Large & Get Small
                                                 </h5>
                                             </a>
@@ -511,9 +492,28 @@
 
                         <!-- Food List Area  -->
                         <div class="foodList mt-6">
+                            <form class="mb-3 m-[0.75rem]">
+                                <label for="search"
+                                    class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+
+                                    </div>
+                                    <input type="search" id="search"
+                                        class="r_form block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
+                                        placeholder="Search" required>
+                                    <button type="submit"
+                                        class="text-white absolute right-0 bottom-0 h-[37px] bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-tr-lg rounded-br-lg text-sm px-4 py-2 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800"><svg
+                                            aria-hidden="true" class="w-5 h-5 text-white dark:text-gray-400" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                        </svg></button>
+                                </div>
+                            </form>
                             <!-- Snacks  -->
-                            <div class="snacks h-0 opacity-0 overflow-hidden duration-200 bg-white rounded-md  shadow-gray-400 flex flex-col justify-center activeFoodTabe"
-                                id="snacks">
+                            <div class="snacks foodSection activeFoodTabe" id="snacks">
                                 <h1 class="text-lg font-semibold">Snacks</h1>
                                 <!-- Food List  -->
                                 <div class="foodListItemForRpage text-xs">
@@ -521,13 +521,13 @@
                                         class="snaksFoodList flex justify-between w-full h-full items-center my-4 border-b-2 border-gray-300 py-2">
                                         <div class="details flex flex-col justify-between h-[105px]">
                                             <div class="r_foodName">
-                                                <p class="">Nachos</p>
-                                                <p class=" flex, flex-wrap text-[8px] w-[100px] text-gray-400">Rice,
+                                                <p class="text-[14px]">Nachos</p>
+                                                <p class=" flex, flex-wrap text-[10px] w-[100px] text-gray-400">Rice,
                                                     Chicken,
                                                     Vegetable, Drinks, Note: 10tk Extra For Parcel</p>
                                             </div>
-                                            <div class="priceAndQu flex justify-between items-center w-[80px]">
-                                                <p class="">৳ 200</p>
+                                            <div class="priceAndQu flex justify-between items-center w-[100px]">
+                                                <p class="text-[14px] mr-2">৳ 200</p>
                                                 <div class="">
                                                     <div class="qty-container p-0 border-none">
                                                         <button class="qty-btn-minus btn-danger btn-cornered mr-1"
@@ -552,13 +552,13 @@
                                         class="snaksFoodList flex justify-between w-full h-full items-center my-4 border-b-2 border-gray-300 py-2">
                                         <div class="details flex flex-col justify-between h-[105px]">
                                             <div class="r_foodName">
-                                                <p class="">Nachos</p>
-                                                <p class=" flex, flex-wrap text-[8px] w-[100px] text-gray-400">Rice,
+                                                <p class="text-[14px]">Nachos</p>
+                                                <p class=" flex, flex-wrap text-[10px] w-[100px] text-gray-400">Rice,
                                                     Chicken,
                                                     Vegetable, Drinks, Note: 10tk Extra For Parcel</p>
                                             </div>
-                                            <div class="priceAndQu flex justify-between items-center w-[80px]">
-                                                <p class="">৳ 200</p>
+                                            <div class="priceAndQu flex justify-between items-center w-[100px]">
+                                                <p class="text-[14px] mr-2">৳ 200</p>
                                                 <div class="">
                                                     <div class="qty-container p-0 border-none">
                                                         <button class="qty-btn-minus btn-danger btn-cornered mr-1"
@@ -582,8 +582,7 @@
                                 </div>
                             </div>
                             <!-- Soup  -->
-                            <div class="soup h-0 opacity-0 overflow-hidden duration-200 bg-white rounded-md  shadow-gray-400 flex flex-col justify-center activeFoodTabe"
-                                id="soup">
+                            <div class="soup foodSection activeFoodTabe" id="soup">
                                 <h1 class="text-lg font-semibold">Soup</h1>
                                 <!-- Food List  -->
                                 <div class="foodListItemForRpage text-xs">
@@ -591,13 +590,13 @@
                                         class="snaksFoodList flex justify-between w-full h-full items-center my-4 border-b-2 border-gray-300 py-2">
                                         <div class="details flex flex-col justify-between h-[105px]">
                                             <div class="r_foodName">
-                                                <p class="">Nachos</p>
-                                                <p class=" flex, flex-wrap text-[8px] w-[100px] text-gray-400">Rice,
+                                                <p class="text-[14px]">Nachos</p>
+                                                <p class=" flex, flex-wrap text-[10px] w-[100px] text-gray-400">Rice,
                                                     Chicken,
                                                     Vegetable, Drinks, Note: 10tk Extra For Parcel</p>
                                             </div>
-                                            <div class="priceAndQu flex justify-between items-center w-[80px]">
-                                                <p class="">৳ 200</p>
+                                            <div class="priceAndQu flex justify-between items-center w-[100px]">
+                                                <p class="text-[14px] mr-2">৳ 200</p>
                                                 <div class="">
                                                     <div class="qty-container p-0 border-none">
                                                         <button class="qty-btn-minus btn-danger btn-cornered mr-1"
@@ -622,13 +621,13 @@
                                         class="snaksFoodList flex justify-between w-full h-full items-center my-4 border-b-2 border-gray-300 py-2">
                                         <div class="details flex flex-col justify-between h-[105px]">
                                             <div class="r_foodName">
-                                                <p class="">Nachos</p>
-                                                <p class=" flex, flex-wrap text-[8px] w-[100px] text-gray-400">Rice,
+                                                <p class="text-[14px]">Nachos</p>
+                                                <p class=" flex, flex-wrap text-[10px] w-[100px] text-gray-400">Rice,
                                                     Chicken,
                                                     Vegetable, Drinks, Note: 10tk Extra For Parcel</p>
                                             </div>
-                                            <div class="priceAndQu flex justify-between items-center w-[80px]">
-                                                <p class="">৳ 200</p>
+                                            <div class="priceAndQu flex justify-between items-center w-[100px]">
+                                                <p class="text-[14px] mr-2">৳ 200</p>
                                                 <div class="">
                                                     <div class="qty-container p-0 border-none">
                                                         <button class="qty-btn-minus btn-danger btn-cornered mr-1"
@@ -653,8 +652,7 @@
                             </div>
 
                             <!-- Chicken  -->
-                            <div class="chicken h-0 opacity-0 overflow-hidden duration-200 bg-white rounded-md  shadow-gray-400 flex flex-col justify-center activeFoodTabe"
-                                id="chicken">
+                            <div class="chicken foodSection activeFoodTabe" id="chicken">
                                 <h1 class="text-lg font-semibold">Chicken</h1>
                                 <!-- Food List  -->
                                 <div class="foodListItemForRpage text-xs">
@@ -662,13 +660,13 @@
                                         class="snaksFoodList flex justify-between w-full h-full items-center my-4 border-b-2 border-gray-300 py-2">
                                         <div class="details flex flex-col justify-between h-[105px]">
                                             <div class="r_foodName">
-                                                <p class="">Nachos</p>
-                                                <p class=" flex, flex-wrap text-[8px] w-[100px] text-gray-400">Rice,
+                                                <p class="text-[14px]">Nachos</p>
+                                                <p class=" flex, flex-wrap text-[10px] w-[100px] text-gray-400">Rice,
                                                     Chicken,
                                                     Vegetable, Drinks, Note: 10tk Extra For Parcel</p>
                                             </div>
-                                            <div class="priceAndQu flex justify-between items-center w-[80px]">
-                                                <p class="">৳ 200</p>
+                                            <div class="priceAndQu flex justify-between items-center w-[100px]">
+                                                <p class="text-[14px] mr-2">৳ 200</p>
                                                 <div class="">
                                                     <div class="qty-container p-0 border-none">
                                                         <button class="qty-btn-minus btn-danger btn-cornered mr-1"
@@ -693,13 +691,13 @@
                                         class="snaksFoodList flex justify-between w-full h-full items-center my-4 border-b-2 border-gray-300 py-2">
                                         <div class="details flex flex-col justify-between h-[105px]">
                                             <div class="r_foodName">
-                                                <p class="">Nachos</p>
-                                                <p class=" flex, flex-wrap text-[8px] w-[100px] text-gray-400">Rice,
+                                                <p class="text-[14px]">Nachos</p>
+                                                <p class=" flex, flex-wrap text-[10px] w-[100px] text-gray-400">Rice,
                                                     Chicken,
                                                     Vegetable, Drinks, Note: 10tk Extra For Parcel</p>
                                             </div>
-                                            <div class="priceAndQu flex justify-between items-center w-[80px]">
-                                                <p class="">৳ 200</p>
+                                            <div class="priceAndQu flex justify-between items-center w-[100px]">
+                                                <p class="text-[14px] mr-2">৳ 200</p>
                                                 <div class="">
                                                     <div class="qty-container p-0 border-none">
                                                         <button class="qty-btn-minus btn-danger btn-cornered mr-1"
@@ -724,8 +722,7 @@
                             </div>
 
                             <!-- Burger  -->
-                            <div class="burgerr h-0 opacity-0 overflow-hidden duration-200 bg-white rounded-md  shadow-gray-400 flex flex-col justify-center activeFoodTabe"
-                                id="burgerr">
+                            <div class="burgerr foodSection activeFoodTabe" id="burgerr">
                                 <h1 class="text-lg font-semibold">Burger</h1>
                                 <!-- Food List  -->
                                 <div class="foodListItemForRpage text-xs">
@@ -733,13 +730,13 @@
                                         class="snaksFoodList flex justify-between w-full h-full items-center my-4 border-b-2 border-gray-300 py-2">
                                         <div class="details flex flex-col justify-between h-[105px]">
                                             <div class="r_foodName">
-                                                <p class="">Nachos</p>
-                                                <p class=" flex, flex-wrap text-[8px] w-[100px] text-gray-400">Rice,
+                                                <p class="text-[14px]">Nachos</p>
+                                                <p class=" flex, flex-wrap text-[10px] w-[100px] text-gray-400">Rice,
                                                     Chicken,
                                                     Vegetable, Drinks, Note: 10tk Extra For Parcel</p>
                                             </div>
-                                            <div class="priceAndQu flex justify-between items-center w-[80px]">
-                                                <p class="">৳ 200</p>
+                                            <div class="priceAndQu flex justify-between items-center w-[100px]">
+                                                <p class="text-[14px] mr-2">৳ 200</p>
                                                 <div class="">
                                                     <div class="qty-container p-0 border-none">
                                                         <button class="qty-btn-minus btn-danger btn-cornered mr-1"
@@ -764,13 +761,13 @@
                                         class="snaksFoodList flex justify-between w-full h-full items-center my-4 border-b-2 border-gray-300 py-2">
                                         <div class="details flex flex-col justify-between h-[105px]">
                                             <div class="r_foodName">
-                                                <p class="">Nachos</p>
-                                                <p class=" flex, flex-wrap text-[8px] w-[100px] text-gray-400">Rice,
+                                                <p class="text-[14px]">Nachos</p>
+                                                <p class=" flex, flex-wrap text-[10px] w-[100px] text-gray-400">Rice,
                                                     Chicken,
                                                     Vegetable, Drinks, Note: 10tk Extra For Parcel</p>
                                             </div>
-                                            <div class="priceAndQu flex justify-between items-center w-[80px]">
-                                                <p class="">৳ 200</p>
+                                            <div class="priceAndQu flex justify-between items-center w-[100px]">
+                                                <p class="text-[14px] mr-2">৳ 200</p>
                                                 <div class="">
                                                     <div class="qty-container p-0 border-none">
                                                         <button class="qty-btn-minus btn-danger btn-cornered mr-1"
@@ -795,8 +792,7 @@
                             </div>
 
                             <!-- pizza  -->
-                            <div class="pizza h-0 opacity-0 overflow-hidden duration-200 bg-white rounded-md  shadow-gray-400 flex flex-col justify-center activeFoodTabe"
-                                id="pizza">
+                            <div class="pizza foodSection activeFoodTabe" id="pizza">
                                 <h1 class="text-lg font-semibold">Pizza</h1>
                                 <!-- Food List  -->
                                 <div class="foodListItemForRpage text-xs">
@@ -804,13 +800,13 @@
                                         class="snaksFoodList flex justify-between w-full h-full items-center my-4 border-b-2 border-gray-300 py-2">
                                         <div class="details flex flex-col justify-between h-[105px]">
                                             <div class="r_foodName">
-                                                <p class="">Nachos</p>
-                                                <p class=" flex, flex-wrap text-[8px] w-[100px] text-gray-400">Rice,
+                                                <p class="text-[14px]">Nachos</p>
+                                                <p class=" flex, flex-wrap text-[10px] w-[100px] text-gray-400">Rice,
                                                     Chicken,
                                                     Vegetable, Drinks, Note: 10tk Extra For Parcel</p>
                                             </div>
-                                            <div class="priceAndQu flex justify-between items-center w-[80px]">
-                                                <p class="">৳ 200</p>
+                                            <div class="priceAndQu flex justify-between items-center w-[100px]">
+                                                <p class="text-[14px] mr-2">৳ 200</p>
                                                 <div class="">
                                                     <div class="qty-container p-0 border-none">
                                                         <button class="qty-btn-minus btn-danger btn-cornered mr-1"
@@ -835,13 +831,13 @@
                                         class="snaksFoodList flex justify-between w-full h-full items-center my-4 border-b-2 border-gray-300 py-2">
                                         <div class="details flex flex-col justify-between h-[105px]">
                                             <div class="r_foodName">
-                                                <p class="">Nachos</p>
-                                                <p class=" flex, flex-wrap text-[8px] w-[100px] text-gray-400">Rice,
+                                                <p class="text-[14px]">Nachos</p>
+                                                <p class=" flex, flex-wrap text-[10px] w-[100px] text-gray-400">Rice,
                                                     Chicken,
                                                     Vegetable, Drinks, Note: 10tk Extra For Parcel</p>
                                             </div>
-                                            <div class="priceAndQu flex justify-between items-center w-[80px]">
-                                                <p class="">৳ 200</p>
+                                            <div class="priceAndQu flex justify-between items-center w-[100px]">
+                                                <p class="text-[14px] mr-2">৳ 200</p>
                                                 <div class="">
                                                     <div class="qty-container p-0 border-none">
                                                         <button class="qty-btn-minus btn-danger btn-cornered mr-1"
@@ -866,8 +862,7 @@
                             </div>
 
                             <!-- Pasta  -->
-                            <div class="pasta h-0 opacity-0 overflow-hidden duration-200 bg-white rounded-md  shadow-gray-400 flex flex-col justify-center activeFoodTabe"
-                                id="pasta">
+                            <div class="pasta foodSection activeFoodTabe" id="pasta">
                                 <h1 class="text-lg font-semibold">Pasta</h1>
                                 <!-- Food List  -->
                                 <div class="foodListItemForRpage text-xs">
@@ -875,13 +870,13 @@
                                         class="snaksFoodList flex justify-between w-full h-full items-center my-4 border-b-2 border-gray-300 py-2">
                                         <div class="details flex flex-col justify-between h-[105px]">
                                             <div class="r_foodName">
-                                                <p class="">Nachos</p>
-                                                <p class=" flex, flex-wrap text-[8px] w-[100px] text-gray-400">Rice,
+                                                <p class="text-[14px]">Nachos</p>
+                                                <p class=" flex, flex-wrap text-[10px] w-[100px] text-gray-400">Rice,
                                                     Chicken,
                                                     Vegetable, Drinks, Note: 10tk Extra For Parcel</p>
                                             </div>
-                                            <div class="priceAndQu flex justify-between items-center w-[80px]">
-                                                <p class="">৳ 200</p>
+                                            <div class="priceAndQu flex justify-between items-center w-[100px]">
+                                                <p class="text-[14px]">৳ 200</p>
                                                 <div class="">
                                                     <div class="qty-container p-0 border-none">
                                                         <button class="qty-btn-minus btn-danger btn-cornered mr-1"
@@ -906,13 +901,13 @@
                                         class="snaksFoodList flex justify-between w-full h-full items-center my-4 border-b-2 border-gray-300 py-2">
                                         <div class="details flex flex-col justify-between h-[105px]">
                                             <div class="r_foodName">
-                                                <p class="">Nachos</p>
-                                                <p class=" flex, flex-wrap text-[8px] w-[100px] text-gray-400">Rice,
+                                                <p class="text-[14px]">Nachos</p>
+                                                <p class=" flex, flex-wrap text-[10px] w-[100px] text-gray-400">Rice,
                                                     Chicken,
                                                     Vegetable, Drinks, Note: 10tk Extra For Parcel</p>
                                             </div>
-                                            <div class="priceAndQu flex justify-between items-center w-[80px]">
-                                                <p class="">৳ 200</p>
+                                            <div class="priceAndQu flex justify-between items-center w-[100px]">
+                                                <p class="text-[14px]">৳ 200</p>
                                                 <div class="">
                                                     <div class="qty-container p-0 border-none">
                                                         <button class="qty-btn-minus btn-danger btn-cornered mr-1"
@@ -936,8 +931,7 @@
                                 </div>
                             </div>
                             <!-- chowMein  -->
-                            <div class="chowMein h-0 opacity-0 overflow-hidden duration-200 bg-white rounded-md  shadow-gray-400 flex flex-col justify-center activeFoodTabe"
-                                id="chowMein">
+                            <div class="chowMein foodSection activeFoodTabe" id="chowMein">
                                 <h1 class="text-lg font-semibold">Chow Mein</h1>
                                 <!-- Food List  -->
                                 <div class="foodListItemForRpage text-xs">
@@ -945,13 +939,13 @@
                                         class="snaksFoodList flex justify-between w-full h-full items-center my-4 border-b-2 border-gray-300 py-2">
                                         <div class="details flex flex-col justify-between h-[105px]">
                                             <div class="r_foodName">
-                                                <p class="">Nachos</p>
-                                                <p class=" flex, flex-wrap text-[8px] w-[100px] text-gray-400">Rice,
+                                                <p class="text-[14px]">Nachos</p>
+                                                <p class=" flex, flex-wrap text-[10px] w-[100px] text-gray-400">Rice,
                                                     Chicken,
                                                     Vegetable, Drinks, Note: 10tk Extra For Parcel</p>
                                             </div>
-                                            <div class="priceAndQu flex justify-between items-center w-[80px]">
-                                                <p class="">৳ 200</p>
+                                            <div class="priceAndQu flex justify-between items-center w-[100px]">
+                                                <p class="text-[14px]">৳ 200</p>
                                                 <div class="">
                                                     <div class="qty-container p-0 border-none">
                                                         <button class="qty-btn-minus btn-danger btn-cornered mr-1"
@@ -976,13 +970,13 @@
                                         class="snaksFoodList flex justify-between w-full h-full items-center my-4 border-b-2 border-gray-300 py-2">
                                         <div class="details flex flex-col justify-between h-[105px]">
                                             <div class="r_foodName">
-                                                <p class="">Nachos</p>
-                                                <p class=" flex, flex-wrap text-[8px] w-[100px] text-gray-400">Rice,
+                                                <p class="text-[14px]">Nachos</p>
+                                                <p class=" flex, flex-wrap text-[10px] w-[100px] text-gray-400">Rice,
                                                     Chicken,
                                                     Vegetable, Drinks, Note: 10tk Extra For Parcel</p>
                                             </div>
-                                            <div class="priceAndQu flex justify-between items-center w-[80px]">
-                                                <p class="">৳ 200</p>
+                                            <div class="priceAndQu flex justify-between items-center w-[100px]">
+                                                <p class="text-[14px]">৳ 200</p>
                                                 <div class="">
                                                     <div class="qty-container p-0 border-none">
                                                         <button class="qty-btn-minus btn-danger btn-cornered mr-1"
@@ -1015,7 +1009,7 @@
 
                         <!-- Title  -->
                         <div
-                            class="l_s_title mt-6 m-3 bg-white p-4 rounded-md  shadow-gray-400 flex flex-col justify-center">
+                            class="l_s_title mt-6 m-3 bg-white dark:bg-slate-700 p-4 rounded-md  shadow-gray-400 flex flex-col justify-center">
                             <h1 class="text-xl">Rate this Place</h1>
 
                             <div class="flex items-center">
@@ -1060,7 +1054,7 @@
 
                         <!-- Overveiw  -->
                         <div
-                            class="overveiw  mt-6 m-3 bg-white p-4 rounded-md  shadow-gray-400 flex flex-col justify-center">
+                            class="overveiw  mt-6 m-3 bg-white dark:bg-slate-700 p-4 rounded-md  shadow-gray-400 flex flex-col justify-center">
 
                             <div class="flex items-center mb-3">
                                 <svg aria-hidden="true" class="w-5 h-5 text-orange-500" fill="currentColor"
@@ -1103,35 +1097,35 @@
                             <p class="text-sm font-medium text-gray-500 dark:text-gray-400">1,745 global ratings</p>
                             <div class="flex items-center mt-4">
                                 <span class="text-sm font-medium text-blue-600 dark:text-blue-500">5 star</span>
-                                <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
+                                <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-900">
                                     <div class="h-5 bg-orange-500 rounded" style="width: 70%"></div>
                                 </div>
                                 <span class="text-sm font-medium text-blue-600 dark:text-blue-500">70%</span>
                             </div>
                             <div class="flex items-center mt-4">
                                 <span class="text-sm font-medium text-blue-600 dark:text-blue-500">4 star</span>
-                                <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
+                                <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-900">
                                     <div class="h-5 bg-orange-500 rounded" style="width: 17%"></div>
                                 </div>
                                 <span class="text-sm font-medium text-blue-600 dark:text-blue-500">17%</span>
                             </div>
                             <div class="flex items-center mt-4">
                                 <span class="text-sm font-medium text-blue-600 dark:text-blue-500">3 star</span>
-                                <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
+                                <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-900">
                                     <div class="h-5 bg-orange-500 rounded" style="width: 8%"></div>
                                 </div>
                                 <span class="text-sm font-medium text-blue-600 dark:text-blue-500">8%</span>
                             </div>
                             <div class="flex items-center mt-4">
                                 <span class="text-sm font-medium text-blue-600 dark:text-blue-500">2 star</span>
-                                <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
+                                <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-900">
                                     <div class="h-5 bg-orange-500 rounded" style="width: 4%"></div>
                                 </div>
                                 <span class="text-sm font-medium text-blue-600 dark:text-blue-500">4%</span>
                             </div>
                             <div class="flex items-center mt-4">
                                 <span class="text-sm font-medium text-blue-600 dark:text-blue-500">1 star</span>
-                                <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
+                                <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-900">
                                     <div class="h-5 bg-orange-500 rounded" style="width: 1%"></div>
                                 </div>
                                 <span class="text-sm font-medium text-blue-600 dark:text-blue-500">1%</span>
@@ -1140,7 +1134,8 @@
                         </div>
 
                         <!-- Reveiw -->
-                        <div class="reveiw m-3 bg-white p-4 rounded-md  shadow-gray-400 flex flex-col justify-center">
+                        <div
+                            class="reveiw m-3 bg-white dark:bg-slate-700 p-4 rounded-md  shadow-gray-400 flex flex-col justify-center">
 
                             <h1 class="text-xl font-semibold my-6">All Ratings and Reviews</h1>
                             <div class="reveiwSection max-h-[645px] lg:max-h-[383px] overflow-y-scroll no-scrollbar">
@@ -1296,7 +1291,8 @@
                         </div>
 
                         <!-- Comment  -->
-                        <div class="comment m-3 bg-white p-4 rounded-md  shadow-gray-400 flex flex-col justify-center">
+                        <div
+                            class="comment m-3 bg-white dark:bg-slate-700 p-4 rounded-md  shadow-gray-400 flex flex-col justify-center">
                             <h1 class="text-xl font-semibold my-6">Leave Comment</h1>
 
                             <div class="giveAstar">
@@ -1317,7 +1313,7 @@
                             </div>
 
                             <div class="yourComment mt-6">
-                                <p class="text-xs mb-3 text-black font-semibold">Your Comment</p>
+                                <p class="text-xs mb-3 text-black dark:text-slate-400 font-semibold">Your Comment</p>
                                 <textarea class="textarea textarea-bordered w-full"
                                     placeholder="Write your valuable comment..."></textarea>
                                 <button
@@ -1351,7 +1347,7 @@
                                     </div>
                                 </div>
 
-                                <div class="itemList rounded-md mt-4 text-xs p-4 bg-white">
+                                <div class="itemList rounded-md mt-4 text-xs p-4 bg-white ">
                                     <ul>
                                         <li class="flex justify-between items-center py-2">
                                             <span>
@@ -1442,7 +1438,7 @@
                                     </div>
                                 </div>
 
-                                <div class="itemList rounded-md mt-4 text-xs p-4 bg-white">
+                                <div class="itemList rounded-md mt-4 text-xs p-4 bg-white ">
                                     <ul>
                                         <li class="flex justify-between items-center py-2">
                                             <span>
@@ -1517,24 +1513,6 @@
                             </div>
                         </div>
 
-                        <!-- Note And Promo Code  -->
-                        <div class="noteAndPromoCode rounded-md mt-4 text-xs p-4 bg-white">
-                            <!-- Promo Code  -->
-                            <div class="promoCode flex w-full items-center mb-4 rounded-md">
-                                <input type="text" name="" id="" placeholder="Enter Promo Code"
-                                    class="border rounded-tl-md rounded-bl-md border-y border-l border-gray-300 p-3 w-[70%]">
-                                <button type="submit"
-                                    class="w-[30%] p-4 rounded-tr-md rounded-br-md border-y border-r border-orange-600 bg-orange-600 text-white">Apply</button>
-                            </div>
-                            <div class="note flex w-full items-center mb-4 rounded-md border bg-slate-200">
-                                <span class="material-symbols-outlined w-[20%] p-3 text-center">
-                                    comment </span>
-                                <textarea type="text" name="" cols="30" rows="3" id=""
-                                    placeholder="Any suggestions? We will pass it on..."
-                                    class=" w-[80%] border-l rounded-tr-md rounded-br-md p-3 no-scrollbar outline-none border-gray-300"></textarea>
-                            </div>
-                        </div>
-
                         <!-- Billing Area  -->
                         <div class="billingArea rounded-md mt-4 text-xs p-4 bg-white">
                             <ul class="mb-4">
@@ -1560,7 +1538,7 @@
 
                         <div class="order w-full flex items-center mt-5">
                             <a href="checkout.html"
-                                class="placeOrderButton bg-green-500 text-white w-full text-center rounded-md py-3 text-xl duration-200 hover:bg-green-600">Checkout</a>
+                                class="placeOrderButton bg-[#7B3F00] text-white w-full text-center rounded-md py-3 text-xl duration-200 hover:bg-[#703a00]">Checkout</a>
                         </div>
                     </div>
                     <!-- save alart -->
@@ -1584,34 +1562,16 @@
             </div>
         </div>
         <!-- Container Section End  -->
-        <div id="singInUpModal"></div>
-        <script src="./src/js/singInUpModal.js"></script>
-        <script src="./src/js/flowbite.min.js"></script>
-        <!-- Container Section End  -->
     </div>
     <!-- Container Section End  -->
     </div>
 
-
-    <!-- Container Footer  -->
+    <!-- Foooter Section  -->
     <div id="footer"></div>
     <script src="./src/js/footer.js"></script>
-    <!-- Footer Section End  -->
-
-    <!-- Back to top button  -->
-    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
-        class="inline-block p-3 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition ease-in-out bottom-5 right-5 z-50 duration-200"
-        id="btn-back-to-top">
-        <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img"
-            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path fill="currentColor"
-                d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
-            </path>
-        </svg>
-    </button>
-
+    <!-- Container Section End  -->
     <div id="singInUpModal"></div>
-    <script src="./src/js/singInUpModal.js"></script>
+    <script src="./src/js/allModals.js"></script>
     <script src="./src/js/flowbite.min.js"></script>
 
     <!-- Slick Slider Js -->
