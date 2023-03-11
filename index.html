@@ -74,10 +74,11 @@
         <script src="./src/js/heading.js"></script>
 
         <!-- Container Section  -->
-        <div class=" containerSection bg-[#fbf4ed] dark:bg-black flex justify-between flex-col items-center py-16">
+        <div class=" containerSection bg-[#fbf4ed] dark:bg-black flex justify-between flex-col items-center py-16"
+            onclick="cartWindowHide()">
             <!-- Bannar Start -->
             <div
-                class="bannarSection bg-[url('https://drive.google.com/file/d/1_QFxFO7TUVuZRe_g55DMZ08QTgoTUJb9/view')] bg-cover object-cover bg-no-repeat w-full max-h-[80vh] ">
+                class="bannarSection bg-[url('https://ibb.co/1QG0GDs')] bg-cover object-cover bg-no-repeat w-full max-h-[80vh] ">
                 <img src="" alt="">
                 <div class="overlaySection w-full h-full bg-[#00000064] flex flex-col justify-between pt-[15px]">
                     <!-- Hero Section Start -->
@@ -303,390 +304,348 @@
             <!-- Popular Restaurants  -->
             <div class="popularRestaurants my-10">
                 <p class=" font-bold text-center text-orange-600 text-2xl lg:text-4xl">Popular Restaurants</p>
-                <div class="restaurant_cards  flex flex-wrap justify-center items-center mt-8 w-full">
+                <div class="flex flex-wrap justify-center w-[90%] m-auto pt-6">
+                    <div class="restaurant_card">
+                        <a href="restaurantsPage.html" class="resturant_card h-full cursor-pointer ">
+                            <div
+                                class="r_card_cover_image relative h-full object-cover bg-cover bg-center bg-no-repeat">
+                                <div class="coverImage">
+                                    <img src="https://media.istockphoto.com/id/1154731746/photo/cheeseburger-with-cola-and-french-fries.jpg?s=612x612&w=0&k=20&c=DfuI7KyMDIF8_JH66oAhIZLOgL4RRXulfv24PQ5vTEo="
+                                        alt="" srcset="" class="rounded-tl-md rounded-tr-md w-full">
+                                </div>
+                                <div class="absolute h-20 w-20 bottom-4 left-4 ">
+                                    <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
+                                        alt="" class="h-20 w-20 rounded-full ring-4 ring-white">
+                                    <span
+                                        class="top-0 right-0 absolute  w-5 h-5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                </div>
+                                <span
+                                    class="material-symbols-outlined absolute top-2 right-2 bg-white duration-200 hover:text-orange-600 rounded-full p-2 cursor-pointer">
+                                    favorite </span>
+                                <a href="review.html"
+                                    class="absolute flex bottom-2 right-2 justify-center items-center text-[10px] text-white font-semibold bg-orange-600 rounded px-2 py-1">5%
+                                    Off</span>
+                                </a>
+                            </div>
 
-                    <div class="restaurant_card relative">
-                        <div class="" onclick="redirectToLink('restaurantsPage.html')">
-                            <a href="restaurantsPage.html" class="resturant_card h-full cursor-pointer ">
-                                <div
-                                    class="r_card_cover_image relative h-full object-cover bg-cover bg-center bg-no-repeat">
-                                    <div class="coverImage">
-                                        <img src="https://media.istockphoto.com/id/1154731746/photo/cheeseburger-with-cola-and-french-fries.jpg?s=612x612&w=0&k=20&c=DfuI7KyMDIF8_JH66oAhIZLOgL4RRXulfv24PQ5vTEo="
-                                            alt="" srcset="" class="rounded-tl-md rounded-tr-md w-full">
-                                    </div>
-                                    <div class="absolute h-20 w-20 bottom-4 left-4 ">
-                                        <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
-                                            alt="" class="h-20 w-20 rounded-full ring-4 ring-white">
-                                        <span
-                                            class="top-0 right-0 absolute  w-5 h-5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
-                                    </div>
+                            <div class="r_card_dis p-4 cursor-pointer">
+                                <a href="#" class="text-lg hover:text-orange-600 duration-200">El Plato</a>
+                                <div class="tags text-xs text-gray-400 flex w-full my-1">
+                                    <a href="#" class="mr-1 duration-200 hover:text-orange-600">Bangla</a>|
+                                    <a href="#" class="mx-1 duration-200 hover:text-orange-600">Indian</a>|
+                                    <a href="#" class="mx-1 duration-200 hover:text-orange-600">Thai</a>|
+                                    <a href="#" class="mx-1 duration-200 hover:text-orange-600">Chinese</a>
+                                </div>
+                                <hr>
+                                <div class="r_card_footer my-2 flex items-center justify-center">
 
-                                    <div
-                                        class="disCount absolute flex flex-col w-16 h-16 bottom-2 right-2 justify-center items-center text-white font-semibold bg-orange-500 rounded-full px-2 py-1">
-                                        <p calss="text-[22px]">10</p>
-                                        <p class="text-[10px]">%Off</p>
-                                    </div>
-                                    <div
-                                        class="disCount absolute flex flex-col  top-2 left-0 rounded-tr-full rounded-br-full justify-center items-center text-white text-sm bg-orange-500 px-2 py-1">
-                                        <span calss="t">Free Delivery</span>
-                                    </div>
+                                </div>
+                                <div class="max text-sm mt-1 flex items-center justify-center mt-2">
+                                    <p class="min mr-2">Min Order: 100 ৳</p><span
+                                        class="justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md px-2 py-1"><i
+                                            class="fa fa-star"></i>3.1/5 (100+)</span>
+                                </div>
+                                <div class="r_openClose my-2 flex items-center justify-center text-xs ">
+                                    <span
+                                        class="r_opening text-center rounded-full px-2  mr-2 border border-green-600 text-green-500">Open:
+                                        12:00
+                                        PM</span>
+                                    <span
+                                        class="r_closing text-center rounded-full px-2  border border-red-600 text-red-500">Close:
+                                        09:30
+                                        PM</span>
                                 </div>
 
-                                <div href="restaurants.html" class="r_card_dis p-4 cursor-pointer">
-                                    <div class="text-lg hover:text-orange-600 duration-200">El Plato
-                                    </div>
-                                    <div class="tags text-xs text-gray-400 flex w-full my-1">
-                                        <a href="#" class="mr-1 duration-200 hover:text-orange-600">Bangla</a>|
-                                        <a href="#" class="mx-1 duration-200 hover:text-orange-600">Indian</a>|
-                                        <a href="#" class="mx-1 duration-200 hover:text-orange-600">Thai</a>|
-                                        <a href="#" class="mx-1 duration-200 hover:text-orange-600">Chinese</a>
-                                    </div>
-                                    <hr>
-                                    <div class="r_card_footer my-2 flex items-center justify-center">
-                                    </div>
-                                    <div class="max text-sm mt-1 flex items-center justify-center mt-2">
-                                        <p class="min mr-2">Min Order: 100 ৳</p><span
-                                            class="justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md px-2 py-1"><i
-                                                class="fa fa-star"></i>3.1/5 (100+)</span>
-                                    </div>
-                                    <div class="r_openClose my-2 flex items-center justify-center text-xs ">
-                                        <span
-                                            class="r_opening text-center rounded-full px-2  mr-2 border border-green-600 text-green-500">Open:
-                                            12:00 PM</span>
-                                        <span
-                                            class="r_closing text-center rounded-full px-2  border border-red-600 text-red-500">Close:
-                                            09:30 PM</span>
-                                    </div>
-                                    <a href="#"
-                                        class="w-full mt-2 py-2 rounded-md bg-orange-600 border border-orange-600 mt-2 flex justify-center items-center text-white duration-200 uppercase hover:bg-white hover:text-orange-600 font-normal">visit
-                                        restaurant</a>
-                                </div>
-                            </a>
-                        </div>
-                        <span data-tip="Tap to Favorite"
-                            class="tooltip fa fa-heart favoriteButton absolute text-[26px] flex justify-center items-center w-[45px] h-[45px] z-20 top-2 right-2 bg-white duration-200 hover:text-orange-600 rounded-full p-2 cursor-pointer"><ion-icon
-                                name="heart-circle-outline"></ion-icon>
-                        </span>
+                                <a href="#"
+                                    class=" w-full mt-2 py-2 rounded-md bg-orange-600 border border-orange-600 mt-2 flex justify-center items-center text-white duration-200 uppercase hover:bg-white hover:text-orange-600 font-normal">visit
+                                    restaurant</a>
+                            </div>
+                        </a>
                     </div>
+                    <div class="restaurant_card">
+                        <a href="restaurantsPage.html" class="resturant_card h-full cursor-pointer ">
+                            <div
+                                class="r_card_cover_image relative h-full object-cover bg-cover bg-center bg-no-repeat">
+                                <div class="coverImage">
+                                    <img src="https://media.istockphoto.com/id/1154731746/photo/cheeseburger-with-cola-and-french-fries.jpg?s=612x612&w=0&k=20&c=DfuI7KyMDIF8_JH66oAhIZLOgL4RRXulfv24PQ5vTEo="
+                                        alt="" srcset="" class="rounded-tl-md rounded-tr-md w-full">
+                                </div>
+                                <div class="absolute h-20 w-20 bottom-4 left-4 ">
+                                    <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
+                                        alt="" class="h-20 w-20 rounded-full ring-4 ring-white">
+                                    <span
+                                        class="top-0 right-0 absolute  w-5 h-5 bg-red-500 border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                </div>
+                                <span
+                                    class="material-symbols-outlined absolute top-2 right-2 bg-white duration-200 hover:text-orange-600 rounded-full p-2 cursor-pointer">
+                                    favorite </span>
+                                <a href="review.html"
+                                    class="absolute flex bottom-2 right-2 justify-center items-center text-[10px] text-white font-semibold bg-orange-600 rounded px-2 py-1">5%
+                                    Off</span>
+                                </a>
+                            </div>
 
-                    <div class="restaurant_card relative">
-                        <div class="" onclick="redirectToLink('restaurantsPage.html')">
-                            <a href="restaurantsPage.html" class="resturant_card h-full cursor-pointer ">
-                                <div
-                                    class="r_card_cover_image relative h-full object-cover bg-cover bg-center bg-no-repeat">
-                                    <div class="coverImage">
-                                        <img src="https://media.istockphoto.com/id/1154731746/photo/cheeseburger-with-cola-and-french-fries.jpg?s=612x612&w=0&k=20&c=DfuI7KyMDIF8_JH66oAhIZLOgL4RRXulfv24PQ5vTEo="
-                                            alt="" srcset="" class="rounded-tl-md rounded-tr-md w-full">
-                                    </div>
-                                    <div class="absolute h-20 w-20 bottom-4 left-4 ">
-                                        <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
-                                            alt="" class="h-20 w-20 rounded-full ring-4 ring-white">
-                                        <span
-                                            class="top-0 right-0 absolute  w-5 h-5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
-                                    </div>
+                            <div class="r_card_dis p-4 cursor-pointer">
+                                <a href="#" class="text-lg hover:text-orange-600 duration-200">El Plato</a>
+                                <div class="tags text-xs text-gray-400 flex w-full my-1">
+                                    <a href="#" class="mr-1 duration-200 hover:text-orange-600">Bangla</a>|
+                                    <a href="#" class="mx-1 duration-200 hover:text-orange-600">Indian</a>|
+                                    <a href="#" class="mx-1 duration-200 hover:text-orange-600">Thai</a>|
+                                    <a href="#" class="mx-1 duration-200 hover:text-orange-600">Chinese</a>
+                                </div>
+                                <hr>
+                                <div class="r_card_footer my-2 flex items-center justify-center">
 
-                                    <div
-                                        class="disCount absolute flex flex-col w-16 h-16 bottom-2 right-2 justify-center items-center text-white font-semibold bg-orange-500 rounded-full px-2 py-1">
-                                        <p calss="text-[22px]">10</p>
-                                        <p class="text-[10px]">%Off</p>
-                                    </div>
-                                    <div
-                                        class="disCount absolute flex flex-col  top-2 left-0 rounded-tr-full rounded-br-full justify-center items-center text-white text-sm bg-orange-500 px-2 py-1">
-                                        <span calss="t">Free Delivery</span>
-                                    </div>
+                                </div>
+                                <div class="max text-sm mt-1 flex items-center justify-center mt-2">
+                                    <p class="min mr-2">Min Order: 100 ৳</p><span
+                                        class="justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md px-2 py-1"><i
+                                            class="fa fa-star"></i>3.1/5 (100+)</span>
+                                </div>
+                                <div class="r_openClose my-2 flex items-center justify-center text-xs ">
+                                    <span
+                                        class="r_opening text-center rounded-full px-2  mr-2 border border-green-600 text-green-500">Open:
+                                        12:00
+                                        PM</span>
+                                    <span
+                                        class="r_closing text-center rounded-full px-2  border border-red-600 text-red-500">Close:
+                                        09:30
+                                        PM</span>
                                 </div>
 
-                                <div href="restaurants.html" class="r_card_dis p-4 cursor-pointer">
-                                    <div class="text-lg hover:text-orange-600 duration-200">El Plato
-                                    </div>
-                                    <div class="tags text-xs text-gray-400 flex w-full my-1">
-                                        <a href="#" class="mr-1 duration-200 hover:text-orange-600">Bangla</a>|
-                                        <a href="#" class="mx-1 duration-200 hover:text-orange-600">Indian</a>|
-                                        <a href="#" class="mx-1 duration-200 hover:text-orange-600">Thai</a>|
-                                        <a href="#" class="mx-1 duration-200 hover:text-orange-600">Chinese</a>
-                                    </div>
-                                    <hr>
-                                    <div class="r_card_footer my-2 flex items-center justify-center">
-                                    </div>
-                                    <div class="max text-sm mt-1 flex items-center justify-center mt-2">
-                                        <p class="min mr-2">Min Order: 100 ৳</p><span
-                                            class="justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md px-2 py-1"><i
-                                                class="fa fa-star"></i>3.1/5 (100+)</span>
-                                    </div>
-                                    <div class="r_openClose my-2 flex items-center justify-center text-xs ">
-                                        <span
-                                            class="r_opening text-center rounded-full px-2  mr-2 border border-green-600 text-green-500">Open:
-                                            12:00 PM</span>
-                                        <span
-                                            class="r_closing text-center rounded-full px-2  border border-red-600 text-red-500">Close:
-                                            09:30 PM</span>
-                                    </div>
-                                    <a href="#"
-                                        class=" w-full mt-2 py-2 rounded-md bg-orange-600 border border-orange-600 mt-2 flex justify-center items-center text-white duration-200 uppercase hover:bg-white hover:text-orange-600 font-normal">visit
-                                        restaurant</a>
-                                </div>
-                            </a>
-                        </div>
-                        <span data-tip="Tap to Favorite"
-                            class="tooltip fa fa-heart favoriteButton absolute text-[26px] flex justify-center items-center w-[45px] h-[45px] z-20 top-2 right-2 bg-white duration-200 hover:text-orange-600 rounded-full p-2 cursor-pointer"><ion-icon
-                                name="heart-circle-outline"></ion-icon>
-                        </span>
+                                <a href="#"
+                                    class=" w-full mt-2 py-2 rounded-md bg-orange-600 border border-orange-600 mt-2 flex justify-center items-center text-white duration-200 uppercase hover:bg-white hover:text-orange-600 font-normal">visit
+                                    restaurant</a>
+                            </div>
+                        </a>
                     </div>
+                    <div class="restaurant_card">
+                        <a href="restaurantsPage.html" class="resturant_card h-full cursor-pointer ">
+                            <div
+                                class="r_card_cover_image relative h-full object-cover bg-cover bg-center bg-no-repeat">
+                                <div class="coverImage">
+                                    <img src="https://media.istockphoto.com/id/1154731746/photo/cheeseburger-with-cola-and-french-fries.jpg?s=612x612&w=0&k=20&c=DfuI7KyMDIF8_JH66oAhIZLOgL4RRXulfv24PQ5vTEo="
+                                        alt="" srcset="" class="rounded-tl-md rounded-tr-md w-full">
+                                </div>
+                                <div class="absolute h-20 w-20 bottom-4 left-4 ">
+                                    <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
+                                        alt="" class="h-20 w-20 rounded-full ring-4 ring-white">
+                                    <span
+                                        class="top-0 right-0 absolute  w-5 h-5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                </div>
+                                <span
+                                    class="material-symbols-outlined absolute top-2 right-2 bg-white duration-200 hover:text-orange-600 rounded-full p-2 cursor-pointer">
+                                    favorite </span>
+                                <a href="review.html"
+                                    class="absolute flex bottom-2 right-2 justify-center items-center text-[10px] text-white font-semibold bg-orange-600 rounded px-2 py-1">5%
+                                    Off</span>
+                                </a>
+                            </div>
 
-                    <div class="restaurant_card relative">
-                        <div class="" onclick="redirectToLink('restaurantsPage.html')">
-                            <a href="restaurantsPage.html" class="resturant_card h-full cursor-pointer ">
-                                <div
-                                    class="r_card_cover_image relative h-full object-cover bg-cover bg-center bg-no-repeat">
-                                    <div class="coverImage">
-                                        <img src="https://media.istockphoto.com/id/1154731746/photo/cheeseburger-with-cola-and-french-fries.jpg?s=612x612&w=0&k=20&c=DfuI7KyMDIF8_JH66oAhIZLOgL4RRXulfv24PQ5vTEo="
-                                            alt="" srcset="" class="rounded-tl-md rounded-tr-md w-full">
-                                    </div>
-                                    <div class="absolute h-20 w-20 bottom-4 left-4 ">
-                                        <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
-                                            alt="" class="h-20 w-20 rounded-full ring-4 ring-white">
-                                        <span
-                                            class="top-0 right-0 absolute  w-5 h-5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
-                                    </div>
+                            <div class="r_card_dis p-4 cursor-pointer">
+                                <a href="#" class="text-lg hover:text-orange-600 duration-200">El Plato</a>
+                                <div class="tags text-xs text-gray-400 flex w-full my-1">
+                                    <a href="#" class="mr-1 duration-200 hover:text-orange-600">Bangla</a>|
+                                    <a href="#" class="mx-1 duration-200 hover:text-orange-600">Indian</a>|
+                                    <a href="#" class="mx-1 duration-200 hover:text-orange-600">Thai</a>|
+                                    <a href="#" class="mx-1 duration-200 hover:text-orange-600">Chinese</a>
+                                </div>
+                                <hr>
+                                <div class="r_card_footer my-2 flex items-center justify-center">
 
-                                    <div
-                                        class="disCount absolute flex flex-col w-16 h-16 bottom-2 right-2 justify-center items-center text-white font-semibold bg-orange-500 rounded-full px-2 py-1">
-                                        <p calss="text-[22px]">10</p>
-                                        <p class="text-[10px]">%Off</p>
-                                    </div>
-                                    <div
-                                        class="disCount absolute flex flex-col  top-2 left-0 rounded-tr-full rounded-br-full justify-center items-center text-white text-sm bg-orange-500 px-2 py-1">
-                                        <span calss="t">Free Delivery</span>
-                                    </div>
+                                </div>
+                                <div class="max text-sm mt-1 flex items-center justify-center mt-2">
+                                    <p class="min mr-2">Min Order: 100 ৳</p><span
+                                        class="justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md px-2 py-1"><i
+                                            class="fa fa-star"></i>3.1/5 (100+)</span>
+                                </div>
+                                <div class="r_openClose my-2 flex items-center justify-center text-xs ">
+                                    <span
+                                        class="r_opening text-center rounded-full px-2  mr-2 border border-green-600 text-green-500">Open:
+                                        12:00
+                                        PM</span>
+                                    <span
+                                        class="r_closing text-center rounded-full px-2  border border-red-600 text-red-500">Close:
+                                        09:30
+                                        PM</span>
                                 </div>
 
-                                <div href="restaurants.html" class="r_card_dis p-4 cursor-pointer">
-                                    <div class="text-lg hover:text-orange-600 duration-200">El Plato
-                                    </div>
-                                    <div class="tags text-xs text-gray-400 flex w-full my-1">
-                                        <a href="#" class="mr-1 duration-200 hover:text-orange-600">Bangla</a>|
-                                        <a href="#" class="mx-1 duration-200 hover:text-orange-600">Indian</a>|
-                                        <a href="#" class="mx-1 duration-200 hover:text-orange-600">Thai</a>|
-                                        <a href="#" class="mx-1 duration-200 hover:text-orange-600">Chinese</a>
-                                    </div>
-                                    <hr>
-                                    <div class="r_card_footer my-2 flex items-center justify-center">
-                                    </div>
-                                    <div class="max text-sm mt-1 flex items-center justify-center mt-2">
-                                        <p class="min mr-2">Min Order: 100 ৳</p><span
-                                            class="justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md px-2 py-1"><i
-                                                class="fa fa-star"></i>3.1/5 (100+)</span>
-                                    </div>
-                                    <div class="r_openClose my-2 flex items-center justify-center text-xs ">
-                                        <span
-                                            class="r_opening text-center rounded-full px-2  mr-2 border border-green-600 text-green-500">Open:
-                                            12:00 PM</span>
-                                        <span
-                                            class="r_closing text-center rounded-full px-2  border border-red-600 text-red-500">Close:
-                                            09:30 PM</span>
-                                    </div>
-                                    <a href="#"
-                                        class="w-full mt-2 py-2 rounded-md bg-orange-600 border border-orange-600 mt-2 flex justify-center items-center text-white duration-200 uppercase hover:bg-white hover:text-orange-600 font-normal">visit
-                                        restaurant</a>
-                                </div>
-                            </a>
-                        </div>
-                        <span data-tip="Tap to Favorite"
-                            class="tooltip fa fa-heart favoriteButton absolute text-[26px] flex justify-center items-center w-[45px] h-[45px] z-20 top-2 right-2 bg-white duration-200 hover:text-orange-600 rounded-full p-2 cursor-pointer"><ion-icon
-                                name="heart-circle-outline"></ion-icon>
-                        </span>
+                                <a href="#"
+                                    class=" w-full mt-2 py-2 rounded-md bg-orange-600 border border-orange-600 mt-2 flex justify-center items-center text-white duration-200 uppercase hover:bg-white hover:text-orange-600 font-normal">visit
+                                    restaurant</a>
+                            </div>
+                        </a>
                     </div>
+                    <div class="restaurant_card">
+                        <a href="restaurantsPage.html" class="resturant_card h-full cursor-pointer ">
+                            <div
+                                class="r_card_cover_image relative h-full object-cover bg-cover bg-center bg-no-repeat">
+                                <div class="coverImage">
+                                    <img src="https://media.istockphoto.com/id/1154731746/photo/cheeseburger-with-cola-and-french-fries.jpg?s=612x612&w=0&k=20&c=DfuI7KyMDIF8_JH66oAhIZLOgL4RRXulfv24PQ5vTEo="
+                                        alt="" srcset="" class="rounded-tl-md rounded-tr-md w-full">
+                                </div>
+                                <div class="absolute h-20 w-20 bottom-4 left-4 ">
+                                    <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
+                                        alt="" class="h-20 w-20 rounded-full ring-4 ring-white">
+                                    <span
+                                        class="top-0 right-0 absolute  w-5 h-5 bg-red-500 border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                </div>
+                                <span
+                                    class="material-symbols-outlined absolute top-2 right-2 bg-white duration-200 hover:text-orange-600 rounded-full p-2 cursor-pointer">
+                                    favorite </span>
+                                <a href="review.html"
+                                    class="absolute flex bottom-2 right-2 justify-center items-center text-[10px] text-white font-semibold bg-orange-600 rounded px-2 py-1">5%
+                                    Off</span>
+                                </a>
+                            </div>
 
-                    <div class="restaurant_card relative">
-                        <div class="" onclick="redirectToLink('restaurantsPage.html')">
-                            <a href="restaurantsPage.html" class="resturant_card h-full cursor-pointer ">
-                                <div
-                                    class="r_card_cover_image relative h-full object-cover bg-cover bg-center bg-no-repeat">
-                                    <div class="coverImage">
-                                        <img src="https://media.istockphoto.com/id/1154731746/photo/cheeseburger-with-cola-and-french-fries.jpg?s=612x612&w=0&k=20&c=DfuI7KyMDIF8_JH66oAhIZLOgL4RRXulfv24PQ5vTEo="
-                                            alt="" srcset="" class="rounded-tl-md rounded-tr-md w-full">
-                                    </div>
-                                    <div class="absolute h-20 w-20 bottom-4 left-4 ">
-                                        <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
-                                            alt="" class="h-20 w-20 rounded-full ring-4 ring-white">
-                                        <span
-                                            class="top-0 right-0 absolute  w-5 h-5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
-                                    </div>
+                            <div class="r_card_dis p-4 cursor-pointer">
+                                <a href="#" class="text-lg hover:text-orange-600 duration-200">El Plato</a>
+                                <div class="tags text-xs text-gray-400 flex w-full my-1">
+                                    <a href="#" class="mr-1 duration-200 hover:text-orange-600">Bangla</a>|
+                                    <a href="#" class="mx-1 duration-200 hover:text-orange-600">Indian</a>|
+                                    <a href="#" class="mx-1 duration-200 hover:text-orange-600">Thai</a>|
+                                    <a href="#" class="mx-1 duration-200 hover:text-orange-600">Chinese</a>
+                                </div>
+                                <hr>
+                                <div class="r_card_footer my-2 flex items-center justify-center">
 
-                                    <div
-                                        class="disCount absolute flex flex-col w-16 h-16 bottom-2 right-2 justify-center items-center text-white font-semibold bg-orange-500 rounded-full px-2 py-1">
-                                        <p calss="text-[22px]">10</p>
-                                        <p class="text-[10px]">%Off</p>
-                                    </div>
-                                    <div
-                                        class="disCount absolute flex flex-col  top-2 left-0 rounded-tr-full rounded-br-full justify-center items-center text-white text-sm bg-orange-500 px-2 py-1">
-                                        <span calss="t">Free Delivery</span>
-                                    </div>
+                                </div>
+                                <div class="max text-sm mt-1 flex items-center justify-center mt-2">
+                                    <p class="min mr-2">Min Order: 100 ৳</p><span
+                                        class="justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md px-2 py-1"><i
+                                            class="fa fa-star"></i>3.1/5 (100+)</span>
+                                </div>
+                                <div class="r_openClose my-2 flex items-center justify-center text-xs ">
+                                    <span
+                                        class="r_opening text-center rounded-full px-2  mr-2 border border-green-600 text-green-500">Open:
+                                        12:00
+                                        PM</span>
+                                    <span
+                                        class="r_closing text-center rounded-full px-2  border border-red-600 text-red-500">Close:
+                                        09:30
+                                        PM</span>
                                 </div>
 
-                                <div href="restaurants.html" class="r_card_dis p-4 cursor-pointer">
-                                    <div class="text-lg hover:text-orange-600 duration-200">El Plato
-                                    </div>
-                                    <div class="tags text-xs text-gray-400 flex w-full my-1">
-                                        <a href="#" class="mr-1 duration-200 hover:text-orange-600">Bangla</a>|
-                                        <a href="#" class="mx-1 duration-200 hover:text-orange-600">Indian</a>|
-                                        <a href="#" class="mx-1 duration-200 hover:text-orange-600">Thai</a>|
-                                        <a href="#" class="mx-1 duration-200 hover:text-orange-600">Chinese</a>
-                                    </div>
-                                    <hr>
-                                    <div class="r_card_footer my-2 flex items-center justify-center">
-                                    </div>
-                                    <div class="max text-sm mt-1 flex items-center justify-center mt-2">
-                                        <p class="min mr-2">Min Order: 100 ৳</p><span
-                                            class="justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md px-2 py-1"><i
-                                                class="fa fa-star"></i>3.1/5 (100+)</span>
-                                    </div>
-                                    <div class="r_openClose my-2 flex items-center justify-center text-xs ">
-                                        <span
-                                            class="r_opening text-center rounded-full px-2  mr-2 border border-green-600 text-green-500">Open:
-                                            12:00 PM</span>
-                                        <span
-                                            class="r_closing text-center rounded-full px-2  border border-red-600 text-red-500">Close:
-                                            09:30 PM</span>
-                                    </div>
-                                    <a href="#"
-                                        class="w-full mt-2 py-2 rounded-md bg-orange-600 border border-orange-600 mt-2 flex justify-center items-center text-white duration-200 uppercase hover:bg-white hover:text-orange-600 font-normal">visit
-                                        restaurant</a>
-                                </div>
-                            </a>
-                        </div>
-                        <span data-tip="Tap to Favorite"
-                            class="tooltip fa fa-heart favoriteButton absolute text-[26px] flex justify-center items-center w-[45px] h-[45px] z-20 top-2 right-2 bg-white duration-200 hover:text-orange-600 rounded-full p-2 cursor-pointer"><ion-icon
-                                name="heart-circle-outline"></ion-icon>
-                        </span>
+                                <a href="#"
+                                    class=" w-full mt-2 py-2 rounded-md bg-orange-600 border border-orange-600 mt-2 flex justify-center items-center text-white duration-200 uppercase hover:bg-white hover:text-orange-600 font-normal">visit
+                                    restaurant</a>
+                            </div>
+                        </a>
                     </div>
+                    <div class="restaurant_card">
+                        <a href="restaurantsPage.html" class="resturant_card h-full cursor-pointer ">
+                            <div
+                                class="r_card_cover_image relative h-full object-cover bg-cover bg-center bg-no-repeat">
+                                <div class="coverImage">
+                                    <img src="https://media.istockphoto.com/id/1154731746/photo/cheeseburger-with-cola-and-french-fries.jpg?s=612x612&w=0&k=20&c=DfuI7KyMDIF8_JH66oAhIZLOgL4RRXulfv24PQ5vTEo="
+                                        alt="" srcset="" class="rounded-tl-md rounded-tr-md w-full">
+                                </div>
+                                <div class="absolute h-20 w-20 bottom-4 left-4 ">
+                                    <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
+                                        alt="" class="h-20 w-20 rounded-full ring-4 ring-white">
+                                    <span
+                                        class="top-0 right-0 absolute  w-5 h-5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                </div>
+                                <span
+                                    class="material-symbols-outlined absolute top-2 right-2 bg-white duration-200 hover:text-orange-600 rounded-full p-2 cursor-pointer">
+                                    favorite </span>
+                                <a href="review.html"
+                                    class="absolute flex bottom-2 right-2 justify-center items-center text-[10px] text-white font-semibold bg-orange-600 rounded px-2 py-1">5%
+                                    Off</span>
+                                </a>
+                            </div>
 
-                    <div class="restaurant_card relative">
-                        <div class="" onclick="redirectToLink('restaurantsPage.html')">
-                            <a href="restaurantsPage.html" class="resturant_card h-full cursor-pointer ">
-                                <div
-                                    class="r_card_cover_image relative h-full object-cover bg-cover bg-center bg-no-repeat">
-                                    <div class="coverImage">
-                                        <img src="https://media.istockphoto.com/id/1154731746/photo/cheeseburger-with-cola-and-french-fries.jpg?s=612x612&w=0&k=20&c=DfuI7KyMDIF8_JH66oAhIZLOgL4RRXulfv24PQ5vTEo="
-                                            alt="" srcset="" class="rounded-tl-md rounded-tr-md w-full">
-                                    </div>
-                                    <div class="absolute h-20 w-20 bottom-4 left-4 ">
-                                        <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
-                                            alt="" class="h-20 w-20 rounded-full ring-4 ring-white">
-                                        <span
-                                            class="top-0 right-0 absolute  w-5 h-5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
-                                    </div>
+                            <div class="r_card_dis p-4 cursor-pointer">
+                                <a href="#" class="text-lg hover:text-orange-600 duration-200">El Plato</a>
+                                <div class="tags text-xs text-gray-400 flex w-full my-1">
+                                    <a href="#" class="mr-1 duration-200 hover:text-orange-600">Bangla</a>|
+                                    <a href="#" class="mx-1 duration-200 hover:text-orange-600">Indian</a>|
+                                    <a href="#" class="mx-1 duration-200 hover:text-orange-600">Thai</a>|
+                                    <a href="#" class="mx-1 duration-200 hover:text-orange-600">Chinese</a>
+                                </div>
+                                <hr>
+                                <div class="r_card_footer my-2 flex items-center justify-center">
 
-                                    <div
-                                        class="disCount absolute flex flex-col w-16 h-16 bottom-2 right-2 justify-center items-center text-white font-semibold bg-orange-500 rounded-full px-2 py-1">
-                                        <p calss="text-[22px]">10</p>
-                                        <p class="text-[10px]">%Off</p>
-                                    </div>
-                                    <div
-                                        class="disCount absolute flex flex-col  top-2 left-0 rounded-tr-full rounded-br-full justify-center items-center text-white text-sm bg-orange-500 px-2 py-1">
-                                        <span calss="t">Free Delivery</span>
-                                    </div>
+                                </div>
+                                <div class="max text-sm mt-1 flex items-center justify-center mt-2">
+                                    <p class="min mr-2">Min Order: 100 ৳</p><span
+                                        class="justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md px-2 py-1"><i
+                                            class="fa fa-star"></i>3.1/5 (100+)</span>
+                                </div>
+                                <div class="r_openClose my-2 flex items-center justify-center text-xs ">
+                                    <span
+                                        class="r_opening text-center rounded-full px-2  mr-2 border border-green-600 text-green-500">Open:
+                                        12:00
+                                        PM</span>
+                                    <span
+                                        class="r_closing text-center rounded-full px-2  border border-red-600 text-red-500">Close:
+                                        09:30
+                                        PM</span>
                                 </div>
 
-                                <div href="restaurants.html" class="r_card_dis p-4 cursor-pointer">
-                                    <div class="text-lg hover:text-orange-600 duration-200">El Plato
-                                    </div>
-                                    <div class="tags text-xs text-gray-400 flex w-full my-1">
-                                        <a href="#" class="mr-1 duration-200 hover:text-orange-600">Bangla</a>|
-                                        <a href="#" class="mx-1 duration-200 hover:text-orange-600">Indian</a>|
-                                        <a href="#" class="mx-1 duration-200 hover:text-orange-600">Thai</a>|
-                                        <a href="#" class="mx-1 duration-200 hover:text-orange-600">Chinese</a>
-                                    </div>
-                                    <hr>
-                                    <div class="r_card_footer my-2 flex items-center justify-center">
-                                    </div>
-                                    <div class="max text-sm mt-1 flex items-center justify-center mt-2">
-                                        <p class="min mr-2">Min Order: 100 ৳</p><span
-                                            class="justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md px-2 py-1"><i
-                                                class="fa fa-star"></i>3.1/5 (100+)</span>
-                                    </div>
-                                    <div class="r_openClose my-2 flex items-center justify-center text-xs ">
-                                        <span
-                                            class="r_opening text-center rounded-full px-2  mr-2 border border-green-600 text-green-500">Open:
-                                            12:00 PM</span>
-                                        <span
-                                            class="r_closing text-center rounded-full px-2  border border-red-600 text-red-500">Close:
-                                            09:30 PM</span>
-                                    </div>
-                                    <a href="#"
-                                        class=" w-full mt-2 py-2 rounded-md bg-orange-600 border border-orange-600 mt-2 flex justify-center items-center text-white duration-200 uppercase hover:bg-white hover:text-orange-600 font-normal">visit
-                                        restaurant</a>
-                                </div>
-                            </a>
-                        </div>
-                        <span data-tip="Tap to Favorite"
-                            class="tooltip fa fa-heart favoriteButton absolute text-[26px] flex justify-center items-center w-[45px] h-[45px] z-20 top-2 right-2 bg-white duration-200 hover:text-orange-600 rounded-full p-2 cursor-pointer"><ion-icon
-                                name="heart-circle-outline"></ion-icon>
-                        </span>
+                                <a href="#"
+                                    class=" w-full mt-2 py-2 rounded-md bg-orange-600 border border-orange-600 mt-2 flex justify-center items-center text-white duration-200 uppercase hover:bg-white hover:text-orange-600 font-normal">visit
+                                    restaurant</a>
+                            </div>
+                        </a>
                     </div>
+                    <div class="restaurant_card">
+                        <a href="restaurantsPage.html" class="resturant_card h-full cursor-pointer ">
+                            <div
+                                class="r_card_cover_image relative h-full object-cover bg-cover bg-center bg-no-repeat">
+                                <div class="coverImage">
+                                    <img src="https://media.istockphoto.com/id/1154731746/photo/cheeseburger-with-cola-and-french-fries.jpg?s=612x612&w=0&k=20&c=DfuI7KyMDIF8_JH66oAhIZLOgL4RRXulfv24PQ5vTEo="
+                                        alt="" srcset="" class="rounded-tl-md rounded-tr-md w-full">
+                                </div>
+                                <div class="absolute h-20 w-20 bottom-4 left-4 ">
+                                    <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
+                                        alt="" class="h-20 w-20 rounded-full ring-4 ring-white">
+                                    <span
+                                        class="top-0 right-0 absolute  w-5 h-5 bg-red-500 border-2 border-white dark:border-gray-800 rounded-full"></span>
+                                </div>
+                                <span
+                                    class="material-symbols-outlined absolute top-2 right-2 bg-white duration-200 hover:text-orange-600 rounded-full p-2 cursor-pointer">
+                                    favorite </span>
+                                <a href="review.html"
+                                    class="absolute flex bottom-2 right-2 justify-center items-center text-[10px] text-white font-semibold bg-orange-600 rounded px-2 py-1">5%
+                                    Off</span>
+                                </a>
+                            </div>
 
-                    <div class="restaurant_card relative">
-                        <div class="" onclick="redirectToLink('restaurantsPage.html')">
-                            <a href="restaurantsPage.html" class="resturant_card h-full cursor-pointer ">
-                                <div
-                                    class="r_card_cover_image relative h-full object-cover bg-cover bg-center bg-no-repeat">
-                                    <div class="coverImage">
-                                        <img src="https://media.istockphoto.com/id/1154731746/photo/cheeseburger-with-cola-and-french-fries.jpg?s=612x612&w=0&k=20&c=DfuI7KyMDIF8_JH66oAhIZLOgL4RRXulfv24PQ5vTEo="
-                                            alt="" srcset="" class="rounded-tl-md rounded-tr-md w-full">
-                                    </div>
-                                    <div class="absolute h-20 w-20 bottom-4 left-4 ">
-                                        <img src="https://foodshahibd.com/foodshahi_ci/assets/media/restaurants/logo/1671151209_logo.png"
-                                            alt="" class="h-20 w-20 rounded-full ring-4 ring-white">
-                                        <span
-                                            class="top-0 right-0 absolute  w-5 h-5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
-                                    </div>
+                            <div class="r_card_dis p-4 cursor-pointer">
+                                <a href="#" class="text-lg hover:text-orange-600 duration-200">El Plato</a>
+                                <div class="tags text-xs text-gray-400 flex w-full my-1">
+                                    <a href="#" class="mr-1 duration-200 hover:text-orange-600">Bangla</a>|
+                                    <a href="#" class="mx-1 duration-200 hover:text-orange-600">Indian</a>|
+                                    <a href="#" class="mx-1 duration-200 hover:text-orange-600">Thai</a>|
+                                    <a href="#" class="mx-1 duration-200 hover:text-orange-600">Chinese</a>
+                                </div>
+                                <hr>
+                                <div class="r_card_footer my-2 flex items-center justify-center">
 
-                                    <div
-                                        class="disCount absolute flex flex-col w-16 h-16 bottom-2 right-2 justify-center items-center text-white font-semibold bg-orange-500 rounded-full px-2 py-1">
-                                        <p calss="text-[22px]">10</p>
-                                        <p class="text-[10px]">%Off</p>
-                                    </div>
-                                    <div
-                                        class="disCount absolute flex flex-col  top-2 left-0 rounded-tr-full rounded-br-full justify-center items-center text-white text-sm bg-orange-500 px-2 py-1">
-                                        <span calss="t">Free Delivery</span>
-                                    </div>
+                                </div>
+                                <div class="max text-sm mt-1 flex items-center justify-center mt-2">
+                                    <p class="min mr-2">Min Order: 100 ৳</p><span
+                                        class="justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md px-2 py-1"><i
+                                            class="fa fa-star"></i>3.1/5 (100+)</span>
+                                </div>
+                                <div class="r_openClose my-2 flex items-center justify-center text-xs ">
+                                    <span
+                                        class="r_opening text-center rounded-full px-2  mr-2 border border-green-600 text-green-500">Open:
+                                        12:00
+                                        PM</span>
+                                    <span
+                                        class="r_closing text-center rounded-full px-2  border border-red-600 text-red-500">Close:
+                                        09:30
+                                        PM</span>
                                 </div>
 
-                                <div href="restaurants.html" class="r_card_dis p-4 cursor-pointer">
-                                    <div class="text-lg hover:text-orange-600 duration-200">El Plato
-                                    </div>
-                                    <div class="tags text-xs text-gray-400 flex w-full my-1">
-                                        <a href="#" class="mr-1 duration-200 hover:text-orange-600">Bangla</a>|
-                                        <a href="#" class="mx-1 duration-200 hover:text-orange-600">Indian</a>|
-                                        <a href="#" class="mx-1 duration-200 hover:text-orange-600">Thai</a>|
-                                        <a href="#" class="mx-1 duration-200 hover:text-orange-600">Chinese</a>
-                                    </div>
-                                    <hr>
-                                    <div class="r_card_footer my-2 flex items-center justify-center">
-                                    </div>
-                                    <div class="max text-sm mt-1 flex items-center justify-center mt-2">
-                                        <p class="min mr-2">Min Order: 100 ৳</p><span
-                                            class="justify-center items-center text-[10px] text-white font-semibold bg-green-500 rounded-md px-2 py-1"><i
-                                                class="fa fa-star"></i>3.1/5 (100+)</span>
-                                    </div>
-                                    <div class="r_openClose my-2 flex items-center justify-center text-xs ">
-                                        <span
-                                            class="r_opening text-center rounded-full px-2  mr-2 border border-green-600 text-green-500">Open:
-                                            12:00 PM</span>
-                                        <span
-                                            class="r_closing text-center rounded-full px-2  border border-red-600 text-red-500">Close:
-                                            09:30 PM</span>
-                                    </div>
-                                    <a href="#"
-                                        class="w-full mt-2 py-2 rounded-md bg-orange-600 border border-orange-600 mt-2 flex justify-center items-center text-white duration-200 uppercase hover:bg-white hover:text-orange-600 font-normal">visit
-                                        restaurant</a>
-                                </div>
-                            </a>
-                        </div>
-                        <span data-tip="Tap to Favorite"
-                            class="tooltip fa fa-heart favoriteButton absolute text-[26px] flex justify-center items-center w-[45px] h-[45px] z-20 top-2 right-2 bg-white duration-200 hover:text-orange-600 rounded-full p-2 cursor-pointer"><ion-icon
-                                name="heart-circle-outline"></ion-icon>
-                        </span>
+                                <a href="#"
+                                    class=" w-full mt-2 py-2 rounded-md bg-orange-600 border border-orange-600 mt-2 flex justify-center items-center text-white duration-200 uppercase hover:bg-white hover:text-orange-600 font-normal">visit
+                                    restaurant</a>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1221,7 +1180,6 @@
     <script src="./src/js/openClose.js "></script>
     <script src="./src/js/flowbite.min.js "></script>
     <script src="./src/js/allModals.js "></script>
-    <script src="./src/js/favorite.js "></script>
 
 
 
