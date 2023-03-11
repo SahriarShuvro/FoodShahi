@@ -1,6 +1,7 @@
 let navBarSection = document.getElementById("navBarSection");
 
-navBarSection.innerHTML = ` <!-- Heading Section  -->
+navBarSection.innerHTML = `
+<!-- Heading Section  -->
 <nav
     class="headingArea fixed top-0 z-50 w-full bg-white border-gray-200  sm:px-4 py-2.5 md:px-4 lg:px-10 xl:px-10 rounded dark:bg-gray-900">
     <div class="container flex items-center justify-between">
@@ -37,7 +38,7 @@ navBarSection.innerHTML = ` <!-- Heading Section  -->
                     class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 lg:text-base">
                     <li>
                         <a href="./index.html"
-                            class="homePage block py-2 pl-3 pr-4 text-gray-700 hover:text-orange-600 duration-200  rounded md:bg-transparent md:text-gray-700 md:p-0 dark:text-white"
+                            class="homePage block py-2 pl-3 pr-4 text-gray-700 hover:text-orange-600 rounded duration-200 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-600 md:p-0  dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                             aria-current="page">Home</a>
                     </li>
                     <li>
@@ -57,7 +58,7 @@ navBarSection.innerHTML = ` <!-- Heading Section  -->
             <!-- cart & profile  -->
             <div class="flex items-center md:order-1">
                 <div
-                    class="block py-2 pl-3 pr-4  text-gray-700 hover:text-orange-600 rounded duration-200 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-600 md:p-0  dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                    class="block py-2 pl-3 pr-4  text-gray-700 hover:text-orange-600 rounded duration-200 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-600 md:p-0  dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 mr-[15px]">
                     <div class="relative menuBTN cart">
                         <div>
                             <div class="relative">
@@ -229,10 +230,13 @@ navBarSection.innerHTML = ` <!-- Heading Section  -->
                         class="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
                         id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
                         data-dropdown-placement="bottom">
-                        <span class="sr-only">Open user menu</span>
-                        <img class="w-8 h-8 rounded-full"
-                            src="https://scontent.fjsr11-1.fna.fbcdn.net/v/t39.30808-6/328713612_735851141602287_114591454814051131_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=PmhliMSlt58AX8aN1fE&_nc_ht=scontent.fjsr11-1.fna&oh=00_AfDR5jrHY7eg3uodwRaajxFqnWdV1cAwS3ybDtc6OpnPlA&oe=6400C550"
-                            alt="user photo">
+                        <div class="relative w-8 h-8 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                            <svg class="absolute w-10 h-10 text-gray-400 -left-1" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
                     </button>
                     <!-- Dropdown menu -->
                     <div class="z-50 w-[215px] absolute duration-300 -top-[7px] right-0 opacity-0 my-4 text-base list-none "
@@ -299,4 +303,5 @@ navBarSection.innerHTML = ` <!-- Heading Section  -->
 
 
     </div>
-</nav>`;
+</nav>
+`;
