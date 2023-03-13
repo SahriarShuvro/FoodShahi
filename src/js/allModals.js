@@ -356,7 +356,7 @@ allModals.innerHTML = `
 
     <!-- Change Password  -->
     <div id="passwordChange" tabindex="-1" aria-hidden="true"
-        class="fixed top-[8rem] md:top left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full">
+        class="fixed top-[8rem] left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full">
         <div class="relative w-full h-full max-w-md md:h-auto">
             <!-- Modal content -->
             <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
@@ -473,7 +473,7 @@ allModals.innerHTML = `
 
     <!-- Food image Expand  -->
     <div id="foodImageExpand" tabindex="-1"
-        class="fixed top-[8rem] md:top left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full justify-center items-center">
+        class="fixed top md:top-[8rem] left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full justify-center items-center">
         <div class="relative w-full h-full max-w-md md:h-auto">
             <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                 <button type="button"
