@@ -134,7 +134,7 @@ allModals.innerHTML = `
     </div>
 
     <!-- Order Progress  -->
-    <div class="w-auto fixed left-0 z-30 bottom-3 ">
+    <div class="w-full fixed left-0 z-30 bottom-3 ">
         <a href="orderTrack.html" class="flex m-auto w-full md:w-[60%] ">
             <ol class="flex items-center w-auto orderProggress">
                 <li
