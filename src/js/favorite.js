@@ -7,7 +7,7 @@ favoriteMultipleButton.forEach((favoriteSingleButton) => {
         "style",
         "background:red!important; color:#fff !important"
       );
-      favoriteSingleButton.setAttribute("data-tip", "Added");
+      favoriteSingleButton.setAttribute("data-tip", "Added!");
     } else {
       favoriteSingleButton.removeAttribute(
         "style",
