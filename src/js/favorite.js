@@ -7,7 +7,7 @@ favoriteMultipleButton.forEach((favoriteSingleButton) => {
         "style",
         "background:red!important; color:#fff !important"
       );
-      favoriteSingleButton.setAttribute("data-tip", "Added to favorites list!");
+      favoriteSingleButton.setAttribute("data-tip", "Added");
     } else {
       favoriteSingleButton.removeAttribute(
         "style",
@@ -15,12 +15,12 @@ favoriteMultipleButton.forEach((favoriteSingleButton) => {
       );
       favoriteSingleButton.setAttribute(
         "data-tip",
-        "Removed from favorites list!"
+        "Removed!"
       );
       setTimeout(function () {
         favoriteSingleButton.setAttribute(
           "data-tip",
-          "Tap to add favorites list"
+          "Add"
         );
       }, 2000);
     }
