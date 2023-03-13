@@ -6770,7 +6770,7 @@ a:hover {
   background: linear-gradient(110deg, #ffd000 50%, #ff8000 50%);
 }
 .activeOrderDetails {
-  height: 590px !important;
+  height: auto !important;
   transition-duration: 0.2s;
   padding: 5px;
 }
